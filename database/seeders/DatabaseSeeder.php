@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Restaurant_type;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -16,10 +17,9 @@ class DatabaseSeeder extends Seeder
     {
 
         $this->call([
-            // UserSeeder::class,
-            // EventSeeder::class,
+            Restaurant_type::class,
+            UserRestaurantTypeSeeder::class,
             OrderSeeder::class,
         ]);
-        
     }
 }

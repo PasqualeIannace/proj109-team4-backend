@@ -14,11 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('user_restaurant_type', function (Blueprint $table) {
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete();
+            // $table->unsignedBigInteger('user_id');
+            // $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
 
-            $table->unsignedBigInteger('restaurant_type_id');
-            $table->foreign('restaurant_type_id')->references('id')->on('restaurant_type')->cascadeOnDelete();
+            // $table->unsignedBigInteger('restaurant_type_id');
+            // $table->foreign('restaurant_type_id')->references('id')->on('restaurant_type')->cascadeOnDelete();
+            $table->foreignId('restaurant_type_id')->constrained()->cascadeOnDelete();
 
             $table->unsignedInteger('quantity')->default(1);
         });

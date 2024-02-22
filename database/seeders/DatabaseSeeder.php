@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
             // UserSeeder::class,
             // EventSeeder::class,
             OrderSeeder::class,
+            CustomerSeeder::class,
         ]);
-        
     }
 }

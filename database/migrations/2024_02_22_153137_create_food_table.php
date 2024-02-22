@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string("name");
             $table->text("ingredients");
             $table->text("description");
-            $table->integer('price');
+            $table->string('price');
             $table->boolean('visible');
             $table->timestamps();
         });

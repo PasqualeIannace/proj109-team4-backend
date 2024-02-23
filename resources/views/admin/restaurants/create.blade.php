@@ -15,7 +15,7 @@
         @endif
     </div>
     <div class="row">
-        <form action="{{ route('admin.event.store') }}" method="POST">
+        <form action="{{ route('admin.restaurants.store') }}" method="POST">
             @csrf
             {{-- name description --}}
             <div class="mb-3">

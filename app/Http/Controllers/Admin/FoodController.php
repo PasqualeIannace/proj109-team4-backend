@@ -14,31 +14,35 @@ class FoodController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function validation($data){ 
-    $validated = Validator::make($data,[    //accetta 3 argomenti dato da validare, primo array con regole e secondo array con messaggi
-        'image' => 'required',
-        'name' => 'required|max:50',
-        'ingredients' => 'required|max:200',
-        'description' => 'required|max:200',
-        'price' => 'required',
-        'visible' => 'required',
-        'user_id' => 'required',
-    ],
-    [
-        'image' => 'Requisito Necessario',
-        'name.required'=>'Requisito Necessario',
-        'name.max'=>'Numero caratteri consentiti superato',
-        'ingredients.required'=>'Requisito Necessario',
-        'ingredients.max'=>'Numero caratteri consentiti superato',
-        'description.required'=>'Requisito Necessario',
-        'description.max'=>'Numero caratteri consentiti superato',
-        'price.required'=>'Requisito Necessario',
-        'visible.required'=>'Requisito Necessario',
-        'user_id.required'=>'Requisito Necessario',
-       
-    ])->validate();
-    return $validated;
-}
+    public function validation($data)
+    {
+        $validated = Validator::make(
+            $data,
+            [    //accetta 3 argomenti dato da validare, primo array con regole e secondo array con messaggi
+                'image' => 'required',
+                'name' => 'required|max:50',
+                'ingredients' => 'required|max:200',
+                'description' => 'required|max:200',
+                'price' => 'required',
+                'visible' => 'required',
+                'user_id' => 'required',
+            ],
+            [
+                'image' => 'Requisito Necessario',
+                'name.required' => 'Requisito Necessario',
+                'name.max' => 'Numero caratteri consentiti superato',
+                'ingredients.required' => 'Requisito Necessario',
+                'ingredients.max' => 'Numero caratteri consentiti superato',
+                'description.required' => 'Requisito Necessario',
+                'description.max' => 'Numero caratteri consentiti superato',
+                'price.required' => 'Requisito Necessario',
+                'visible.required' => 'Requisito Necessario',
+                'user_id.required' => 'Requisito Necessario',
+
+            ]
+        )->validate();
+        return $validated;
+    }
 
     public function index()
     { {
@@ -71,13 +75,13 @@ class FoodController extends Controller
      */
     public function store(Request $request)
     {
-         $data = $request->all();
-         $valid_data=$this->validation($data);
-         //$validated["user_id"] = Auth::id();
-         $newFood = new Food();
-         $newFood->fill($valid_data);
+        $data = $request->all();
+        $valid_data = $this->validation($data);
+        //$validated["user_id"] = Auth::id();
+        $newFood = new Food();
+        $newFood->fill($valid_data);
 
-         return redirect()->route('admin.restaurants.index'); //agg id per non ripetere l'agg dell'ogg      
+        return redirect()->route('admin.restaurants.index'); //agg id per non ripetere l'agg dell'ogg      
     }
 
     /**

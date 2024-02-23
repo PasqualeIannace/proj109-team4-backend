@@ -145,7 +145,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 5,
             ],
             [
-                'image' => '',
+                'image' => 'https://blog.giallozafferano.it/martolinaincucina/wp-content/uploads/2020/02/Involtini-primavera-B1200x1200.jpg',
                 'name' => 'Involtini primavera',
                 'ingredients' => 'Sfoglie per involtini, Carote, Vino di riso, Cavolo cappuccio, Cipolle bianche, Olio di semi di arachide, Sale fino, Pepe bianco',
                 'description' => "In passato venivano preparati soprattutto in occasione del Capodanno cinese, che secondo il calendario tradizionale corrisponde con l’inizio della primavera… ed ecco spiegato il loro nome: involtini primavera!",
@@ -155,7 +155,7 @@ class FoodSeeder extends Seeder
 
             ],
             [
-                'image' => '',
+                'image' => 'https://cinaintavola.com/wp-content/uploads/2020/11/dscf4308-800x530.jpg',
                 'name' => 'Ravioli al vapore',
                 'ingredients' => 'Maiale macinato, Cavolo cappuccio, Cipollotto fresco, Vino di riso, Salsa di soia, Sale fino, Pepe bianco',
                 'description' => "Sono tipici del Capodanno cinese, come gli involtini primavera, ma vengono consumati durante tutte le festività perché la loro forma, che ricorda quella di un’antica moneta, è considerata un simbolo di buona fortuna: stiamo parlando dei ravioli cinesi al vapore!",
@@ -165,7 +165,7 @@ class FoodSeeder extends Seeder
 
             ],
             [
-                "image" => "",
+                "image" => "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/90929d007e686f05260549f6274747f9/Derivates/0da9de513598521b6ade419f76eb68bb8bbebd57.jpg",
                 "name" => "Costine di maiale al vapore",
                 "ingredients" => "Costine di maiale, salsa di soia, zenzero, aglio, cipollotti",
                 "description" => "Le costine di maiale al vapore sono un piatto cinese classico, dove le costine vengono marinate con salsa di soia, zenzero e aglio, poi cotte al vapore fino a diventare tenere e saporite. Sono spesso servite con cipollotti freschi.",
@@ -174,7 +174,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://cinaintavola.com/wp-content/uploads/2021/03/dscf5336-scaled.jpg",
                 "name" => "Baozi al vapore",
                 "ingredients" => "Carne di maiale, cavolo cinese, zenzero, salsa di soia",
                 "description" => "I baozi al vapore sono panini cinesi ripieni di carne di maiale aromatica, cavolo cinese e zenzero. Sono cotti al vapore fino a diventare soffici e deliziosi. Si gustano spesso come spuntino o colazione.",
@@ -183,7 +183,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://www.quotidiano.net/polopoly_fs/1.5253667.1592897967!/menu/standard/file/merluzzo%20al%20curry3.JPG",
                 "name" => "Pesce al curry",
                 "ingredients" => "Filetto di pesce, curry in polvere, latte di cocco, peperoni, cipolle",
                 "description" => "Il pesce al curry è un piatto cinese ispirato alla cucina indiana, dove filetti di pesce sono cotti in una ricca salsa al curry a base di latte di cocco, peperoni e cipolle. È un piatto aromatico e speziato.",
@@ -192,7 +192,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://www.gazzettadelgusto.it/wp-content/uploads/2020/07/Insalata-di-fagioli-ricetta-vegana-salutare-veloce.jpg",
                 "name" => "Insalata di fagioli freddi",
                 "ingredients" => "Fagioli verdi, salsa di sesamo, aglio, peperoncino, salsa di soia",
                 "description" => "L'insalata di fagioli freddi è un contorno fresco e salutare della cucina cinese, preparato con fagioli verdi croccanti conditi con salsa di sesamo, aglio, peperoncino e salsa di soia. È leggero e ricco di sapori.",
@@ -201,7 +201,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://blackdrops.it/cdn/shop/articles/filetto.webp?v=1699627424&width=1100",
                 "name" => "Maiale al vapore con salsa di prugne",
                 "ingredients" => "Maiale, salsa di prugne, zenzero, aglio, cipollotti",
                 "description" => "Il maiale al vapore con salsa di prugne è un piatto tradizionale cinese dove fette di maiale vengono cotte al vapore e servite con una salsa dolce e acidula a base di prugne, zenzero e aglio. È una delizia gustosa e salutare.",
@@ -210,7 +210,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://img.freepik.com/premium-photo/pajeon-korean-green-onion-pancake-buchimgae_511235-9692.jpg",
                 "name" => "Pancake alla cipolla verde",
                 "ingredients" => "Farina, cipolla verde, olio di sesamo, salsa di soia",
                 "description" => "I pancake alla cipolla verde sono un antipasto classico della cucina cinese, preparati con strati sottili di pasta ripiegati con cipolla verde e cotti fino a diventare croccanti e dorati. Sono deliziosi e aromatici.",
@@ -219,7 +219,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://www.delizieeconfidenze.com/wp-content/uploads/2019/03/IMG_9172.jpg",
                 "name" => "Congee di riso",
                 "ingredients" => "Riso, brodo di pollo, zenzero, uova, cipollotti",
                 "description" => "Il congee di riso è una zuppa tradizionale della colazione cinese, fatta con riso cotto lentamente in brodo di pollo con aggiunta di zenzero, uova e cipollotti. È cremoso, nutriente e confortante.",
@@ -228,7 +228,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://www.thepyperskitchen.com/wp-content/uploads/2021/11/3B964D3D-1CCB-43D1-997F-A61C424B1023.jpeg",
                 "name" => "Tanghulu",
                 "ingredients" => "Frutta mista, zucchero, bastoncini",
                 "description" => "Il tanghulu è uno spuntino dolce cinese composto da frutta cristallizzata su bastoncini. Solitamente viene usata la frutta fresca, come uva o fragole, immersa in uno sciroppo di zucchero caramellato. È croccante e delizioso.",
@@ -237,7 +237,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://www.nonsprecare.it/wp-content/uploads/2018/11/ricetta-pollo-arancia-1.jpg",
                 "name" => "Pollo all'arancia",
                 "ingredients" => "Pollo, scorza d'arancia, salsa di soia, zenzero, aglio",
                 "description" => "Il pollo all'arancia è un piatto cinese classico caratterizzato da pezzi di pollo fritti e immersi in una salsa agrodolce aromatizzata all'arancia. È croccante e ricco di sapore.",
@@ -246,7 +246,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://i0.wp.com/www.linkiesta.it/wp-content/uploads/2022/11/giardino-di-giada-courtesy-anatra-pechinese-con-crepes.jpg?resize=640%2C427&ssl=1",
                 "name" => "Anatra alla pechinese",
                 "ingredients" => "Anatra, salsa hoisin, cipollotti, pancake",
                 "description" => "L'anatra alla pechinese è un piatto iconico della cucina cinese composto da fette di anatra arrosto, servite con pancake sottili, salsa hoisin e cipollotti freschi. È una delizia da condividere.",
@@ -590,7 +590,83 @@ class FoodSeeder extends Seeder
                 "price" => "7.99€",
                 "visible" => true,
                 'user_id' => 1,
-            ]
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/b5/pizza-margherita_dop-b54437ce.png',
+                'name' => 'Margherita',
+                'ingredients' => 'Pomodoro, Mozzarella, Basilico',
+                'description' => "La pizza Margherita è un classico intramontabile della cucina italiana. Fu creata nel 1889 dal pizzaiolo Raffaele Esposito in onore della Regina Margherita di Savoia. La sua combinazione di sapori semplici e freschi la rende una scelta popolare per tutti i gusti.",
+                'price' => '9€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/ce/pizza-mortadella-cef41c7e.webp',
+                'name' => 'Mortadella',
+                'ingredients' => 'Mozzarella fior di latte, Mortadella di Prato IGP Presidio Slow-Food, Burattina artigianale, Granella di pistacchio di Bronte DOP',
+                'description' => "Una deliziosa pizza con mortadella di Prato IGP presidio Slow-food, burattina artigianale e mozzarella fior di latte, il tutto abbracciato da pistacchi di Bronte in grado di soddisfare anche i gusti più fini.",
+                'price' => '10€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/0a/pizza-marinara-0a37a1f1.webp',
+                'name' => 'Marinara',
+                'ingredients' => 'Salsa di pomodoro, Origano di Pantelleria, Aglio bianco Polesano DOP',
+                'description' => "Pizza marinara è una tipica pizza napoletana condita con pomodoro, aglio, origano, olio. È particolarmente apprezzata nell'Italia meridionale, dove risulta la seconda pizza preferita per gusto dopo quella con mozzarella di bufala.",
+                'price' => '6€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/a4/pizza-capricciosa-2-a4c509d1.webp',
+                'name' => 'Capricciosa',
+                'ingredients' => 'Salsa di pomodoro, Mozzarella fior di latte, Prosciutto cotto, Funghi, Carciofi',
+                'description' => "La pizza capricciosa è una pizza tipica della cucina italiana caratterizzata da un condimento di pomodoro, mozzarella fior di latte, prosciutto cotto, funghi e carciofi.
+
+                Sebbene abbia gli stessi ingredienti della pizza alle quattro stagioni, la capricciosa presenta condimenti tutti insieme sparsi e non divisi in quattro spicchi.
+                
+                Risulta inventata nell'omonimo ristorante di Roma nel 1937.",
+                'price' => '10€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/0a/pizza-valtellina-0aaffed6.webp',
+                'name' => 'Valtelliana',
+                'ingredients' => 'Salsa di pomodoro, Mozzarella fior di latte',
+                'description' => 'La pizza valtellina è una pizza leggera ma allo stesso tempo ricca di gusto. Preparata con salsa di pomodoro, mozzarella fior di latte, bresaola, rucola e grana, è la soluzione ideale per tutti quelli che hanno voglia di mangiare una pizza nutriente ma allo stesso tempo leggera.',
+                'price' => '10.50€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/6b/pizza-chiodini_e_sopressa-6b48aefc.webp',
+                'name' => 'Chiodini e Sopressa',
+                'ingredients' => 'Pomodoro, Mozzarella, Pepperoni',
+                'description' => 'La pizza chiodini e sopressa è molto apprezzata per il gusto delicato e aromatico. Condita con salsa di pomodoro, mozzarella fior di latte, chiodini e sopressa, è una pizza perfetta che chi ama i gusti decisi e sapori genuini.',
+                'price' => '9€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/2d/pizza-verdure-2d708cec.webp',
+                'name' => 'Verdure',
+                'ingredients' => 'Salsa di pomodoro, Mozzarella fior di latte, Zucchine, Melanzane, Peperoni',
+                'description' => 'La pizza sfiziosa che scatena il sguardo con i suoi colori e con la combinazione delle melanzane, peperoni e zucchine abbracciando la mozzarella fior di latte e la salsa di pomodoro.',
+                'price' => '10.50€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/59/pizza-friarelli_e_salssicia-59a8b0a8.webp',
+                'name' => 'Friarielli e Salsiccia',
+                'ingredients' => 'Mozzarella fior di latte, Salsiccia, Friarielli',
+                'description' => 'La pizza friarielli e salsiccia è una pizza tipica napoletana con mozzarella fior di latte, salsiccia e una nota di piccantino datto dai friarielli. Tutti questi ingredienti, messi insieme, danno un gusto deciso grazie alla loro bontà.',
+                'price' => '10€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
         ];
         foreach ($foods as $food) {
 

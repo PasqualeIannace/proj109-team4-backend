@@ -145,7 +145,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 5,
             ],
             [
-                'image' => '',
+                'image' => 'https://blog.giallozafferano.it/martolinaincucina/wp-content/uploads/2020/02/Involtini-primavera-B1200x1200.jpg',
                 'name' => 'Involtini primavera',
                 'ingredients' => 'Sfoglie per involtini, Carote, Vino di riso, Cavolo cappuccio, Cipolle bianche, Olio di semi di arachide, Sale fino, Pepe bianco',
                 'description' => "In passato venivano preparati soprattutto in occasione del Capodanno cinese, che secondo il calendario tradizionale corrisponde con l’inizio della primavera… ed ecco spiegato il loro nome: involtini primavera!",
@@ -155,7 +155,7 @@ class FoodSeeder extends Seeder
 
             ],
             [
-                'image' => '',
+                'image' => 'https://cinaintavola.com/wp-content/uploads/2020/11/dscf4308-800x530.jpg',
                 'name' => 'Ravioli al vapore',
                 'ingredients' => 'Maiale macinato, Cavolo cappuccio, Cipollotto fresco, Vino di riso, Salsa di soia, Sale fino, Pepe bianco',
                 'description' => "Sono tipici del Capodanno cinese, come gli involtini primavera, ma vengono consumati durante tutte le festività perché la loro forma, che ricorda quella di un’antica moneta, è considerata un simbolo di buona fortuna: stiamo parlando dei ravioli cinesi al vapore!",
@@ -165,7 +165,7 @@ class FoodSeeder extends Seeder
 
             ],
             [
-                "image" => "",
+                "image" => "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/90929d007e686f05260549f6274747f9/Derivates/0da9de513598521b6ade419f76eb68bb8bbebd57.jpg",
                 "name" => "Costine di maiale al vapore",
                 "ingredients" => "Costine di maiale, salsa di soia, zenzero, aglio, cipollotti",
                 "description" => "Le costine di maiale al vapore sono un piatto cinese classico, dove le costine vengono marinate con salsa di soia, zenzero e aglio, poi cotte al vapore fino a diventare tenere e saporite. Sono spesso servite con cipollotti freschi.",
@@ -174,7 +174,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://cinaintavola.com/wp-content/uploads/2021/03/dscf5336-scaled.jpg",
                 "name" => "Baozi al vapore",
                 "ingredients" => "Carne di maiale, cavolo cinese, zenzero, salsa di soia",
                 "description" => "I baozi al vapore sono panini cinesi ripieni di carne di maiale aromatica, cavolo cinese e zenzero. Sono cotti al vapore fino a diventare soffici e deliziosi. Si gustano spesso come spuntino o colazione.",
@@ -183,7 +183,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://www.quotidiano.net/polopoly_fs/1.5253667.1592897967!/menu/standard/file/merluzzo%20al%20curry3.JPG",
                 "name" => "Pesce al curry",
                 "ingredients" => "Filetto di pesce, curry in polvere, latte di cocco, peperoni, cipolle",
                 "description" => "Il pesce al curry è un piatto cinese ispirato alla cucina indiana, dove filetti di pesce sono cotti in una ricca salsa al curry a base di latte di cocco, peperoni e cipolle. È un piatto aromatico e speziato.",
@@ -192,7 +192,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://www.gazzettadelgusto.it/wp-content/uploads/2020/07/Insalata-di-fagioli-ricetta-vegana-salutare-veloce.jpg",
                 "name" => "Insalata di fagioli freddi",
                 "ingredients" => "Fagioli verdi, salsa di sesamo, aglio, peperoncino, salsa di soia",
                 "description" => "L'insalata di fagioli freddi è un contorno fresco e salutare della cucina cinese, preparato con fagioli verdi croccanti conditi con salsa di sesamo, aglio, peperoncino e salsa di soia. È leggero e ricco di sapori.",
@@ -201,7 +201,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://blackdrops.it/cdn/shop/articles/filetto.webp?v=1699627424&width=1100",
                 "name" => "Maiale al vapore con salsa di prugne",
                 "ingredients" => "Maiale, salsa di prugne, zenzero, aglio, cipollotti",
                 "description" => "Il maiale al vapore con salsa di prugne è un piatto tradizionale cinese dove fette di maiale vengono cotte al vapore e servite con una salsa dolce e acidula a base di prugne, zenzero e aglio. È una delizia gustosa e salutare.",
@@ -210,7 +210,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://img.freepik.com/premium-photo/pajeon-korean-green-onion-pancake-buchimgae_511235-9692.jpg",
                 "name" => "Pancake alla cipolla verde",
                 "ingredients" => "Farina, cipolla verde, olio di sesamo, salsa di soia",
                 "description" => "I pancake alla cipolla verde sono un antipasto classico della cucina cinese, preparati con strati sottili di pasta ripiegati con cipolla verde e cotti fino a diventare croccanti e dorati. Sono deliziosi e aromatici.",
@@ -219,7 +219,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://www.delizieeconfidenze.com/wp-content/uploads/2019/03/IMG_9172.jpg",
                 "name" => "Congee di riso",
                 "ingredients" => "Riso, brodo di pollo, zenzero, uova, cipollotti",
                 "description" => "Il congee di riso è una zuppa tradizionale della colazione cinese, fatta con riso cotto lentamente in brodo di pollo con aggiunta di zenzero, uova e cipollotti. È cremoso, nutriente e confortante.",
@@ -228,7 +228,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://www.thepyperskitchen.com/wp-content/uploads/2021/11/3B964D3D-1CCB-43D1-997F-A61C424B1023.jpeg",
                 "name" => "Tanghulu",
                 "ingredients" => "Frutta mista, zucchero, bastoncini",
                 "description" => "Il tanghulu è uno spuntino dolce cinese composto da frutta cristallizzata su bastoncini. Solitamente viene usata la frutta fresca, come uva o fragole, immersa in uno sciroppo di zucchero caramellato. È croccante e delizioso.",
@@ -237,7 +237,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://www.nonsprecare.it/wp-content/uploads/2018/11/ricetta-pollo-arancia-1.jpg",
                 "name" => "Pollo all'arancia",
                 "ingredients" => "Pollo, scorza d'arancia, salsa di soia, zenzero, aglio",
                 "description" => "Il pollo all'arancia è un piatto cinese classico caratterizzato da pezzi di pollo fritti e immersi in una salsa agrodolce aromatizzata all'arancia. È croccante e ricco di sapore.",
@@ -246,7 +246,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://i0.wp.com/www.linkiesta.it/wp-content/uploads/2022/11/giardino-di-giada-courtesy-anatra-pechinese-con-crepes.jpg?resize=640%2C427&ssl=1",
                 "name" => "Anatra alla pechinese",
                 "ingredients" => "Anatra, salsa hoisin, cipollotti, pancake",
                 "description" => "L'anatra alla pechinese è un piatto iconico della cucina cinese composto da fette di anatra arrosto, servite con pancake sottili, salsa hoisin e cipollotti freschi. È una delizia da condividere.",

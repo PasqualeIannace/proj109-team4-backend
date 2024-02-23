@@ -7,6 +7,7 @@
 <div class="container-sm">
     <form action="{{ route('admin.restaurants.update' , $editFood) }}" method="POST">
         @csrf
+        @method('PUT')
         <div class="row">
             <div class="col-6 offset-3">
                 <div class="mb-3">

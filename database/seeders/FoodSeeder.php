@@ -590,7 +590,83 @@ class FoodSeeder extends Seeder
                 "price" => "7.99€",
                 "visible" => true,
                 'user_id' => 1,
-            ]
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/b5/pizza-margherita_dop-b54437ce.png',
+                'name' => 'Margherita',
+                'ingredients' => 'Pomodoro, Mozzarella, Basilico',
+                'description' => "La pizza Margherita è un classico intramontabile della cucina italiana. Fu creata nel 1889 dal pizzaiolo Raffaele Esposito in onore della Regina Margherita di Savoia. La sua combinazione di sapori semplici e freschi la rende una scelta popolare per tutti i gusti.",
+                'price' => '9€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/ce/pizza-mortadella-cef41c7e.webp',
+                'name' => 'Mortadella',
+                'ingredients' => 'Mozzarella fior di latte, Mortadella di Prato IGP Presidio Slow-Food, Burattina artigianale, Granella di pistacchio di Bronte DOP',
+                'description' => "Una deliziosa pizza con mortadella di Prato IGP presidio Slow-food, burattina artigianale e mozzarella fior di latte, il tutto abbracciato da pistacchi di Bronte in grado di soddisfare anche i gusti più fini.",
+                'price' => '10€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/0a/pizza-marinara-0a37a1f1.webp',
+                'name' => 'Marinara',
+                'ingredients' => 'Salsa di pomodoro, Origano di Pantelleria, Aglio bianco Polesano DOP',
+                'description' => "Pizza marinara è una tipica pizza napoletana condita con pomodoro, aglio, origano, olio. È particolarmente apprezzata nell'Italia meridionale, dove risulta la seconda pizza preferita per gusto dopo quella con mozzarella di bufala.",
+                'price' => '6€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/a4/pizza-capricciosa-2-a4c509d1.webp',
+                'name' => 'Capricciosa',
+                'ingredients' => 'Salsa di pomodoro, Mozzarella fior di latte, Prosciutto cotto, Funghi, Carciofi',
+                'description' => "La pizza capricciosa è una pizza tipica della cucina italiana caratterizzata da un condimento di pomodoro, mozzarella fior di latte, prosciutto cotto, funghi e carciofi.
+
+                Sebbene abbia gli stessi ingredienti della pizza alle quattro stagioni, la capricciosa presenta condimenti tutti insieme sparsi e non divisi in quattro spicchi.
+                
+                Risulta inventata nell'omonimo ristorante di Roma nel 1937.",
+                'price' => '10€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/0a/pizza-valtellina-0aaffed6.webp',
+                'name' => 'Valtelliana',
+                'ingredients' => 'Salsa di pomodoro, Mozzarella fior di latte',
+                'description' => 'La pizza valtellina è una pizza leggera ma allo stesso tempo ricca di gusto. Preparata con salsa di pomodoro, mozzarella fior di latte, bresaola, rucola e grana, è la soluzione ideale per tutti quelli che hanno voglia di mangiare una pizza nutriente ma allo stesso tempo leggera.',
+                'price' => '10.50€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/6b/pizza-chiodini_e_sopressa-6b48aefc.webp',
+                'name' => 'Chiodini e Sopressa',
+                'ingredients' => 'Pomodoro, Mozzarella, Pepperoni',
+                'description' => 'La pizza chiodini e sopressa è molto apprezzata per il gusto delicato e aromatico. Condita con salsa di pomodoro, mozzarella fior di latte, chiodini e sopressa, è una pizza perfetta che chi ama i gusti decisi e sapori genuini.',
+                'price' => '9€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/2d/pizza-verdure-2d708cec.webp',
+                'name' => 'Verdure',
+                'ingredients' => 'Salsa di pomodoro, Mozzarella fior di latte, Zucchine, Melanzane, Peperoni',
+                'description' => 'La pizza sfiziosa che scatena il sguardo con i suoi colori e con la combinazione delle melanzane, peperoni e zucchine abbracciando la mozzarella fior di latte e la salsa di pomodoro.',
+                'price' => '10.50€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
+            [
+                'image' => 'https://www.pizzeriagraniantichi.it/templates/yootheme/cache/59/pizza-friarelli_e_salssicia-59a8b0a8.webp',
+                'name' => 'Friarielli e Salsiccia',
+                'ingredients' => 'Mozzarella fior di latte, Salsiccia, Friarielli',
+                'description' => 'La pizza friarielli e salsiccia è una pizza tipica napoletana con mozzarella fior di latte, salsiccia e una nota di piccantino datto dai friarielli. Tutti questi ingredienti, messi insieme, danno un gusto deciso grazie alla loro bontà.',
+                'price' => '10€',
+                'visible' => true,
+                'user_id' => 2,
+            ],
         ];
         foreach ($foods as $food) {
 

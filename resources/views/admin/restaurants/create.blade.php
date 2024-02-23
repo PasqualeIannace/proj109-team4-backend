@@ -81,7 +81,7 @@
                             </div>
                         </div>
 
-                        <div class="row">
+                           {{-- <div class="row">
                             <div class="col-6 offset-3">
                                 <div class="mb-3">
                                     <label for="user_id" class="form-label">Il tuo id</label>
@@ -91,7 +91,7 @@
                                     <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
                                 </div>
-                            </div>
+                            </div> --}}
 
 
 

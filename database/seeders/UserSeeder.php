@@ -47,6 +47,15 @@ class Userseeder extends Seeder
             $new_user->save();
 
             $new_user = new User();
+            $new_user->name = "Francesca Picoco";
+            $new_user->email = "francesca.picoco96@gmail.com";
+            $new_user->password = Hash::make('password');
+            $new_user->activity_name = "MOYA";
+            $new_user->address = "Via Bartolomeo, 11, Milano(MI)";
+            $new_user->VAT_number = "12345675710";
+            $new_user->save();
+
+            $new_user = new User();
             $new_user->name = "Thomas Salvaterra";
             $new_user->email = "thomassalvaterra@gmail.it";
             $new_user->password = Hash::make('password');

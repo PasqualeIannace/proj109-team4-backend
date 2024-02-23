@@ -40,8 +40,16 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.restaurants.index' ? 'bg-secondary' : '' }}" href="{{route('admin.restaurants.index')}}">
-                                    <i class="fa-solid fa-book-open"></i> PIATTI
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.restaurants.index' ? 'bg-secondary' : '' }}"
+                                    href="{{route('admin.restaurants.index')}}">
+                                    <i class="fa-solid fa-book-open"></i> Piatti
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.restaurants.create' ? 'bg-secondary' : '' }}"
+                                    href="{{route('admin.restaurants.create')}}">
+                                    <i class="fa-solid fa-utensils"></i> Aggiungi Piatto
                                 </a>
                             </li>
 

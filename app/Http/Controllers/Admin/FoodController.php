@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller; // Controller di base da importare
 use Illuminate\Support\Facades\Auth;  //aggiungo il contr Auth
 use App\Models\Food;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class FoodController extends Controller
 {
@@ -13,11 +14,41 @@ class FoodController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function validation($data)
+    {
+        $validated = Validator::make(
+            $data,
+            [    //accetta 3 argomenti dato da validare, primo array con regole e secondo array con messaggi
+                'image' => 'required',
+                'name' => 'required|max:50',
+                'ingredients' => 'required|max:200',
+                'description' => 'required|max:200',
+                'price' => 'required',
+                'visible' => 'required',
+                'user_id' => 'required',
+            ],
+            [
+                'image' => 'Requisito Necessario',
+                'name.required' => 'Requisito Necessario',
+                'name.max' => 'Numero caratteri consentiti superato',
+                'ingredients.required' => 'Requisito Necessario',
+                'ingredients.max' => 'Numero caratteri consentiti superato',
+                'description.required' => 'Requisito Necessario',
+                'description.max' => 'Numero caratteri consentiti superato',
+                'price.required' => 'Requisito Necessario',
+                'visible.required' => 'Requisito Necessario',
+                'user_id.required' => 'Requisito Necessario',
+
+            ]
+        )->validate();
+        return $validated;
+    }
+
     public function index()
     { {
-             //Recupera l'ID dell'utente autenticato
+            //Recupera l'ID dell'utente autenticato
             $userId = Auth::id();
-             //Recupera solo i Food collegati all'utente autenticato
+            //Recupera solo i Food collegati all'utente autenticato
             $foods = Food::where('user_id', $userId)->get();
             //$foods = Food::all();
             return view("admin.restaurants.index", compact("foods"));
@@ -29,9 +60,11 @@ class FoodController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Food $food)
     {
-        //
+        $userId = Auth::id();
+
+        return view("admin.restaurants.create", compact("food"));
     }
 
     /**
@@ -42,7 +75,13 @@ class FoodController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $valid_data = $this->validation($data);
+        //$validated["user_id"] = Auth::id();
+        $newFood = new Food();
+        $newFood->fill($valid_data);
+
+        return redirect()->route('admin.restaurants.index'); //agg id per non ripetere l'agg dell'ogg      
     }
 
     /**

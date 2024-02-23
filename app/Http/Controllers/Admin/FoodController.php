@@ -73,14 +73,12 @@ class FoodController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->all();
-        $valid_data = $this->validation($data);
-        $validated["user_id"] = Auth::id();
-        $newFood = new Food();
-        $newFood->fill($valid_data);
-        $newFood->save();
+        $validatedData = $this->validation($request->all());
+        $validatedData['user_id'] = Auth::id();
 
-        return redirect()->route('admin.restaurants.index'); //agg id per non ripetere l'agg dell'ogg      
+        $newFood = Food::create($validatedData);
+
+        return redirect()->route('admin.restaurants.index');
     }
 
     /**
@@ -115,8 +113,7 @@ class FoodController extends Controller
     public function update(Food $food)
     {
         $userId = Auth::id();
-
-        return view("admin.restaurants.edit", compact("food", "userId"));
+        return view("admin.events.edit", compact("food", "userId"));
     }
 
     /**

@@ -18,9 +18,9 @@ return new class extends Migration
             // $table->unsignedBigInteger('restaurant_types_id');
             $table->string('email');
             $table->string('password');
-            $table->string('activity_name');
-            $table->string('address');
-            $table->char('VAT_number', 11)->unique();
+            $table->string('activity_name')->nullable();
+            $table->string('address')->nullable();
+            $table->char('VAT_number', 11)->unique()->nullable();
             $table->timestamps('');
         });
     }

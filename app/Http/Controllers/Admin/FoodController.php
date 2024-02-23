@@ -99,9 +99,9 @@ class FoodController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Food $food)
+    public function edit(String $id)
     {
-        $editFood = Food::find($food);
+        $editFood = Food::find($id);
         $tags = Tag::all();
         return view('admin.restaurants.edit', compact('editFood', 'tags'));
     }

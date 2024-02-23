@@ -5,7 +5,7 @@
 <h2 class="text-center">Modifica il piatto</h2>
 
 <div class="container-sm">
-    <form action="{{ route('admin.restaurants.update') }}" method="POST">
+    <form action="{{ route('admin.restaurants.update' , $editFood) }}" method="POST">
         @csrf
         <div class="row">
             <div class="col-6 offset-3">

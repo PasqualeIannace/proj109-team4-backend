@@ -101,8 +101,9 @@ class FoodController extends Controller
      */
     public function edit(Food $food)
     {
+        $editFood = Food::find($food);
         $tags = Tag::all();
-        return view('admin.restaurants.edit', compact('food', 'tags'));
+        return view('admin.restaurants.edit', compact('editFood', 'tags'));
     }
 
     /**
@@ -112,10 +113,12 @@ class FoodController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Food $food)
+    public function update(Request $request, Food $food)
     {
-        $userId = Auth::id();
-        return view("admin.restaurants.edit", compact("food", "userId"));
+        $data = $request->all();
+        $valid_data=$this->validation($data); 
+        $food->update($valid_data);  
+        return redirect()->route('admin.reastaurants.index');   
     }
 
     /**

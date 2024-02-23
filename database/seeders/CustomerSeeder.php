@@ -15,7 +15,7 @@ class CustomerSeeder extends Seeder
      */
     public function run()
     {
-        $customers = config("customers");
+        $customers = config("customer");
 
         foreach ($customers as $customer) {
             $new_customer = new Customer();

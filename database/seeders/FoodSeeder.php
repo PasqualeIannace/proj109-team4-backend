@@ -255,7 +255,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://images.dissapore.com/wp-content/uploads/2022/09/zuppa-agropiccante-in-una-ciotola.jpg?width=1280&height=720&quality=75",
                 "name" => "Zuppa agro piccante",
                 "ingredients" => "Brodo di pollo, peperoncino, pepe di Sichuan, tofu, funghi, verdure",
                 "description" => "La zuppa agro piccante è una zuppa cinese ricca e speziata preparata con brodo di pollo arricchito con peperoncino, pepe di Sichuan, tofu, funghi e verdure fresche. È piccante e rinfrescante.",

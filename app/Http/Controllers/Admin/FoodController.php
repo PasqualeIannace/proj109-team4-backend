@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller; // Controller di base da importare
 use Illuminate\Support\Facades\Auth;  //aggiungo il contr Auth
 use App\Models\Food;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class FoodController extends Controller
 {

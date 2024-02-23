@@ -20,5 +20,12 @@
       </div>
    </div>
    @endforeach
+   {{-- <a href="{{ route('admin.restaurants.edit', $food->id) }}" class="btn btn-outline-secondary">Edit</a>
+   <a href="{{ route('admin.restaurants.show', $eventIt->id) }}" class="btn btn-outline-secondary">Show Details</a>
+   <form action="{{route('admin.restaurants.destroy', $eventIt->id)}}" onsubmit="" method="POST" class="d-inline-block">
+     @csrf
+     @method('DELETE')
+     <input type="submit" value="&#9249;" class="btn btn-outline-danger" id="sure">
+   </form> --}}
 </div>
 @endsection

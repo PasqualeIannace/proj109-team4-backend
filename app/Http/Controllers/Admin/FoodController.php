@@ -115,7 +115,7 @@ class FoodController extends Controller
     public function update(Food $food)
     {
         $userId = Auth::id();
-        return view("admin.events.edit", compact("food", "userId"));
+        return view("admin.restaurants.edit", compact("food", "userId"));
     }
 
     /**

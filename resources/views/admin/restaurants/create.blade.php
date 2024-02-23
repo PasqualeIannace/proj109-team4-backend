@@ -2,6 +2,8 @@
 
 @section('content')
 
+<h2 class="text-center">Nuovo piatto</h2>
+
 <div class="container-sm">
     <form action="{{ route('admin.restaurants.store') }}" method="POST">
         @csrf

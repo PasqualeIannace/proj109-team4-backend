@@ -15,9 +15,9 @@ class FoodController extends Controller
      */
     public function index()
     { {
-             //Recupera l'ID dell'utente autenticato
+            //Recupera l'ID dell'utente autenticato
             $userId = Auth::id();
-             //Recupera solo i Food collegati all'utente autenticato
+            //Recupera solo i Food collegati all'utente autenticato
             $foods = Food::where('user_id', $userId)->get();
             //$foods = Food::all();
             return view("admin.restaurants.index", compact("foods"));
@@ -29,9 +29,11 @@ class FoodController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Food $food)
     {
-        //
+        $userId = Auth::id();
+
+        return view("admin.restaurants.create", compact("food"));
     }
 
     /**

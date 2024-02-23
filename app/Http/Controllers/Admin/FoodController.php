@@ -15,11 +15,11 @@ class FoodController extends Controller
      */
     public function index()
     { {
-            // Recupera l'ID dell'utente autenticato
-            //$userId = Auth::id();
-            // Recupera solo i Food collegati all'utente autenticato
-            //$foods = Food::where('user_id', $userId)->get();
-            $foods = Food::all();
+             //Recupera l'ID dell'utente autenticato
+            $userId = Auth::id();
+             //Recupera solo i Food collegati all'utente autenticato
+            $foods = Food::where('user_id', $userId)->get();
+            //$foods = Food::all();
             return view("admin.restaurants.index", compact("foods"));
         }
     }

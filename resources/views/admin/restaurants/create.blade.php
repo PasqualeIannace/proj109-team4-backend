@@ -83,20 +83,6 @@
                             </div>
                         </div>
 
-                           {{-- <div class="row">
-                            <div class="col-6 offset-3">
-                                <div class="mb-3">
-                                    <label for="user_id" class="form-label">Il tuo id</label>
-                                    <input type="user_id" class="form-control @error('user_id') is-invalid @enderror"
-                                        id="user_id" name="user_id" value="{{ old('user_id')}} ">
-                                    @error('user_id')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                    @enderror
-                                </div>
-                            </div> --}}
-
-
-
                             <div class="col-12 text-center">
                                 <button type="submit" class="btn btn-primary">Invia</button>
                             </div>

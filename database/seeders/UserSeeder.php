@@ -29,6 +29,7 @@ class Userseeder extends Seeder
 
         if (!User::where("email", "luca.lambia@gmail.com")->first()) {
             $new_user = new User();
+            $new_user->name = "Giuseppe";
             $new_user->email = "hameked854@huizk.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "King's Outlaw Tavern";

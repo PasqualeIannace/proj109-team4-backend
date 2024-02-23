@@ -23,7 +23,7 @@ class FoodSeeder extends Seeder
                 'description' => "Dove sono nati gli spaghetti alla carbonara? Il Vicolo della Scrofa, per chi conosce Roma, è una delle stradine più caratteristiche e ricche di simboli. Proprio in una trattoria di questa strada, da cui il nome del vicolo, pare sia stata realizzata la prima carbonara, nel 1944. La storia più attendibile su questo primo piatto, infatti, racconta l'incontro tra gli ingredienti a disposizione dei soldati americani e la fantasia di un cuoco romano.",
                 'price' => '11€',
                 'visible' => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
 
             ],
             [
@@ -33,7 +33,7 @@ class FoodSeeder extends Seeder
                 'description' => "Gli spaghetti cacio e pepe sono diventati oramai piatti simbolo dell'italianità, realizzati con ingredienti DOP legati alle tradizioni dei territori in cui sono nate.",
                 'price' => '8€',
                 'visible' => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
 
             ],
             [
@@ -43,7 +43,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il risotto ai funghi porcini è un piatto italiano elegante e saporito, preparato con riso Arborio cotto lentamente in brodo di carne e arricchito con funghi porcini freschi, cipolla, vino bianco, burro e parmigiano reggiano. È cremoso e ricco di sapore.",
                 "price" => "14.50€",
                 "visible" => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
             ],
             [
                 "image" => "",
@@ -52,7 +52,7 @@ class FoodSeeder extends Seeder
                 "description" => "La lasagna alla bolognese è un piatto italiano classico, composto da strati di pasta intercalati con ragù di carne, besciamella e parmigiano reggiano. È un piatto ricco e gratificante.",
                 "price" => "14.99€",
                 "visible" => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
             ],
             [
                 "image" => "",
@@ -61,7 +61,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il risotto alla milanese è un piatto lombardo famoso per il suo colore giallo intenso dovuto allo zafferano. È preparato con riso carnaroli cotto in brodo di carne, cipolla, vino bianco, burro e zafferano. È cremoso e aromatico.",
                 "price" => "11.99€",
                 "visible" => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
             ],
             [
                 "image" => "",
@@ -70,7 +70,7 @@ class FoodSeeder extends Seeder
                 "description" => "L'ossobuco alla milanese è un piatto tradizionale lombardo, composto da fette di vitello con osso e midollo, brasate lentamente in un sugo a base di vino bianco, brodo di carne, cipolla, sedano e carota. È succulento e saporito.",
                 "price" => "16.99€",
                 "visible" => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
             ],
             [
                 "image" => "",
@@ -79,7 +79,7 @@ class FoodSeeder extends Seeder
                 "description" => "I ravioli di ricotta e spinaci sono un piatto di pasta fresca ripiena di un delizioso mix di ricotta fresca, spinaci freschi e parmigiano reggiano. Vengono solitamente conditi con burro fuso e salvia. Sono cremosi e saporiti.",
                 "price" => "13.50€",
                 "visible" => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
             ],
             [
                 "image" => "",
@@ -88,7 +88,7 @@ class FoodSeeder extends Seeder
                 "description" => "La pasta alla Norma è un piatto siciliano tradizionale, composto da pasta corta condita con pomodori freschi, melanzane fritte, basilico, aglio e ricotta salata grattugiata. È un piatto estivo ricco di sapore.",
                 "price" => "12.99€",
                 "visible" => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
             ],
             [
                 "image" => "",
@@ -97,7 +97,7 @@ class FoodSeeder extends Seeder
                 "description" => "Le saltimbocca alla romana sono un piatto romano classico, composto da fettine di vitello avvolte in prosciutto crudo e foglie di salvia, poi saltate in padella con burro e vino bianco. Sono teneri e saporiti.",
                 "price" => "15.99€",
                 "visible" => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
             ],
             [
                 "image" => "",
@@ -106,7 +106,7 @@ class FoodSeeder extends Seeder
                 "description" => "La caponata siciliana è un piatto tipico della cucina siciliana, composto da melanzane fritte e condite con pomodori, sedano, cipolle, aceto di vino, zucchero, pinoli e uvetta. È agrodolce e ricca di sapori.",
                 "price" => "10.50€",
                 "visible" => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
             ],
             [
                 "image" => "",
@@ -115,7 +115,7 @@ class FoodSeeder extends Seeder
                 "description" => "La polenta e funghi è un piatto del nord Italia, composto da polenta fatta con farina di mais e servita con funghi porcini trifolati, burro, parmigiano reggiano e prezzemolo fresco. È confortante e saporito.",
                 "price" => "11.50€",
                 "visible" => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
             ],
             [
                 "image" => "",
@@ -124,7 +124,7 @@ class FoodSeeder extends Seeder
                 "description" => "Gli spaghetti alle vongole sono un piatto classico della cucina italiana, preparato con spaghetti conditi con vongole veraci fresche, aglio, prezzemolo, peperoncino e vino bianco. È un piatto fresco e saporito, perfetto per gli amanti del mare.",
                 "price" => "15.99€",
                 "visible" => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
             ],
             [
                 "image" => "",
@@ -133,7 +133,7 @@ class FoodSeeder extends Seeder
                 "description" => "La frittura di paranza è un piatto tradizionale italiano, composto da una varietà di pesci di piccola taglia come gamberi, calamari, triglie e alici, passati nella farina e fritti fino a doratura. È croccante e saporito, perfetto come antipasto o piatto principale.",
                 "price" => "17.50€",
                 "visible" => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
             ],
             [
                 "image" => "",
@@ -142,7 +142,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il pesce al cartoccio è un piatto italiano delicato e aromatico, preparato con filetti di pesce misto avvolti in un foglio di alluminio insieme a pomodorini, olive, capperi, aglio, prezzemolo e vino bianco. Viene cotto al forno, mantenendo tutto il sapore del pesce e degli aromi. È leggero e gustoso.",
                 "price" => "16.99€",
                 "visible" => true,
-                // 'user_id' => 1,
+                'user_id' => 5,
             ],
             [
                 'image' => '',
@@ -151,7 +151,7 @@ class FoodSeeder extends Seeder
                 'description' => "In passato venivano preparati soprattutto in occasione del Capodanno cinese, che secondo il calendario tradizionale corrisponde con l’inizio della primavera… ed ecco spiegato il loro nome: involtini primavera!",
                 'price' => '9€',
                 'visible' => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
 
             ],
             [
@@ -161,7 +161,7 @@ class FoodSeeder extends Seeder
                 'description' => "Sono tipici del Capodanno cinese, come gli involtini primavera, ma vengono consumati durante tutte le festività perché la loro forma, che ricorda quella di un’antica moneta, è considerata un simbolo di buona fortuna: stiamo parlando dei ravioli cinesi al vapore!",
                 'price' => '11€',
                 'visible' => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
 
             ],
             [
@@ -171,7 +171,7 @@ class FoodSeeder extends Seeder
                 "description" => "Le costine di maiale al vapore sono un piatto cinese classico, dove le costine vengono marinate con salsa di soia, zenzero e aglio, poi cotte al vapore fino a diventare tenere e saporite. Sono spesso servite con cipollotti freschi.",
                 "price" => "13.50€",
                 "visible" => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
             ],
             [
                 "image" => "",
@@ -180,7 +180,7 @@ class FoodSeeder extends Seeder
                 "description" => "I baozi al vapore sono panini cinesi ripieni di carne di maiale aromatica, cavolo cinese e zenzero. Sono cotti al vapore fino a diventare soffici e deliziosi. Si gustano spesso come spuntino o colazione.",
                 "price" => "7.49€",
                 "visible" => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
             ],
             [
                 "image" => "",
@@ -189,7 +189,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il pesce al curry è un piatto cinese ispirato alla cucina indiana, dove filetti di pesce sono cotti in una ricca salsa al curry a base di latte di cocco, peperoni e cipolle. È un piatto aromatico e speziato.",
                 "price" => "15.50€",
                 "visible" => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
             ],
             [
                 "image" => "",
@@ -198,7 +198,7 @@ class FoodSeeder extends Seeder
                 "description" => "L'insalata di fagioli freddi è un contorno fresco e salutare della cucina cinese, preparato con fagioli verdi croccanti conditi con salsa di sesamo, aglio, peperoncino e salsa di soia. È leggero e ricco di sapori.",
                 "price" => "6.99€",
                 "visible" => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
             ],
             [
                 "image" => "",
@@ -207,7 +207,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il maiale al vapore con salsa di prugne è un piatto tradizionale cinese dove fette di maiale vengono cotte al vapore e servite con una salsa dolce e acidula a base di prugne, zenzero e aglio. È una delizia gustosa e salutare.",
                 "price" => "14.99€",
                 "visible" => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
             ],
             [
                 "image" => "",
@@ -216,7 +216,7 @@ class FoodSeeder extends Seeder
                 "description" => "I pancake alla cipolla verde sono un antipasto classico della cucina cinese, preparati con strati sottili di pasta ripiegati con cipolla verde e cotti fino a diventare croccanti e dorati. Sono deliziosi e aromatici.",
                 "price" => "6.50€",
                 "visible" => "1",
-                // 'user_id' => 2,
+                'user_id' => 3,
             ],
             [
                 "image" => "",
@@ -225,7 +225,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il congee di riso è una zuppa tradizionale della colazione cinese, fatta con riso cotto lentamente in brodo di pollo con aggiunta di zenzero, uova e cipollotti. È cremoso, nutriente e confortante.",
                 "price" => "8.99€",
                 "visible" => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
             ],
             [
                 "image" => "",
@@ -234,7 +234,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il tanghulu è uno spuntino dolce cinese composto da frutta cristallizzata su bastoncini. Solitamente viene usata la frutta fresca, come uva o fragole, immersa in uno sciroppo di zucchero caramellato. È croccante e delizioso.",
                 "price" => "4.99€",
                 "visible" => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
             ],
             [
                 "image" => "",
@@ -243,7 +243,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il pollo all'arancia è un piatto cinese classico caratterizzato da pezzi di pollo fritti e immersi in una salsa agrodolce aromatizzata all'arancia. È croccante e ricco di sapore.",
                 "price" => "12.99€",
                 "visible" => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
             ],
             [
                 "image" => "",
@@ -252,7 +252,7 @@ class FoodSeeder extends Seeder
                 "description" => "L'anatra alla pechinese è un piatto iconico della cucina cinese composto da fette di anatra arrosto, servite con pancake sottili, salsa hoisin e cipollotti freschi. È una delizia da condividere.",
                 "price" => "18.99€",
                 "visible" => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
             ],
             [
                 "image" => "",
@@ -261,7 +261,7 @@ class FoodSeeder extends Seeder
                 "description" => "La zuppa agro piccante è una zuppa cinese ricca e speziata preparata con brodo di pollo arricchito con peperoncino, pepe di Sichuan, tofu, funghi e verdure fresche. È piccante e rinfrescante.",
                 "price" => "10.99€",
                 "visible" => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
             ],
             [
                 "image" => "",
@@ -270,7 +270,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il maiale in agrodolce è un piatto cinese che combina pezzi di maiale fritti con peperoni, ananas e cipolle in una salsa agrodolce aromatica. È una combinazione equilibrata di dolce e acido.",
                 "price" => "11.50€",
                 "visible" => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
             ],
             [
                 "image" => "",
@@ -279,7 +279,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il riso fritto Yangzhou è un piatto di riso cinese tradizionale fatto con riso saltato in padella con uova, gamberetti, piselli, carote e cipolle. È una pietanza gustosa e colorata.",
                 "price" => "8.99€",
                 "visible" => true,
-                // 'user_id' => 2,
+                'user_id' => 3,
             ],
             [
                 'image' => '',
@@ -288,7 +288,7 @@ class FoodSeeder extends Seeder
                 'description' => "Il futomaki è un sushi arrotolato, fatto con una foglia intera di alga nori ripiena di riso e almeno 4 ingredienti a scelta. Questa varietà di ingredienti, rende il futomaki molto colorato ed è tra i pezzi di sushi più apprezzati.",
                 'price' => '6€',
                 'visible' => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
 
             ],
             [
@@ -298,7 +298,7 @@ class FoodSeeder extends Seeder
                 'description' => "La tempura è uno dei piatti più conosciuti e amati della cucina del Sol Levante, nonché uno dei più richiesti nei ristoranti in giro per il mondo.",
                 'price' => '8€',
                 'visible' => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
 
             ],
             [
@@ -308,7 +308,7 @@ class FoodSeeder extends Seeder
                 "description" => "Lo sushi assortito è un piatto giapponese classico composto da una varietà di sushi, inclusi nigiri (sfere di riso con fettine di pesce crudo sopra) e maki (rotoli di riso e pesce avvolti in alga nori). È fresco e gustoso.",
                 "price" => "18.99€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -317,7 +317,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il ramen di tonkotsu è una zuppa giapponese ricca e cremosa fatta con brodo di ossa di maiale e servita con noodle di frumento, maiale a fette, uovo sodo e cipollotti. È confortante e nutriente.",
                 "price" => "14.50€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -326,7 +326,7 @@ class FoodSeeder extends Seeder
                 "description" => "La tempura di gamberi è un piatto giapponese di gamberi ricoperti di pastella leggera e croccante, fritti in olio caldo fino a diventare dorati e croccanti. Viene spesso servita con salsa tempura per intingere.",
                 "price" => "16.99€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -335,7 +335,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il gyudon è una ciotola giapponese di riso servita con manzo a fette sottili cotto in una salsa dolce e salata a base di salsa dashi, salsa di soia, mirin e zucchero. È un comfort food popolare in Giappone.",
                 "price" => "12.99€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -344,7 +344,7 @@ class FoodSeeder extends Seeder
                 "description" => "L'uramaki California è un tipo di sushi maki originario della California, composto da surimi, avocado, cetriolo avvolti in riso e alga nori, e poi ricoperti con semi di sesamo. È un sushi leggero e gustoso.",
                 "price" => "13.99€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -353,7 +353,7 @@ class FoodSeeder extends Seeder
                 "description" => "L'okonomiyaki è una specie di pancake giapponese farcito con una varietà di ingredienti come cavolo, pancetta e frutti di mare, cotto su una piastra e servito con salsa okonomiyaki e maionese giapponese. È un piatto divertente e gustoso.",
                 "price" => "10.99€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -362,7 +362,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il sashimi misto è un piatto giapponese composto da una selezione di pesce crudo fresco, tagliato a fette sottili e servito con wasabi e salsa di soia. È una prelibatezza delicata e saporita.",
                 "price" => "20.99€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -371,7 +371,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il tonkatsu è una pietanza giapponese costituita da fette di maiale impanate e fritte fino a diventare croccanti e dorate. Viene spesso servito con cavolo fresco e riso, accompagnato dalla salsa tonkatsu. È croccante e delizioso.",
                 "price" => "15.50€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -380,7 +380,7 @@ class FoodSeeder extends Seeder
                 "description" => "Lo yakitori è un piatto giapponese di spiedini di pollo marinati e cotti alla griglia. Viene spesso servito con salsa tare, una salsa dolce e salata, e cipollotti freschi. È un piatto popolare nei bar e nelle bancarelle.",
                 "price" => "9.99€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -389,7 +389,7 @@ class FoodSeeder extends Seeder
                 "description" => "L'unagi don è una ciotola di riso giapponese servita con anguilla alla griglia e glassata con salsa unagi dolce e salata. È un piatto tradizionale giapponese ricco di sapore e apprezzato per la sua morbidezza.",
                 "price" => "19.99€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -398,7 +398,7 @@ class FoodSeeder extends Seeder
                 "description" => "Gli soba noodles sono una tipica pasta giapponese fatta con farina di grano saraceno, servita in brodo dashi caldo e accompagnata da cipollotti e radice di wasabi. È un piatto leggero e nutriente.",
                 "price" => "11.99€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -407,7 +407,7 @@ class FoodSeeder extends Seeder
                 "description" => "L'oshizushi è una varietà di sushi giapponese composta da strati di riso e pesce crudo compressi in uno stampo di legno e tagliati in pezzi rettangolari. È un tipo di sushi popolare e gustoso.",
                 "price" => "17.50€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -416,7 +416,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il takoyaki è un piatto giapponese composto da palline di pastella ripiene di pezzi di polpo cotti su una piastra speciale. Viene spesso condito con salsa takoyaki, maionese, scaglie di bonito e alghe. È un street food popolare.",
                 "price" => "8.99€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -425,7 +425,7 @@ class FoodSeeder extends Seeder
                 "description" => "La zuppa di miso è una zuppa giapponese leggera e saporita fatta con brodo dashi e pasta di miso, arricchita con alga kombu, tofu a dadini e cipollotti. È un accompagnamento comune ai pasti giapponesi.",
                 "price" => "5.99€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 "image" => "",
@@ -434,7 +434,7 @@ class FoodSeeder extends Seeder
                 "description" => "Gli onigiri sono palline di riso giapponesi triangolari o rotonde, spesso avvolte in alga nori e riempite con ripieni come tonno, salmone o umeboshi (prugna marinata). Sono un cibo comune per la merenda o il pranzo.",
                 "price" => "4.50€",
                 "visible" => true,
-                // 'user_id' => 3,
+                'user_id' => 4,
             ],
             [
                 'image' => '',
@@ -443,7 +443,7 @@ class FoodSeeder extends Seeder
                 'description' => "La tempura è uno dei piatti più conosciuti e amati della cucina del Sol Levante, nonché uno dei più richiesti nei ristoranti in giro per il mondo.",
                 'price' => '11€',
                 'visible' => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
 
             ],
             [
@@ -453,7 +453,7 @@ class FoodSeeder extends Seeder
                 'description' => "Il Bhelpuri è uno snack salato, tipico della cucina indiana a base di riso soffiato, che può essere consumato col cucchiaio o raccolto su una piadina.",
                 'price' => '6€',
                 'visible' => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
 
             ],
             [
@@ -463,7 +463,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il pollo al burro è un piatto tradizionale indiano dal sapore ricco e cremoso, preparato con pezzi di pollo marinato in una salsa di pomodoro, burro e panna. Servito con riso basmati.",
                 "price" => "15.99€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -472,7 +472,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il Naan è un pane indiano soffice e leggero, cotto in un forno tandoor. È perfetto per accompagnare piatti come il curry o il pollo al burro.",
                 "price" => "2.50€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -481,7 +481,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il Biryani di agnello è un piatto di riso speziato e aromatico, preparato con carne d'agnello, riso basmati e una miscela di spezie. Viene cotto lentamente per ottenere un sapore ricco e succulento.",
                 "price" => "18.99€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -490,7 +490,7 @@ class FoodSeeder extends Seeder
                 "description" => "Le Samosa sono deliziose frittelle indiane ripiene di patate, piselli e spezie aromatiche. Sono croccanti all'esterno e morbide all'interno, perfette da gustare come antipasto o spuntino.",
                 "price" => "3.50€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -499,7 +499,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il Paneer Tikka è un antipasto indiano composto da cubetti di paneer (formaggio indiano), marinati in una miscela di yogurt e spezie, infilzati in spiedini e grigliati fino a doratura.",
                 "price" => "12.99€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -508,7 +508,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il Dal Makhani è un piatto di lenticchie nere ricco e cremoso, cotto lentamente con una salsa di pomodoro, burro e panna. Servito con riso basmati e pane naan.",
                 "price" => "14.50€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -517,7 +517,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il Pollo Tandoori è un piatto indiano in cui il pollo marinato con yogurt e spezie viene cotto in un forno tandoor, un forno indiano tradizionale a carbone. È succulento e ricco di sapore.",
                 "price" => "16.99€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -526,7 +526,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il Rasgulla è un dessert indiano tradizionale fatto con palline di paneer (formaggio indiano) bollite in uno sciroppo di zucchero profumato all'acqua di rosa. È dolce e rinfrescante.",
                 "price" => "8.99€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -535,7 +535,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il Palak Paneer è un piatto vegetariano indiano preparato con cubetti di paneer (formaggio indiano) e spinaci cotti in una salsa cremosa di pomodori, cipolle e spezie. Servito con riso basmati.",
                 "price" => "13.50€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -544,7 +544,7 @@ class FoodSeeder extends Seeder
                 "description" => "L'Aloo Gobi è un piatto vegetariano indiano composto da patate e cavolfiore saltati in una miscela di spezie aromatiche. È semplice ma pieno di sapore.",
                 "price" => "11.99€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -553,7 +553,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il Chana Masala è un piatto vegetariano a base di ceci cotti in una salsa di pomodoro speziata con cipolle, zenzero e aglio. È ricco di sapori indiani autentici.",
                 "price" => "11.49€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -562,7 +562,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il Mutter Paneer è un piatto vegetariano indiano con paneer e piselli cotti in una salsa di pomodoro condita con spezie aromatiche come cumino e coriandolo. È delizioso e nutriente.",
                 "price" => "12.99€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -571,7 +571,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il Bhindi Masala è un piatto vegetariano indiano preparato con okra fresca cotta in una salsa di pomodoro piccante con cipolle, peperoncino verde, zenzero e aglio. È croccante e saporito.",
                 "price" => "10.99€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -580,7 +580,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il Pav Bhaji è un piatto di street food indiano composto da una miscela di verdure speziate, come patate, piselli e pomodori, servita con pane tostato. È un piatto gustoso e sostanzioso.",
                 "price" => "9.99€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ],
             [
                 "image" => "",
@@ -589,7 +589,7 @@ class FoodSeeder extends Seeder
                 "description" => "Il Kheer è un dessert di riso cremoso e dolce preparato con riso cotto lentamente nel latte aromatizzato con cardamomo, zucchero e frutta secca. È una delizia per il palato.",
                 "price" => "7.99€",
                 "visible" => true,
-                // 'user_id' => 4,
+                'user_id' => 1,
             ]
         ];
         foreach ($foods as $food) {
@@ -601,7 +601,7 @@ class FoodSeeder extends Seeder
             $new_food->description =  $food['description'];
             $new_food->price =  $food['price'];
             $new_food->visible =  $food['visible'];
-            // $new_food->user_id = $food['user_id'];
+            $new_food->user_id = $food['user_id'];
 
             $new_food->save();
         }

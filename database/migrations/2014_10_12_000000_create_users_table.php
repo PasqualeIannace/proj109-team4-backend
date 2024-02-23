@@ -17,11 +17,13 @@ return new class extends Migration
             $table->id();
             // $table->unsignedBigInteger('restaurant_types_id');
             $table->string('name');
-            $table->string('email');
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('activity_name')->nullable();
             $table->string('address')->nullable();
             $table->char('VAT_number', 11)->unique()->nullable();
+            $table->rememberToken();
             $table->timestamps('');
         });
     }

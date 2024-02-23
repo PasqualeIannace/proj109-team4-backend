@@ -10,5 +10,18 @@ class Food extends Model
     use HasFactory;
 
     protected $fillable =
-    ['image', 'name', 'ingredients', 'description', 'price', 'visible', 'user_id'];
+    [
+        'image',
+        'name',
+        'ingredients',
+        'description',
+        'price',
+        'visible',
+        'user_id'
+    ];
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
 }

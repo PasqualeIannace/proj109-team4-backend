@@ -4,7 +4,7 @@ return [
         "email" => "hameked854@huizk.com"
     ],
     [
-        "password" => "xuNvr@8MpK!9phtvi6&8nX"
+        "password" => ""
     ],
     [
         "activity_name" => "King's Outlaw Tavern"

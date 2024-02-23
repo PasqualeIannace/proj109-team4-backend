@@ -80,7 +80,7 @@ class FoodController extends Controller
         $newFood->fill([$valid_data]);
         $newFood->save();
 
-        return redirect()->route('admin.restaurants.index'); //agg id per non ripetere l'agg dell'ogg      
+        return redirect()->route('admin.restaurants.index', $newFood->id); //agg id per non ripetere l'agg dell'ogg      
     }
 
     /**

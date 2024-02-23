@@ -20,7 +20,7 @@ return new class extends Migration
             $table->tinyText("message");
             $table->boolean("payment_status");
             $table->date("order_date");
-            $table->decimal("total_price");
+            $table->string("total_price");
         });
     }
 

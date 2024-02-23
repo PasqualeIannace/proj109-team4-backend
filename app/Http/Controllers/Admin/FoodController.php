@@ -22,8 +22,8 @@ class FoodController extends Controller
             [    //accetta 3 argomenti dato da validare, primo array con regole e secondo array con messaggi
                 'image' => 'required',
                 'name' => 'required|max:50',
-                'ingredients' => 'required|max:400',
-                'description' => 'required|max:400',
+                'ingredients' => 'required|max:200',
+                'description' => 'required|max:200',
                 'price' => 'required',
                 'visible' => 'required',
             ],
@@ -77,7 +77,7 @@ class FoodController extends Controller
         $validatedData = $this->validation($request->all());
         $validatedData['user_id'] = Auth::id();
 
-        $newFood = Food::update($validatedData);
+        $newFood = Food::create($validatedData);
 
         return redirect()->route('admin.restaurants.index');
     }
@@ -117,7 +117,7 @@ class FoodController extends Controller
     {
         $data = $request->all();
         $valid_data = $this->validation($data);
-        $food->update($valid_data);
+        $food->update([$valid_data]);
         return redirect()->route('admin.restaurants.index');
     }
 

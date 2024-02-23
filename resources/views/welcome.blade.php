@@ -3,7 +3,7 @@
 <div class="jumbotron p-5 mb-4 bg-light rounded-3">
     <div class="container py-5">
         <div class="logo_deliveboo">
-            <img src="/icon.png" alt="logo" class="w-25">
+            <img src="logo.png" alt="logo" class="w-25">
         </div>
         <h1 class="display-5 fw-bold">
             Welcome to DelivBoo

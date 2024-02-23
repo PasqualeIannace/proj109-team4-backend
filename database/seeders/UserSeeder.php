@@ -16,14 +16,24 @@ class Userseeder extends Seeder
      */
     public function run()
     {
-        $users = config("user");
-        foreach ($users as $user) {
-            $new_user = new user();
-            $new_user->email = $user["email"];
+        // $users = config("user");
+        // foreach ($users as $user) {
+        //     $new_user = new User();
+        //     $new_user->email = $user["email"];
+        //     $new_user->password = Hash::make('password');
+        //     $new_user->activity_name = $user["activity_name"];
+        //     $new_user->address = $user["address"];
+        //     $new_user->VAT_number = $user["VAT_number"];
+        //     $new_user->save();
+        // }
+
+        if (!User::where("email", "luca.lambia@gmail.com")->first()) {
+            $new_user = new User();
+            $new_user->email = "hameked854@huizk.com";
             $new_user->password = Hash::make('password');
-            $new_user->activity_name = $user["activity_name"];
-            $new_user->address = $user["address"];
-            $new_user->VAT_number = $user["VAT_number"];
+            $new_user->activity_name = "King's Outlaw Tavern";
+            $new_user->address = "9869 Ryan Plaza Apt. 293";
+            $new_user->VAT_number = "77634180036";
             $new_user->save();
         }
     }

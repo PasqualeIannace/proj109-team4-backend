@@ -1,0 +1,28 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class User extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+
+        foreach ($users as $user) {
+            $new_user = new user();
+            $new_user->email = $user["email"];
+            $new_user->password = $user["password"];
+            $new_user->activity_name = $user["activity_name"];
+            $new_user->address = $user["address"];
+            $new_user->VAT_number = $user["VAT_number"];
+            $new_user->save();
+        }
+    }
+}

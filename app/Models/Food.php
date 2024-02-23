@@ -17,4 +17,9 @@ class Food extends Model
         "price",
         "visible",
     ];
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
 }

@@ -36,6 +36,15 @@ class Userseeder extends Seeder
             $new_user->address = "9869 Ryan Plaza Apt. 293";
             $new_user->VAT_number = "77634180036";
             $new_user->save();
+
+            $new_user = new User();
+            $new_user->name = "Pasquale Iannace";
+            $new_user->email = "pasquale.iannace@hotmail.it";
+            $new_user->password = Hash::make('password');
+            $new_user->activity_name = "Pasquale's Pizzeria";
+            $new_user->address = "Via Roma, 1, Roma (RM)";
+            $new_user->VAT_number = "12345678911";
+            $new_user->save();
         }
     }
 }

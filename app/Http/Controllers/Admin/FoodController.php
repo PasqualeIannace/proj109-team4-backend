@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;  //ho aggiunto admin perche non leggeva il
 use App\Http\Controllers\Controller; // Controller di base da importare
 use Illuminate\Support\Facades\Auth;  //aggiungo il contr Auth
 use App\Models\Food;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -98,9 +99,10 @@ class FoodController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Food $food)
     {
-        //
+        $tags = Tag::all();
+        return view('admin.restaurants.edit', compact('food', 'tags'));
     }
 
     /**

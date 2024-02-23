@@ -62,7 +62,7 @@ class FoodController extends Controller
     {
         $userId = Auth::id();
 
-        return view("admin.restaurants.create", compact("food"));
+        return view("admin.restaurants.create", compact("food", "userId"));
     }
 
     /**
@@ -112,9 +112,10 @@ class FoodController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Food $food)
     {
-        //
+        $userId = Auth::id();
+        return view("admin.events.edit", compact("food", "userId"));
     }
 
     /**

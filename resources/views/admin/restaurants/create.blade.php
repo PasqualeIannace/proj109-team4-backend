@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="container-fluid mt-4">
+{{-- <div class="container-fluid mt-4">
     <div class="row justify-content-center">
         <h2 class="text-center">New Food</h2>
         @if ($errors->any())
@@ -16,9 +16,9 @@
     </div>
     <div class="row">
         <form action="{{ route('admin.restaurants.store') }}" method="POST">
-            @csrf
+            @csrf --}}
             {{-- name description --}}
-            <div class="mb-3">
+            {{-- <div class="mb-3">
                 <label for="image" class="form-label"><b>Food image</b></label>
                 <input type="text" class="form-control @error('image') is-invalid @enderror" id="image" name="image"
                     value="{{ old('image') }}">
@@ -57,21 +57,103 @@
                 @error('price')
                 <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
-            </div>
-            <div class="mb-3">
+            </div> --}}
+            {{-- <div class="mb-3">
                 <label for="users" class="form-label"><b>Select a Restaurateur</b></label>
                 <select multiple name="users[]" id="users" class="form-select">
                     @foreach ($users as $user)
                     <option value="{{ $user->id }}">{{ $user->id }}</option>
                     @endforeach
                 </select>
-            </div>
-            <div class="d-flex justify-content-center">
+            </div> --}}
+            {{-- <div class="d-flex justify-content-center">
                 <button type="submit" class="btn btn-primary"><b>Insert
                         Food</b></button>
-            </div>
+            </div> --}}
 
-        </form>
+        {{-- </form>
     </div>
+</div> --}}
+
+<div class="container-sm">
+    <form action="{{ route('admin.restaurants.store') }}" method="POST">
+    @csrf
+     <div class="row">
+        <div class="col-6 offset-3">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome Piatto</label>
+                <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{ old('name')}} ">
+                @error('name')
+                 <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+              </div>
+        </div>
+     </div>
+        
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="mb-3">
+                <label for="ingredients" class="form-label">ingredients</label>
+                <input type="text" class="form-control @error('ingredients') is-invalid @enderror" id="ingredients" name="ingredients" value="{{ old('ingredients')}} ">
+              @error('ingredients')
+                  <div class="invalid-feedback">{{ $message }}</div>
+              @enderror
+              </div>
+        </div>
+    </div>
+        
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="mb-3">
+                <label for="visible" class="form-label">disponibile</label>
+                <input type="text" class="form-control @error('visible') is-invalid @enderror" id="visible" name="visible" value="{{ old('visible')}} ">
+            @error('visible')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="mb-3">
+                <label for="price" class="form-label">price</label>
+                <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" name="price" value="{{ old('price')}} ">
+            @error('price')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+    </div>
+        
+
+
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="mb-3">
+                <label for="description" class="form-label">description</label>
+                <input type="text" class="form-control @error('description') is-invalid @enderror" id="description" name="description" value="{{ old('description')}} ">
+            @error('description')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="mb-3">
+                <label for="image" class="form-label">image</label>
+                <input type="text" class="form-control @error('image') is-invalid @enderror" id="image" name="image" value="{{ old('image')}} ">
+            @error('image')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+    </div>
+
+    
+ 
+        <div class="col-12 text-center">  
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        
+    </form>
 </div>
 @endsection

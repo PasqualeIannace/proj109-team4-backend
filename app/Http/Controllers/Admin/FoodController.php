@@ -25,7 +25,6 @@ class FoodController extends Controller
                 'description' => 'required|max:200',
                 'price' => 'required',
                 'visible' => 'required',
-                'user_id' => 'required',
             ],
             [
                 'image' => 'Requisito Necessario',
@@ -37,7 +36,6 @@ class FoodController extends Controller
                 'description.max' => 'Numero caratteri consentiti superato',
                 'price.required' => 'Requisito Necessario',
                 'visible.required' => 'Requisito Necessario',
-                'user_id.required' => 'Requisito Necessario',
 
             ]
         )->validate();
@@ -77,7 +75,7 @@ class FoodController extends Controller
     {
         $data = $request->all();
         $valid_data = $this->validation($data);
-        //$validated["user_id"] = Auth::id();
+        $validated["user_id"] = Auth::id();
         $newFood = new Food();
         $newFood->fill($valid_data);
 

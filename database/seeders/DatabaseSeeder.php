@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             OrderSeeder::class,
             CustomerSeeder::class,
             FoodSeeder::class,
+            TagSeeder::class,
         ]);
     }
 }

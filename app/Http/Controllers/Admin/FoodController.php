@@ -77,7 +77,7 @@ class FoodController extends Controller
         $valid_data = $this->validation($data);
         $validated["user_id"] = Auth::id();
         $newFood = new Food();
-        $newFood->fill($valid_data);
+        $newFood->fill([$valid_data]);
         $newFood->save();
 
         return redirect()->route('admin.restaurants.index'); //agg id per non ripetere l'agg dell'ogg      
@@ -115,7 +115,8 @@ class FoodController extends Controller
     public function update(Food $food)
     {
         $userId = Auth::id();
-        return view("admin.events.edit", compact("food", "userId"));
+
+        return view("admin.restaurants.edit", compact("food", "userId"));
     }
 
     /**

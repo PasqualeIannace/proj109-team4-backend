@@ -17,7 +17,7 @@ class FoodSeeder extends Seeder
     {
         $foods = [
             [
-                'image' => '',
+                'image' => 'https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/0346a29a89ef229b1a0ff9697184f944/Derivates/cb5051204f4a4525c8b013c16418ae2904e737b7.jpg',
                 'name' => 'Spaghetti alla carbonara',
                 'ingredients' => 'Spaghetti, Tuorli, Guanciale, Pecorino romano, Pepe Nero',
                 'description' => "Dove sono nati gli spaghetti alla carbonara? Il Vicolo della Scrofa, per chi conosce Roma, è una delle stradine più caratteristiche e ricche di simboli. Proprio in una trattoria di questa strada, da cui il nome del vicolo, pare sia stata realizzata la prima carbonara, nel 1944. La storia più attendibile su questo primo piatto, infatti, racconta l'incontro tra gli ingredienti a disposizione dei soldati americani e la fantasia di un cuoco romano.",
@@ -27,7 +27,7 @@ class FoodSeeder extends Seeder
 
             ],
             [
-                'image' => '',
+                'image' => 'https://www.giallozafferano.it/images/ricette/219/21989/foto_hd/hd650x433_wm.jpg',
                 'name' => 'Spaghetti cacio e pepe',
                 'ingredients' => 'Spaghetti, Pepe nero, Pecorino romano',
                 'description' => "Gli spaghetti cacio e pepe sono diventati oramai piatti simbolo dell'italianità, realizzati con ingredienti DOP legati alle tradizioni dei territori in cui sono nate.",
@@ -37,7 +37,7 @@ class FoodSeeder extends Seeder
 
             ],
             [
-                "image" => "",
+                "image" => "https://www.buttalapasta.it/wp-content/uploads/2023/08/Risotto-ai-funghi-porcini-25082023-buttalapasta.it_.jpg",
                 "name" => "Risotto ai Funghi Porcini",
                 "ingredients" => "Riso Arborio, funghi porcini freschi, cipolla, brodo di carne, vino bianco, burro, parmigiano reggiano",
                 "description" => "Il risotto ai funghi porcini è un piatto italiano elegante e saporito, preparato con riso Arborio cotto lentamente in brodo di carne e arricchito con funghi porcini freschi, cipolla, vino bianco, burro e parmigiano reggiano. È cremoso e ricco di sapore.",
@@ -46,7 +46,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 5,
             ],
             [
-                "image" => "",
+                "image" => "https://www.ricettedellanonna.net/wp-content/uploads/2014/09/lasagne-al-ragu%CC%80.jpg",
                 "name" => "Lasagna alla Bolognese",
                 "ingredients" => "Fogli di pasta, ragù di carne, besciamella, parmigiano reggiano",
                 "description" => "La lasagna alla bolognese è un piatto italiano classico, composto da strati di pasta intercalati con ragù di carne, besciamella e parmigiano reggiano. È un piatto ricco e gratificante.",
@@ -55,7 +55,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 5,
             ],
             [
-                "image" => "",
+                "image" => "https://www.conad.it/assets/images/ricette/dayone-ricette/s-d/s-d-risottomilanese.jpg?_u=9fec060990adfc958e77ee3f46a9eb3b7af109eb",
                 "name" => "Risotto alla Milanese",
                 "ingredients" => "Riso carnaroli, zafferano, brodo di carne, cipolla, vino bianco, burro",
                 "description" => "Il risotto alla milanese è un piatto lombardo famoso per il suo colore giallo intenso dovuto allo zafferano. È preparato con riso carnaroli cotto in brodo di carne, cipolla, vino bianco, burro e zafferano. È cremoso e aromatico.",
@@ -64,7 +64,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 5,
             ],
             [
-                "image" => "",
+                "image" => "https://media-assets.lacucinaitaliana.it/photos/635169cdbc2c8a8e10d1f342/16:9/w_2560%2Cc_limit/GettyImages-482478191.jpg",
                 "name" => "Ossobuco alla Milanese",
                 "ingredients" => "Fette di vitello, osso con midollo, vino bianco, brodo di carne, cipolla, sedano, carota",
                 "description" => "L'ossobuco alla milanese è un piatto tradizionale lombardo, composto da fette di vitello con osso e midollo, brasate lentamente in un sugo a base di vino bianco, brodo di carne, cipolla, sedano e carota. È succulento e saporito.",
@@ -73,7 +73,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 5,
             ],
             [
-                "image" => "",
+                "image" => "https://www.cucchiaio.it/content/cucchiaio/it/ricette/2012/05/ricetta-ravioli-ricotta-spinaci/jcr:content/imagePreview.img10.jpg/1542896337028.jpg",
                 "name" => "Ravioli di ricotta e spinaci",
                 "ingredients" => "Pasta all'uovo, ricotta, spinaci, burro, salvia, parmigiano reggiano",
                 "description" => "I ravioli di ricotta e spinaci sono un piatto di pasta fresca ripiena di un delizioso mix di ricotta fresca, spinaci freschi e parmigiano reggiano. Vengono solitamente conditi con burro fuso e salvia. Sono cremosi e saporiti.",
@@ -82,7 +82,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 5,
             ],
             [
-                "image" => "",
+                "image" => "https://www.acouplecooks.com/wp-content/uploads/2023/03/Pasta-alla-Norma-005.jpg",
                 "name" => "Pasta alla Norma",
                 "ingredients" => "Pasta corta, pomodori freschi, melanzane, basilico, ricotta salata, aglio",
                 "description" => "La pasta alla Norma è un piatto siciliano tradizionale, composto da pasta corta condita con pomodori freschi, melanzane fritte, basilico, aglio e ricotta salata grattugiata. È un piatto estivo ricco di sapore.",
@@ -91,7 +91,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 5,
             ],
             [
-                "image" => "",
+                "image" => "https://www.giallozafferano.it/images/ricette/204/20401/foto_hd/hd650x433_wm.jpg",
                 "name" => "Saltimbocca alla romana",
                 "ingredients" => "Fettine di vitello, prosciutto crudo, salvia, vino bianco, burro",
                 "description" => "Le saltimbocca alla romana sono un piatto romano classico, composto da fettine di vitello avvolte in prosciutto crudo e foglie di salvia, poi saltate in padella con burro e vino bianco. Sono teneri e saporiti.",
@@ -100,7 +100,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 5,
             ],
             [
-                "image" => "",
+                "image" => "https://www.chiarapassion.com/wp-content/uploads/2021/09/caponata-siciliana-melanzane-pomodoro-olive-capperi-sedano-basilico-aceto-zucchero-500x500.jpg",
                 "name" => "Caponata siciliana",
                 "ingredients" => "Melanzane, pomodori, sedano, cipolle, aceto di vino, zucchero, pinoli, uvetta",
                 "description" => "La caponata siciliana è un piatto tipico della cucina siciliana, composto da melanzane fritte e condite con pomodori, sedano, cipolle, aceto di vino, zucchero, pinoli e uvetta. È agrodolce e ricca di sapori.",
@@ -109,7 +109,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 5,
             ],
             [
-                "image" => "",
+                "image" => "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/a7540496-ce46-402b-af1a-42504d6dcd01/Derivates/e3901d4a-23ac-44d2-8672-5d54bc019c0b.jpg",
                 "name" => "Polenta e funghi",
                 "ingredients" => "Farina di mais, funghi porcini, burro, parmigiano reggiano, prezzemolo",
                 "description" => "La polenta e funghi è un piatto del nord Italia, composto da polenta fatta con farina di mais e servita con funghi porcini trifolati, burro, parmigiano reggiano e prezzemolo fresco. È confortante e saporito.",
@@ -118,7 +118,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 5,
             ],
             [
-                "image" => "",
+                "image" => "https://www.tavolartegusto.it/wp/wp-content/uploads/2019/06/Spaghetti-alle-vongole-e-pomodorini-Ricetta-Spaghetti-con-vongole-e-pomodorini.jpg",
                 "name" => "Spaghetti alle Vongole",
                 "ingredients" => "Spaghetti, vongole veraci, aglio, prezzemolo, peperoncino, vino bianco",
                 "description" => "Gli spaghetti alle vongole sono un piatto classico della cucina italiana, preparato con spaghetti conditi con vongole veraci fresche, aglio, prezzemolo, peperoncino e vino bianco. È un piatto fresco e saporito, perfetto per gli amanti del mare.",
@@ -127,7 +127,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 5,
             ],
             [
-                "image" => "",
+                "image" => "https://cdn.cook.stbm.it/thumbnails/ricette/144/144181/hd750x421.jpg",
                 "name" => "Frittura di Paranza",
                 "ingredients" => "Gamberi, calamari, triglie, alici, olio per friggere, farina",
                 "description" => "La frittura di paranza è un piatto tradizionale italiano, composto da una varietà di pesci di piccola taglia come gamberi, calamari, triglie e alici, passati nella farina e fritti fino a doratura. È croccante e saporito, perfetto come antipasto o piatto principale.",
@@ -136,7 +136,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 5,
             ],
             [
-                "image" => "",
+                "image" => "https://staticcookist.akamaized.net/wp-content/uploads/sites/21/2022/03/Orata-al-cartoccio-1200x675.jpg",
                 "name" => "Pesce al Cartoccio",
                 "ingredients" => "Filetti di pesce misto, pomodorini, olive, capperi, aglio, prezzemolo, vino bianco",
                 "description" => "Il pesce al cartoccio è un piatto italiano delicato e aromatico, preparato con filetti di pesce misto avvolti in un foglio di alluminio insieme a pomodorini, olive, capperi, aglio, prezzemolo e vino bianco. Viene cotto al forno, mantenendo tutto il sapore del pesce e degli aromi. È leggero e gustoso.",

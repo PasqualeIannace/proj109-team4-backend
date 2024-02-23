@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
-
+namespace App\Http\Controllers\Admin;  //ho aggiunto admin perche non leggeva il controller
+use App\Http\Controllers\Controller; // Controller di base da importare
+use Illuminate\Support\Facades\Auth;  //aggiungo il contr Auth
 use App\Models\Food;
 use Illuminate\Http\Request;
 
@@ -14,9 +15,12 @@ class FoodController extends Controller
      */
     public function index()
     { {
+            // Recupera l'ID dell'utente autenticato
+            //$userId = Auth::id();
+            // Recupera solo i Food collegati all'utente autenticato
+            //$foods = Food::where('user_id', $userId)->get();
             $foods = Food::all();
-
-            return view("admin.foods.index", compact("foods"));
+            return view("admin.restaurants.index", compact("foods"));
         }
     }
 

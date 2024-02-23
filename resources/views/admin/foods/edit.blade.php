@@ -6,7 +6,7 @@
 
 <div class="container-fluid mt-4">
     <div class="row">
-        <form action="{{ route('admin.restaurants.update' , $editFood) }}" method="POST">
+        <form action="{{ route('admin.foods.update' , $editFood) }}" method="POST">
             @csrf
             @method('PUT')
 

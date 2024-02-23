@@ -6,7 +6,7 @@
 
 <div class="container-fluid mt-4">
     <div class="row">
-        <form action="{{ route('admin.restaurants.store') }}" method="POST">
+        <form action="{{ route('admin.foods.store') }}" method="POST">
             @csrf
 
             <div class="mb-3">

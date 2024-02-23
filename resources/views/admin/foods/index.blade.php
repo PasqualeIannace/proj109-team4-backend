@@ -18,9 +18,9 @@
         {{-- <p> {{ $food->visible }}</p> --}}
       </div>
     </div>
-    <a href="{{ route('admin.restaurants.edit', $food->id) }}" class="btn btn-secondary">Edit</a>
-    <a href="{{ route('admin.restaurants.show', $food->id) }}" class="btn btn-secondary">Show Details</a>
-    <form action="{{route('admin.restaurants.destroy', $food->id)}}" onsubmit="" method="POST" class="d-inline-block">
+    <a href="{{ route('admin.foods.edit', $food->id) }}" class="btn btn-secondary">Edit</a>
+    <a href="{{ route('admin.foods.show', $food->id) }}" class="btn btn-secondary">Show Details</a>
+    <form action="{{route('admin.foods.destroy', $food->id)}}" method="POST" class="d-inline-block">
       @csrf
       @method('DELETE')
       <input type="submit" value="&#9249;" class="btn btn-outline-danger" id="sure">

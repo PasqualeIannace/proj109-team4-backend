@@ -22,7 +22,7 @@ return new class extends Migration
             // $table->foreign('restaurant_type_id')->references('id')->on('restaurant_type')->cascadeOnDelete();
             $table->foreignId('restaurant_type_id')->constrained()->cascadeOnDelete();
 
-            $table->unsignedInteger('quantity')->default(1);
+            /* $table->unsignedInteger('quantity')->default(1); */
         });
     }
 

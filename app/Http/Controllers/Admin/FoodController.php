@@ -115,10 +115,9 @@ class FoodController extends Controller
      */
     public function update(Request $request, Food $food)
     {
-        $validatedData = $this->validation($request->all());
-        // $data = $request->all();
-        // $valid_data = $this->validation($data);
-        $food->update($validatedData);
+        $data = $request->all();
+        $valid_data = $this->validation($data);
+        $food->update($valid_data);
         return redirect()->route('admin.restaurants.index');
     }
 

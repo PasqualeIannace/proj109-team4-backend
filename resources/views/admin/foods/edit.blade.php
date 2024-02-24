@@ -11,7 +11,7 @@
             @method('PUT')
 
             <div class="mb-3">
-                <label for="name" class="form-label">Nome Piatto</label>
+                <label for="name" class="form-label text-white">Nome Piatto</label>
                 <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name"
                     value="{{ old('name') ?? $editFood->name}} ">
                 @error('name')
@@ -20,7 +20,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="ingredients" class="form-label">Ingredienti</label>
+                <label for="ingredients" class="form-label text-white">Ingredienti</label>
                 <input type="text" class="form-control @error('ingredients') is-invalid @enderror" id="ingredients"
                     name="ingredients" value="{{ old('ingredients') ?? $editFood->ingredients}} ">
                 @error('ingredients')
@@ -30,7 +30,7 @@
 
 
             <div class="mb-3">
-                <label for="visible" class="form-label">Disponibile</label>
+                <label for="visible" class="form-label text-white">Disponibile</label>
                 <input type="text" class="form-control @error('visible') is-invalid @enderror" id="visible"
                     name="visible" value="{{ old('visible') ?? $editFood->visible}} ">
                 @error('visible')
@@ -40,7 +40,7 @@
 
 
             <div class="mb-3">
-                <label for="price" class="form-label">Prezzo</label>
+                <label for="price" class="form-label text-white">Prezzo</label>
                 <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" name="price"
                     value="{{ old('price') ?? $editFood->price}} ">
                 @error('price')
@@ -49,7 +49,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="description" class="form-label">Descrizione</label>
+                <label for="description" class="form-label text-white">Descrizione</label>
                 <input type="text" class="form-control @error('description') is-invalid @enderror" id="description"
                     name="description" value="{{ old('description') ?? $editFood->description}} ">
                 @error('description')
@@ -59,7 +59,7 @@
 
 
             <div class="mb-3">
-                <label for="image" class="form-label">Immagine</label>
+                <label for="image" class="form-label text-white">Immagine</label>
                 <input type="text" class="form-control @error('image') is-invalid @enderror" id="image" name="image"
                     value="{{ old('image') ?? $editFood->image}} ">
                 @error('image')

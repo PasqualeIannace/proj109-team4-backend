@@ -264,7 +264,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://www.giallozafferano.it/images/18-1811/Maiale-in-agrodolce_650x433_wm.jpg",
                 "name" => "Maiale in agrodolce",
                 "ingredients" => "Maiale, peperoni, ananas, cipolle, salsa agrodolce",
                 "description" => "Il maiale in agrodolce è un piatto cinese che combina pezzi di maiale fritti con peperoni, ananas e cipolle in una salsa agrodolce aromatica. È una combinazione equilibrata di dolce e acido.",
@@ -273,7 +273,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                "image" => "",
+                "image" => "https://lh5.googleusercontent.com/tz_dn5rvgFpUiF-PT3vcJR2_sERaah2rV_a_olDeVnhVhd4t9Of7lE4ekuJm6O8cR2O5LJFJwuoCWgtlvZcO3iIQzTpqr8vhaywFOl4rrACtv-20Hg3rssCZsr7Q7x7omUgO03-y6VAmMB9TZw",
                 "name" => "Riso fritto Yangzhou",
                 "ingredients" => "Riso, uova, gamberetti, piselli, carote, cipolle",
                 "description" => "Il riso fritto Yangzhou è un piatto di riso cinese tradizionale fatto con riso saltato in padella con uova, gamberetti, piselli, carote e cipolle. È una pietanza gustosa e colorata.",
@@ -282,7 +282,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 3,
             ],
             [
-                'image' => '',
+                'image' => 'https://amysushi.it/wp-content/uploads/2016/06/29-Futomaki-fritto.jpg',
                 'name' => 'Futomaki',
                 'ingredients' => 'Riso per sushi cotto, Wasabi, Alga nori, Surimi, Uova di lompo, Cetrioli, Tonno, Avocado, Salsa di soia, Zenzero sotto aceto',
                 'description' => "Il futomaki è un sushi arrotolato, fatto con una foglia intera di alga nori ripiena di riso e almeno 4 ingredienti a scelta. Questa varietà di ingredienti, rende il futomaki molto colorato ed è tra i pezzi di sushi più apprezzati.",
@@ -292,7 +292,7 @@ class FoodSeeder extends Seeder
 
             ],
             [
-                'image' => '',
+                'image' => 'https://okasan.it/tablet/wp-content/uploads/2017/03/67-Tempura-Mista.jpg',
                 'name' => 'Tempura',
                 'ingredients' => 'Gamberi, Carote, Zucchine, Farina di riso, Olio di semi di girasole',
                 'description' => "La tempura è uno dei piatti più conosciuti e amati della cucina del Sol Levante, nonché uno dei più richiesti nei ristoranti in giro per il mondo.",
@@ -302,7 +302,7 @@ class FoodSeeder extends Seeder
 
             ],
             [
-                "image" => "",
+                "image" => "https://png.pngtree.com/background/20230520/original/pngtree-sushi-pictures-on-your-phone-picture-image_2670262.jpg",
                 "name" => "Sushi assortito",
                 "ingredients" => "Riso, pesce crudo (salmone, tonno, branzino), alga nori, aceto di riso",
                 "description" => "Lo sushi assortito è un piatto giapponese classico composto da una varietà di sushi, inclusi nigiri (sfere di riso con fettine di pesce crudo sopra) e maki (rotoli di riso e pesce avvolti in alga nori). È fresco e gustoso.",
@@ -311,7 +311,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://primochef.it/wp-content/uploads/2017/03/SH_ramen.jpg",
                 "name" => "Ramen di tonkotsu",
                 "ingredients" => "Brodo di ossa di maiale, noodle di frumento, maiale a fette, uovo sodo, cipollotti",
                 "description" => "Il ramen di tonkotsu è una zuppa giapponese ricca e cremosa fatta con brodo di ossa di maiale e servita con noodle di frumento, maiale a fette, uovo sodo e cipollotti. È confortante e nutriente.",
@@ -320,7 +320,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://www.alimentaitaly.com/img/cms/gamberi%20tempura-large.png",
                 "name" => "Tempura di gamberi",
                 "ingredients" => "Gamberi, pastella leggera, olio per friggere, salsa tempura",
                 "description" => "La tempura di gamberi è un piatto giapponese di gamberi ricoperti di pastella leggera e croccante, fritti in olio caldo fino a diventare dorati e croccanti. Viene spesso servita con salsa tempura per intingere.",
@@ -329,7 +329,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://www.pressurecookrecipes.com/wp-content/uploads/2021/10/gyudon.jpg",
                 "name" => "Gyudon",
                 "ingredients" => "Manzo a fette sottili, cipolle, salsa dashi, salsa di soia, mirin, zucchero, riso",
                 "description" => "Il gyudon è una ciotola giapponese di riso servita con manzo a fette sottili cotto in una salsa dolce e salata a base di salsa dashi, salsa di soia, mirin e zucchero. È un comfort food popolare in Giappone.",
@@ -338,7 +338,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://www.kyoosushi.com/images/joomlart/blog/2_ok.png",
                 "name" => "Uramaki California",
                 "ingredients" => "Riso, surimi, avocado, cetriolo, alga nori, semi di sesamo",
                 "description" => "L'uramaki California è un tipo di sushi maki originario della California, composto da surimi, avocado, cetriolo avvolti in riso e alga nori, e poi ricoperti con semi di sesamo. È un sushi leggero e gustoso.",
@@ -347,7 +347,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://wips.plug.it/cips/buonissimo.org/cms/2019/12/progetto-senza-titolo-10.png",
                 "name" => "Okonomiyaki",
                 "ingredients" => "Cavolo, pancetta, farina, uova, dashi, salsa okonomiyaki, maionese giapponese",
                 "description" => "L'okonomiyaki è una specie di pancake giapponese farcito con una varietà di ingredienti come cavolo, pancetta e frutti di mare, cotto su una piastra e servito con salsa okonomiyaki e maionese giapponese. È un piatto divertente e gustoso.",
@@ -356,7 +356,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://www.ristorantedong.it/wp-content/uploads/Ristorante-Dong-Menu-WEB-54.jpg",
                 "name" => "Sashimi misto",
                 "ingredients" => "Pesce crudo assortito (salmone, tonno, branzino), wasabi, salsa di soia",
                 "description" => "Il sashimi misto è un piatto giapponese composto da una selezione di pesce crudo fresco, tagliato a fette sottili e servito con wasabi e salsa di soia. È una prelibatezza delicata e saporita.",
@@ -365,7 +365,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://www.marionskitchen.com/wp-content/uploads/2021/08/20201110_Spicy-Pork-Tonkatsu-5.jpg",
                 "name" => "Tonkatsu",
                 "ingredients" => "Maiale impanato, cavolo fresco, salsa tonkatsu, riso",
                 "description" => "Il tonkatsu è una pietanza giapponese costituita da fette di maiale impanate e fritte fino a diventare croccanti e dorate. Viene spesso servito con cavolo fresco e riso, accompagnato dalla salsa tonkatsu. È croccante e delizioso.",
@@ -374,7 +374,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://staticcookist.akamaized.net/wp-content/uploads/sites/21/2021/01/6_yakitori-serviti_yakitori%C2%A9Gooduria-lab-1200x675.jpg",
                 "name" => "Yakitori",
                 "ingredients" => "Spiedini di pollo, salsa tare, cipollotti",
                 "description" => "Lo yakitori è un piatto giapponese di spiedini di pollo marinati e cotti alla griglia. Viene spesso servito con salsa tare, una salsa dolce e salata, e cipollotti freschi. È un piatto popolare nei bar e nelle bancarelle.",
@@ -383,7 +383,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://sudachirecipes.com/wp-content/uploads/2022/07/unagi-don-sqr.jpg",
                 "name" => "Unagi Don",
                 "ingredients" => "Anguilla alla griglia, salsa unagi, riso",
                 "description" => "L'unagi don è una ciotola di riso giapponese servita con anguilla alla griglia e glassata con salsa unagi dolce e salata. È un piatto tradizionale giapponese ricco di sapore e apprezzato per la sua morbidezza.",
@@ -392,7 +392,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/1896db7ab4eec1e7ad3b98df3314bad8/Derivates/7c1b07b2f6c90061bc8968c9e629bcefdc97b391.jpg",
                 "name" => "Soba noodles",
                 "ingredients" => "Noodle di grano saraceno, brodo dashi, cipollotti, radice di wasabi",
                 "description" => "Gli soba noodles sono una tipica pasta giapponese fatta con farina di grano saraceno, servita in brodo dashi caldo e accompagnata da cipollotti e radice di wasabi. È un piatto leggero e nutriente.",
@@ -401,7 +401,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://manasushi.it/wp-content/uploads/2021/07/oshizushi.jpg",
                 "name" => "Oshizushi",
                 "ingredients" => "Riso, pesce crudo (salmone, tonno), aceto di riso, alga nori",
                 "description" => "L'oshizushi è una varietà di sushi giapponese composta da strati di riso e pesce crudo compressi in uno stampo di legno e tagliati in pezzi rettangolari. È un tipo di sushi popolare e gustoso.",
@@ -410,7 +410,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://www.orientalitalia.com/wp-content/uploads/2023/02/takoyaki-recipe-ft.jpg",
                 "name" => "Takoyaki",
                 "ingredients" => "Polpo, pastella, salsa takoyaki, maionese, scaglie di bonito, alghe",
                 "description" => "Il takoyaki è un piatto giapponese composto da palline di pastella ripiene di pezzi di polpo cotti su una piastra speciale. Viene spesso condito con salsa takoyaki, maionese, scaglie di bonito e alghe. È un street food popolare.",
@@ -419,7 +419,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://www.veggiesdontbite.com/wp-content/uploads/2022/07/vegan-miso-soup-noodles-vegetables-FI.jpg",
                 "name" => "Miso Soup",
                 "ingredients" => "Dashi, miso, alga kombu, tofu, cipollotti",
                 "description" => "La zuppa di miso è una zuppa giapponese leggera e saporita fatta con brodo dashi e pasta di miso, arricchita con alga kombu, tofu a dadini e cipollotti. È un accompagnamento comune ai pasti giapponesi.",
@@ -428,7 +428,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                "image" => "",
+                "image" => "https://cdn.ilclubdellericette.it/wp-content/uploads/2020/01/onigiri-verticale-640x480.jpg",
                 "name" => "Onigiri",
                 "ingredients" => "Riso, alga nori, ripieno (tonno, salmone, umeboshi)",
                 "description" => "Gli onigiri sono palline di riso giapponesi triangolari o rotonde, spesso avvolte in alga nori e riempite con ripieni come tonno, salmone o umeboshi (prugna marinata). Sono un cibo comune per la merenda o il pranzo.",
@@ -437,7 +437,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 4,
             ],
             [
-                'image' => '',
+                'image' => 'https://www.cookwithmanali.com/wp-content/uploads/2021/09/Moong-Dal-Dosa.jpg',
                 'name' => 'Masala Dosa',
                 'ingredients' => 'Patate, Semi di senape, Lenticchie, Assafetida, Foglie di curry, Zenzero, Cipolla, Foglie di coriandolo, Peperoncini verdi',
                 'description' => "La tempura è uno dei piatti più conosciuti e amati della cucina del Sol Levante, nonché uno dei più richiesti nei ristoranti in giro per il mondo.",
@@ -447,7 +447,7 @@ class FoodSeeder extends Seeder
 
             ],
             [
-                'image' => '',
+                'image' => 'data:image/jpeg;base64,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',
                 'name' => 'Bhelpuri',
                 'ingredients' => 'Riso soffiato, Arachidi, Ceci tostati, Cetriolo, Patate, Cipolla, Pomodoro, Chaat Masala, Curcuma',
                 'description' => "Il Bhelpuri è uno snack salato, tipico della cucina indiana a base di riso soffiato, che può essere consumato col cucchiaio o raccolto su una piadina.",
@@ -457,7 +457,7 @@ class FoodSeeder extends Seeder
 
             ],
             [
-                "image" => "",
+                "image" => "https://redketchup.it/wp-content/uploads/2023/08/pollo-al-burro-e-curry.webp",
                 "name" => "Pollo al burro",
                 "ingredients" => "Pollo, burro, panna, pomodori, garam masala",
                 "description" => "Il pollo al burro è un piatto tradizionale indiano dal sapore ricco e cremoso, preparato con pezzi di pollo marinato in una salsa di pomodoro, burro e panna. Servito con riso basmati.",
@@ -466,7 +466,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://img.taste.com.au/t7vFeXvh/taste/2016/11/naan-bread-94266-1.jpeg",
                 "name" => "Naan",
                 "ingredients" => "Farina di grano, acqua, lievito, yogurt, sale",
                 "description" => "Il Naan è un pane indiano soffice e leggero, cotto in un forno tandoor. È perfetto per accompagnare piatti come il curry o il pollo al burro.",
@@ -475,7 +475,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://www.corriere.it/methode_image/2021/03/28/Cucina/Foto%20Cucina%20-%20Trattate/12_agnello_india-kxnG-U32501163316713j5D-593x443@Corriere-Web-Sezioni.jpeg",
                 "name" => "Biryani di agnello",
                 "ingredients" => "Agnello, riso basmati, garam masala, cumino, yogurt, prezzemolo",
                 "description" => "Il Biryani di agnello è un piatto di riso speziato e aromatico, preparato con carne d'agnello, riso basmati e una miscela di spezie. Viene cotto lentamente per ottenere un sapore ricco e succulento.",
@@ -484,7 +484,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/1ff162303ad59c74b6cd746adcfab9ab/Derivates/48d3ea100fc3c1b2621b71a749def60d61f21706.jpg",
                 "name" => "Samosa",
                 "ingredients" => "Patate, piselli, pasta di farina, garam masala, olio",
                 "description" => "Le Samosa sono deliziose frittelle indiane ripiene di patate, piselli e spezie aromatiche. Sono croccanti all'esterno e morbide all'interno, perfette da gustare come antipasto o spuntino.",
@@ -493,7 +493,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Neha_Mathur/Achari_Paneer_Tikka_Recipe_Party_Food_400.jpg",
                 "name" => "Paneer Tikka",
                 "ingredients" => "Paneer, yogurt, peperoni, cipolle, garam masala",
                 "description" => "Il Paneer Tikka è un antipasto indiano composto da cubetti di paneer (formaggio indiano), marinati in una miscela di yogurt e spezie, infilzati in spiedini e grigliati fino a doratura.",
@@ -502,7 +502,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://lovingitvegan.com/wp-content/uploads/2022/05/Vegan-Dal-Makhani-Square-2.jpg",
                 "name" => "Dal Makhani",
                 "ingredients" => "Lenticchie nere, fagioli, pomodori, cipolle, burro, panna, garam masala",
                 "description" => "Il Dal Makhani è un piatto di lenticchie nere ricco e cremoso, cotto lentamente con una salsa di pomodoro, burro e panna. Servito con riso basmati e pane naan.",
@@ -511,7 +511,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://senzaolio.it/wp-content/uploads/2023/08/Pollo-tandoori-elettrico-alla-griglia.webp",
                 "name" => "Pollo Tandoori",
                 "ingredients" => "Pollo, yogurt, spezie tandoori, limone",
                 "description" => "Il Pollo Tandoori è un piatto indiano in cui il pollo marinato con yogurt e spezie viene cotto in un forno tandoor, un forno indiano tradizionale a carbone. È succulento e ricco di sapore.",
@@ -520,7 +520,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://www.palatesdesire.com/wp-content/uploads/2022/09/rasgulla-recipe@palates-desire.jpg",
                 "name" => "Rasgulla",
                 "ingredients" => "Latte, zucchero, acqua di rosa",
                 "description" => "Il Rasgulla è un dessert indiano tradizionale fatto con palline di paneer (formaggio indiano) bollite in uno sciroppo di zucchero profumato all'acqua di rosa. È dolce e rinfrescante.",
@@ -529,7 +529,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/1911ED40-7BDC-46C2-809B-937F1993DFA4/Derivates/C0F6BA93-C7F1-45AF-BD9E-5E6DAC9A6741.jpg",
                 "name" => "Palak Paneer",
                 "ingredients" => "Paneer, spinaci, pomodori, cipolle, garam masala, panna",
                 "description" => "Il Palak Paneer è un piatto vegetariano indiano preparato con cubetti di paneer (formaggio indiano) e spinaci cotti in una salsa cremosa di pomodori, cipolle e spezie. Servito con riso basmati.",
@@ -538,7 +538,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://veganhuggs.com/wp-content/uploads/2021/04/aloo-gobi-in-bowl-side-view.jpg",
                 "name" => "Aloo Gobi",
                 "ingredients" => "Patate, cavolfiore, pomodori, cipolle, cumino, coriandolo",
                 "description" => "L'Aloo Gobi è un piatto vegetariano indiano composto da patate e cavolfiore saltati in una miscela di spezie aromatiche. È semplice ma pieno di sapore.",
@@ -547,7 +547,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://staticcookist.akamaized.net/wp-content/uploads/sites/21/2020/02/Chana-masala-0D6A9427.jpg",
                 "name" => "Chana Masala",
                 "ingredients" => "Ceci, pomodori, cipolle, zenzero, aglio, garam masala",
                 "description" => "Il Chana Masala è un piatto vegetariano a base di ceci cotti in una salsa di pomodoro speziata con cipolle, zenzero e aglio. È ricco di sapori indiani autentici.",
@@ -556,7 +556,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://www.cubesnjuliennes.com/wp-content/uploads/2020/02/Matar-Paneer-500x500.jpg",
                 "name" => "Mutter Paneer",
                 "ingredients" => "Paneer, piselli, pomodori, cipolle, cumino, coriandolo",
                 "description" => "Il Mutter Paneer è un piatto vegetariano indiano con paneer e piselli cotti in una salsa di pomodoro condita con spezie aromatiche come cumino e coriandolo. È delizioso e nutriente.",
@@ -565,7 +565,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://www.whiskaffair.com/wp-content/uploads/2020/11/Bhindi-Masala-2-3.jpg",
                 "name" => "Bhindi Masala",
                 "ingredients" => "Okra, pomodori, cipolle, peperoncino verde, zenzero, aglio",
                 "description" => "Il Bhindi Masala è un piatto vegetariano indiano preparato con okra fresca cotta in una salsa di pomodoro piccante con cipolle, peperoncino verde, zenzero e aglio. È croccante e saporito.",
@@ -574,7 +574,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://www.cookshideout.com/wp-content/uploads/2015/05/Instant-Pot-Pav-Bhaji_FI.jpg",
                 "name" => "Pav Bhaji",
                 "ingredients" => "Patate, piselli, pomodori, cipolle, peperoni verdi, zenzero, pane",
                 "description" => "Il Pav Bhaji è un piatto di street food indiano composto da una miscela di verdure speziate, come patate, piselli e pomodori, servita con pane tostato. È un piatto gustoso e sostanzioso.",
@@ -583,7 +583,7 @@ class FoodSeeder extends Seeder
                 'user_id' => 1,
             ],
             [
-                "image" => "",
+                "image" => "https://www.cookwithmanali.com/wp-content/uploads/2017/06/Indian-Rice-Kheer-500x500.jpg",
                 "name" => "Kheer",
                 "ingredients" => "Riso, latte, zucchero, cardamomo, mandorle, pistacchi",
                 "description" => "Il Kheer è un dessert di riso cremoso e dolce preparato con riso cotto lentamente nel latte aromatizzato con cardamomo, zucchero e frutta secca. È una delizia per il palato.",

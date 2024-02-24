@@ -1,8 +1,63 @@
 @import '~bootstrap/scss/bootstrap';
 
-.mycard{
+// .mycard{
     
+// }
+body{
+    background-image: url('https://a-static.besthdwallpaper.com/black-and-brown-spiral-graphic-wallpaper-3840x2160-82617_54.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    //background-color: rgb(67, 98, 99);
 }
+
+.plateLf{
+    height: 800px;
+}
+
+.small_img{
+    // width: 100px;
+    // height: 100px; 
+    position: relative; /* Per utilizzare object-position */  
+    display: inline-block;
+}
+.img-container {
+    position: relative;
+    width: 100px;
+    height: 100px; 
+    overflow: hidden;
+}
+.cerchio{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.img-container:hover .edit-btn {
+    opacity: 1; 
+}
+
+.edit-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Nasconde il bottone per impostazione predefinita */
+    transition: opacity 0.3s ease;
+}
+.statistic{
+    width: 700px;
+    height: 700px;
+}
+
+.mybg{
+    background-color: #7da9ae37;
+}
+//LARAVEL BUTTON
+
 
 //FLIPCARD
 .flip-card {
@@ -31,7 +86,6 @@
     transform: rotateY(180deg);
   }
   
-  /* Position the front and back side */
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -40,13 +94,13 @@
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
+ 
   .flip-card-front {
     background-color: #7da9ae;
     color: black;
   }
   
-  /* Style the back side */
+
   .flip-card-back {
     background-color: rgba(102, 166, 183, 0.532);
     color: white;

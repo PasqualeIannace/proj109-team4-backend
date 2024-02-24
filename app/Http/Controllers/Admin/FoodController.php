@@ -132,4 +132,5 @@ class FoodController extends Controller
         $food->delete();
         return redirect()->route("admin.foods.index");
     }
+
 }

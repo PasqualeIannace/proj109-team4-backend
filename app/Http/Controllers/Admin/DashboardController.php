@@ -17,6 +17,8 @@ class DashboardController extends Controller
     public function index()
     {
         $userId = Auth::id();
+
+        $user = Auth::user();
         //Recupera solo i Food collegati all'utente autenticato
         $foods = Food::where('user_id', $userId)->paginate(5);
         //$foods = Food::where('user_id', $userId)->get();
@@ -30,6 +32,6 @@ class DashboardController extends Controller
         //        'path' => LengthAwarePaginator::resolveCurrentPath(),
         //    ]
         //);
-        return view('admin.dashboard', compact('foods' , 'userId'));
+        return view('admin.dashboard', compact('foods', 'userId', "user"));
     }
 }

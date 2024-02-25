@@ -4,7 +4,7 @@
 
 <h2 class="text-center">Modifica il piatto</h2>
 
-<div class="container-fluid mt-4">
+<div class="container-sm mt-4">
     <div class="row">
         <form action="{{ route('admin.foods.update' , $editFood) }}" method="POST">
             @csrf

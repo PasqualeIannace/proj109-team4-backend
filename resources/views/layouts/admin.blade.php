@@ -29,7 +29,7 @@
         <div class="container-fluid vh-100">
             <div class="row h-100">
                 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark navbar-dark sidebar collapse">
-                    <div class="position-sticky pt-3">
+                    <div class="position-sticky pt-1 top-1em">
                         <ul class="nav flex-column">
 
                             <li class="nav-item">

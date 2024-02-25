@@ -37,7 +37,7 @@
                         </div>
                     </div>
 
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center p-3">
                         <b class="text-center">{{$food->name}}</b>
                     </div>
                 </li>

@@ -50,7 +50,7 @@ class FoodController extends Controller
             //Recupera solo i Food collegati all'utente autenticato
             $foods = Food::where('user_id', $userId)->get();
             //$foods = Food::all();
-            return view("admin.restaurants.index", compact("foods"));
+            return view("admin.foods.index", compact("foods"));
         }
     }
 
@@ -63,7 +63,7 @@ class FoodController extends Controller
     {
         $userId = Auth::id();
 
-        return view("admin.restaurants.create", compact("food", "userId"));
+        return view("admin.foods.create", compact("food", "userId"));
     }
 
     /**
@@ -79,7 +79,7 @@ class FoodController extends Controller
 
         $newFood = Food::create($validatedData);
 
-        return redirect()->route('admin.restaurants.index');
+        return redirect()->route('admin.foods.index');
     }
 
     /**
@@ -90,7 +90,7 @@ class FoodController extends Controller
      */
     public function show(Food $food)
     {
-        return view("admin.restaurants.show", compact("food"));
+        return view("admin.foods.show", compact("food"));
     }
 
     /**
@@ -99,10 +99,11 @@ class FoodController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Food $food)
+    public function edit(String $id)
     {
+        $editFood = Food::find($id);
         $tags = Tag::all();
-        return view('admin.restaurants.edit', compact('food', 'tags'));
+        return view('admin.foods.edit', compact('editFood', 'tags'));
     }
 
     /**
@@ -112,10 +113,12 @@ class FoodController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Food $food)
+    public function update(Request $request, Food $food)
     {
-        // $userId = Auth::id();
-        // return view("admin.events.edit", compact("food", "userId"));
+        $data = $request->all();
+        $valid_data = $this->validation($data);
+        $food->update($valid_data);
+        return redirect()->route('admin.foods.index');
     }
 
     /**
@@ -124,8 +127,10 @@ class FoodController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Food $food)
     {
-        //
+        $food->delete();
+        return redirect()->route("admin.foods.index");
     }
+
 }

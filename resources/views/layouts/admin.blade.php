@@ -9,7 +9,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Boolivery Business') }}</title>
-    <link rel="shortcut icon" href="{{ asset('icon.png') }}">
 
     <!-- Fontawesome 6 cdn -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous' referrerpolicy='no-referrer' />
@@ -28,7 +27,7 @@
         <div class="container-fluid vh-100">
             <div class="row h-100">
                 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark navbar-dark sidebar collapse">
-                    <div class="position-sticky pt-3">
+                    <div class="position-sticky pt-1 top-1em">
                         <ul class="nav flex-column">
 
                             <li class="nav-item">
@@ -38,7 +37,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.restaurants.index' ? 'bg-secondary' : '' }}" href="{{route('admin.restaurants.index')}}">
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.foods.index' ? 'bg-secondary' : '' }}" href="{{route('admin.foods.index')}}">
                                     <i class="fa-solid fa-book-open"></i> Piatti
                                 </a>
                             </li>

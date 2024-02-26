@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="container-sm text-black rounded p-5">
+{{-- <div class="container-sm text-black rounded p-5">
 
     <h2 class="text-center">I Miei Ordini</h2>
 
@@ -16,6 +16,37 @@
         </li>
         @endforeach
     </ol>
-</div>
+</div> --}}
+<!-- admin/orders/index.blade.php -->
+
+    <div class="container">
+        <h1>Elenco degli ordini</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Data Ordine</th>
+                    <th>Quantità</th>
+                    <!-- Aggiungi altre colonne secondo necessità -->
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($orders as $order)
+                    <tr>
+                        <td>{{ $order->id }}</td>
+                        <td>{{ $order->order_date }}</td> <!-- Assumo che 'order_date' sia un campo della tua tabella Order -->
+                        <td>
+                            <ul>
+                                @foreach ($order->foods as $food)
+                                    <li>{{ $food->name }} - Quantità: {{ $food->pivot->quantity }}</li>
+                                @endforeach
+                            </ul>
+                        </td>
+                        <!-- Aggiungi altre colonne secondo necessità -->
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
 
 @endsection

@@ -20,7 +20,7 @@ class DashboardController extends Controller
 
         $user = Auth::user();
         //Recupera solo i Food collegati all'utente autenticato
-        $foods = Food::where('user_id', $userId)->paginate(5);
+        $foods = Food::where('user_id', $userId)->get();
         //$foods = Food::where('user_id', $userId)->get();
         //$foods->withPath(route('admin.dashboard')); //personalizz
         //$customPaginator = new CustomPaginator(  //rendo food un'istanza della collect $foods=>query dentro index

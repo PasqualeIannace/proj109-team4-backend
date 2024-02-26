@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Order;
@@ -25,7 +26,6 @@ class OrderController extends Controller
         //     $query->where('user_id', $userId);
         // })->orderBy('id')->get();
 
-        return view("admin.foods.orders.index", compact("orders"));
+        return view("admin.orders.index", compact("orders"));
     }
-    
 }

@@ -33,9 +33,8 @@
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                     <div class="logo_deliveboo">
-                        <img class="logo_deliveboo1" src="logo.png" alt="logo">
+                        <img class="logo_deliveboo1" src="/logo.png" alt="logo">
                     </div>
-                    {{-- config('app.name', 'Laravel') --}}
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -47,9 +46,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+
+                        @auth
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
+                            <a class="nav-link" href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
                         </li>
+                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -72,7 +74,12 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
+                                {{-- <a class="dropdown-item" href="{{ route('admin.dashboard') }}">{{ __('Dashboard')
+                                    }}</a> --}}
+                                <a class="dropdown-item" href="{{ route('admin.orders.index') }}">{{ __('Ordini')
+                                    }}</a>
+                                <a class="dropdown-item" href="{{ route('admin.foods.index') }}">{{ __('Il mio menu')
+                                    }}</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}

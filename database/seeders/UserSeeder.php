@@ -33,6 +33,7 @@ class Userseeder extends Seeder
             $new_user->email = "israr.muhammad@libero.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Taj Mahal Restaurant";
+            $new_user->logo_activity = "../../public/indian.png";
             $new_user->address = "Via Gandhi, 145, Milano (MI)";
             $new_user->VAT_number = "77634180036";
             $new_user->save();
@@ -42,6 +43,7 @@ class Userseeder extends Seeder
             $new_user->email = "pasquale.iannace@hotmail.it";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Pasquale's Pizzeria";
+            $new_user->logo_activity = "../public/pizza.png";
             $new_user->address = "Via Roma, 1, Roma (RM)";
             $new_user->VAT_number = "12345678911";
             $new_user->save();
@@ -51,6 +53,7 @@ class Userseeder extends Seeder
             $new_user->email = "francesca.picoco96@gmail.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "MOYA";
+            $new_user->logo_activity= "../../public/cinese.png";
             $new_user->address = "Via Bartolomeo, 11, Milano(MI)";
             $new_user->VAT_number = "12345675710";
             $new_user->save();
@@ -60,6 +63,7 @@ class Userseeder extends Seeder
             $new_user->email = "thomassalvaterra@gmail.it";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Kyiomi Sushi";
+            $new_user->logo_activity = "../../public/japan.png";
             $new_user->address = "Corso Umberto, 14, Mantova (MN)";
             $new_user->VAT_number = "13245869024";
             $new_user->save();
@@ -69,6 +73,7 @@ class Userseeder extends Seeder
             $new_user->email = "abdullah.azza@gmail.it";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Ristorante La Lanterna";
+            $new_user->logo_activity= "../../public/italian.png";
             $new_user->address = "Via Ugo Foscolo, 21, Modena (MO)";
             $new_user->VAT_number = "13245864248";
             $new_user->save();

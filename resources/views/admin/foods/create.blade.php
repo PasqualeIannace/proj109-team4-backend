@@ -4,7 +4,7 @@
 
 <h1 class="text-center mt-3">Nuovo piatto</h2>
 
-    <div class="container-sm mt-4">
+    <div class="container-sm mt-4 bg-opacity-50 bg-black text-light">
         <div class="row">
             <form action="{{ route('admin.foods.store') }}" method="POST">
                 @csrf

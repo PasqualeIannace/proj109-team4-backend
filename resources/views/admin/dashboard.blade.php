@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-sm m-4 text-black">
     <div class="row justify-content-center">
-        <h1 class="text-center m-4">{{ $user->activity_name }}</h2>
+        <img class="m-4 text-center fs-2" src="{{ $user->logo_activity }}" alt="{{$user->activity_name}}">
             {{-- {{ddd($user->activity_name);}} --}}
     </div>
     <div class="d-flex justify-content-around">

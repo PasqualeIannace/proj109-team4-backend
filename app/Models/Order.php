@@ -11,7 +11,8 @@ class Order extends Model
     public $timestamps = false;
     protected $fillable = 
     [
-        'customer_id',
+        //qui avevo inserito 'user_id' ma non esiste questa colonna D
+        //'customer_id',
         'message', 
         'order_date',
         'total_price',

@@ -17,20 +17,22 @@ class OrderController extends Controller
     //     return view("admin.foods.order", compact("order" , "userId"));
     // }
 
-    public function index()
+    public function index(Order $order)
     {
         $userId = Auth::id();
-        //$orders = Order::all();
+        
         //$order = Order::find($orderId);
+        //$orders = Order::all();        
         // $orders = Order::whereHas('food', function ($query) use ($userId) {
+
         //      $query->where('user_id', $userId);
         // })->orderBy('name')->get();
+
         $orders = Order::whereHas('foods', function ($query) use ($userId) {
             $query->where('user_id', $userId);
         })->with(['foods' => function ($query) use ($userId) {
             $query->where('user_id', $userId)->withPivot('quantity');
         }])->get();
-
         return view("admin.orders.index", compact("orders"));
     }
 }

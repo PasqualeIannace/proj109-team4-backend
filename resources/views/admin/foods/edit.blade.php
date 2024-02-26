@@ -66,6 +66,26 @@
                 <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
+
+            <div class="mb-3">
+                <div>
+                    <label for="tags" class="form-label text-white">Allergeni</label>
+                </div>
+
+                <input class="form-check-input" type="checkbox" name="tags[]" id="tags" value="">Nessuno
+                @foreach ($tags as $tag)
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="tags[]" id="tags"
+                        value="{{ old('tags') ?? $tag->id }}">
+                    <label class="form-check-label" for="{{ $tag->id }}">{{ $tag->name}}</label>
+                </div>
+                @endforeach
+                @error('tags')
+                <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+
+
             <div class="d-flex justify-content-center">
                 <button type="submit" class="btn btn-primary">Modifica</button>
             </div>

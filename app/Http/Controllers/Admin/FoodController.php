@@ -118,6 +118,12 @@ class FoodController extends Controller
         $data = $request->all();
         $valid_data = $this->validation($data);
         $food->update($valid_data);
+
+        if ($request->filled("tags")) {
+            $data["tags"] = array_filter($data["tags"]) ? $data["tags"] : [];  //Livecoding con Luca
+            $food->tags()->sync($data["tags"]);
+        }
+
         return redirect()->route('admin.foods.index');
     }
 
@@ -132,5 +138,4 @@ class FoodController extends Controller
         $food->delete();
         return redirect()->route("admin.foods.index");
     }
-
 }

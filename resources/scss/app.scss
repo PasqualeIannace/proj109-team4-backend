@@ -1,117 +1,134 @@
 @import '~bootstrap/scss/bootstrap';
 
 // .mycard{
-    
+
 // }
-body{
-    background-image: url('https://a-static.besthdwallpaper.com/black-and-brown-spiral-graphic-wallpaper-3840x2160-82617_54.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    //background-color: rgb(67, 98, 99);
+body {
+  background-image: url(/bg-blu.png);
+
+  background-repeat: repeat;
+  // background-position: center;
+  background-attachment: fixed;
+  // height: 100vh;
+  //background-color: rgb(67, 98, 99);
 }
 
-.plateLf{
-    height: 800px;
+.plateLf {
+  height: 800px;
 }
 
-.small_img{
-    // width: 100px;
-    // height: 100px; 
-    position: relative; /* Per utilizzare object-position */  
-    display: inline-block;
+.small_img {
+  // width: 100px;
+  // height: 100px; 
+  position: relative;
+  /* Per utilizzare object-position */
+  display: inline-block;
 }
+
 .img-container {
-    position: relative;
-    width: 100px;
-    height: 100px; 
-    overflow: hidden;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
 }
-.cerchio{
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    object-fit: cover;
-    object-position: center;
+
+.cerchio {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
 }
+
 .img-container:hover .edit-btn {
-    opacity: 1; 
+  opacity: 1;
 }
 
 .edit-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0; /* Nasconde il bottone per impostazione predefinita */
-    transition: opacity 0.3s ease;
-}
-.statistic{
-    width: 700px;
-    height: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  /* Nasconde il bottone per impostazione predefinita */
+  transition: opacity 0.3s ease;
 }
 
-.mybg{
-    background-color: #7da9ae37;
+.statistic {
+  width: 700px;
+  height: 700px;
 }
-.myShowBg{
-    background-color: rgba(0, 0, 0, 0.525);
+
+.mybg {
+  background-color: #7da9ae37;
 }
-.myM{
+
+.myShowBg {
+  background-color: rgba(0, 0, 0, 0.525);
+}
+
+.myM {
   //position: absolute;
   //top: 50%;
   transform: translate(10%, 20%);
 }
+
 //LARAVEL BUTTON
 
 
 //FLIPCARD
 .flip-card {
-    background-color: transparent;
-    width: calc((100% / 3) - 2rem);
-    margin: 1rem;
-    padding: 1rem;
-    // width: 300px;
-    height: 500px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
- 
-  .flip-card-front {
-    background-color: #7da9ae;
-    color: black;
-  }
-  
+  background-color: transparent;
+  width: calc((100% / 3) - 2rem);
+  margin: 1rem;
+  padding: 1rem;
+  // width: 300px;
+  height: 500px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
 
-  .flip-card-back {
-    background-color: rgba(102, 166, 183, 0.532);
-    color: white;
-    transform: rotateY(180deg);
-  }
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  background-color: #7da9ae;
+  color: black;
+}
+
+
+.flip-card-back {
+  background-color: rgba(102, 166, 183, 0.532);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+// CLASSI ATOMICHE
+
+.top-1em {
+  top: 1em;
+}

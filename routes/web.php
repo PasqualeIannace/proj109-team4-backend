@@ -23,8 +23,7 @@ Route::middleware(['auth'])
 
         Route::resource('foods', FoodController::class);
 
-        Route::get('/order', [OrderController::class, 'index'])->name('admin.foods.orders.index');
-
+        Route::resource('orders', OrderController::class);
     });
 
 require __DIR__ . '/auth.php';

@@ -48,6 +48,6 @@ class User extends Authenticatable
 
     public function types()
     {
-        return $this->belongsToMany(Restaurant_type::class);
+        return $this->belongsToMany(Restaurant_type::class, 'user_restaurant_type');
     }
 }

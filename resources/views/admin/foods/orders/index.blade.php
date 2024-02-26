@@ -13,6 +13,7 @@
             </li>
         @endforeach
     </ul>
+    
 </div>
 
 @endsection

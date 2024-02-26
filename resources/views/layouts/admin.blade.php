@@ -38,6 +38,14 @@
                                 </a>
                             </li>
 
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.orders.index' ? 'bg-secondary' : '' }}"
+                                    href="{{route('admin.orders.index')}}">
+                                    <i class="fa-solid fa-list" style="color: #ffffff;"></i> Ordini
+                                </a>
+                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.foods.index' ? 'bg-secondary' : '' }}"
                                     href="{{route('admin.foods.index')}}">

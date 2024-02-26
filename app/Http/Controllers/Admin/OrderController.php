@@ -19,12 +19,17 @@ class OrderController extends Controller
 
     public function index()
     {
-        //$userId = Auth::id();
-        $orders = Order::all();
-
+        $userId = Auth::id();
+        //$orders = Order::all();
+        //$order = Order::find($orderId);
         // $orders = Order::whereHas('food', function ($query) use ($userId) {
-        //     $query->where('user_id', $userId);
-        // })->orderBy('id')->get();
+        //      $query->where('user_id', $userId);
+        // })->orderBy('name')->get();
+        $orders = Order::whereHas('foods', function ($query) use ($userId) {
+            $query->where('user_id', $userId);
+        })->with(['foods' => function ($query) use ($userId) {
+            $query->where('user_id', $userId)->withPivot('quantity');
+        }])->get();
 
         return view("admin.orders.index", compact("orders"));
     }

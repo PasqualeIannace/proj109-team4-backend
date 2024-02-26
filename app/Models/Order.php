@@ -11,16 +11,16 @@ class Order extends Model
     public $timestamps = false;
     protected $fillable = 
     [
-        'user_id',
+        'customer_id',
         'message', 
         'order_date',
         'total_price',
     ];
 
 
-    public function food()
+    public function foods()
     {
-        return $this->belongsToMany(Food::class); // , 'food_order', 'order_id', 'food_id'
+        return $this->belongsToMany(Food::class)->withPivot('quantity');; // , 'food_order', 'order_id', 'food_id'
     }
 }
 

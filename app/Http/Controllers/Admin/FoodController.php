@@ -63,7 +63,9 @@ class FoodController extends Controller
     {
         $userId = Auth::id();
 
-        return view("admin.foods.create", compact("food", "userId"));
+        $tags = Tag::all();
+
+        return view("admin.foods.create", compact("food", "userId", "tags"));
     }
 
     /**
@@ -78,6 +80,10 @@ class FoodController extends Controller
         $validatedData['user_id'] = Auth::id();
 
         $newFood = Food::create($validatedData);
+
+        if ($request->tags) {
+            $newFood->tags()->attach($request->tags);
+        }
 
         return redirect()->route('admin.foods.index');
     }

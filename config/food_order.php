@@ -30,7 +30,7 @@ return
         [
             'food_id' => 10,
             'order_id' => 1,
-            'quant' =>3,
+            'quantity' =>3,
         ],        
         //order2
         [

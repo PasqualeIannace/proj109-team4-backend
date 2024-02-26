@@ -26,7 +26,7 @@
     <div class="d-flex justify-content-around">
         <div class="plateLf mybg">
             <p class="text-center fs-4">Il Tuo Menù</p>
-            <ol>
+            <ol class="overflow-y-scroll h-75">
                 @foreach($foods as $food)
                 <li class="d-flex p-3">
                     <div class="small_img">
@@ -43,8 +43,6 @@
                 </li>
                 @endforeach
             </ol>
-            {{ $foods->links() }}
-            <!--per creare piu paginer usando nel controller paginate-->
         </div>
         <div class="statistic mt-6">
             <p class="text-center fs-4">Le tue Statistiche</p>

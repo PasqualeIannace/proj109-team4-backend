@@ -16,4 +16,12 @@ class Order extends Model
         'order_date',
         'total_price',
     ];
+
+
+    public function food()
+    {
+        return $this->belongsToMany(Food::class); // , 'food_order', 'order_id', 'food_id'
+    }
 }
+
+

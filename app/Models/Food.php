@@ -24,4 +24,8 @@ class Food extends Model
     {
         return $this->belongsToMany(Tag::class);
     }
+    public function orders()
+    {
+        return $this->belongsToMany(Order::class); //, 'food_order', 'food_id', 'order_id'
+    }
 }

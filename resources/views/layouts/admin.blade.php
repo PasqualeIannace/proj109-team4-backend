@@ -44,6 +44,12 @@
                                     <i class="fa-solid fa-book-open"></i> Piatti
                                 </a>
                             </li>
+                            {{-- <li>
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.foods.orders.index' ? 'bg-secondary' : '' }}"
+                                    href="{{route('admin.foods.orders.index')}}">
+                                    <i class="fa-solid fa-book-open"></i> Ordini
+                                </a>
+                            </li> --}}
 
                             <li class="nav-item">
                                 <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.foods.create' ? 'bg-secondary' : '' }}"

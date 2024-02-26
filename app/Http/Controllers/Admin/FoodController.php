@@ -121,6 +121,7 @@ class FoodController extends Controller
         return redirect()->route('admin.foods.index');
     }
 
+
     /**
      * Remove the specified resource from storage.
      *

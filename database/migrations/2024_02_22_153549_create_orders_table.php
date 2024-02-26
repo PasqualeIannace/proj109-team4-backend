@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             //$table->unsignedBigInteger("customer_id");
-            //$table->foreign("user_id")->references("id")->on("customers")->nullOnDelete();
+            //$table->foreign("customers_id")->references("id")->on("customers")->nullOnDelete();
             $table->tinyText("message");
             $table->boolean("payment_status");
             $table->date("order_date");

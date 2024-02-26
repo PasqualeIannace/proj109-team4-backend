@@ -24,8 +24,7 @@ class FoodOrderSeeder extends Seeder
             $food = Food::find($single_order['food_id']);
             $order = Order::find($single_order['order_id']);           // Inserimento dei dati pivot
             $food->orders()->attach($order->id, [
-                'quantity' => $single_order['quantity'],
-                'id' => $single_order['id']
+                'quantity' => $single_order['quantity']
             ]);
     }
     }

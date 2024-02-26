@@ -15,6 +15,7 @@ body {
 
 .plateLf {
   height: 800px;
+  border-radius: 10px;
 }
 
 .small_img {
@@ -57,10 +58,12 @@ body {
 .statistic {
   width: 700px;
   height: 700px;
+  background-color: rgb(58, 101, 194);
+  border-radius: 10px;
 }
 
 .mybg {
-  background-color: #7da9ae37;
+  background-color: rgb(58, 101, 194);
 }
 
 .myShowBg {
@@ -71,6 +74,24 @@ body {
   //position: absolute;
   //top: 50%;
   transform: translate(10%, 20%);
+}
+
+.h-85 {
+  height: 85%;
+}
+
+ol::-webkit-scrollbar {
+  width: 16px;
+}
+
+ol::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+ol::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 100px;
 }
 
 //LARAVEL BUTTON

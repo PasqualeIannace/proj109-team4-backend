@@ -685,6 +685,366 @@ class FoodSeeder extends Seeder
                 'visible' => true,
                 'user_id' => 1,
             ],
+            [
+                "image" => "URL_dell_immagine_1",
+                "name" => "Pad Thai",
+                "ingredients" => "Spaghetti di riso, Gamberi, Tofu, Uova, Arachidi, Germogli di soia",
+                "description" => "Il Pad Thai è un piatto nazionale della Thailandia, con una combinazione unica di sapori dolci, salati, aspri e piccanti. È una miscela di spaghetti di riso saltati in padella con ingredienti come gamberi, tofu, uova, arachidi tritate, germogli di soia e spezie.",
+                "price" => 12,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_2",
+                "name" => "Tom Yum Goong",
+                "ingredients" => "Brodo di gamberi, Gamberi, Erbe aromatiche, Peperoncino, Lime",
+                "description" => "La zuppa Tom Yum Goong è una delle zuppe più famose della Thailandia, con un sapore piccante e aspro derivato da ingredienti come brodo di gamberi, gamberi freschi, erbe aromatiche, peperoncino e lime.",
+                "price" => 10,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_3",
+                "name" => "Massaman Curry",
+                "ingredients" => "Carne di manzo, Patate, Anacardi, Curry, Latte di cocco",
+                "description" => "Il Massaman Curry è un curry dal sapore ricco e speziato, con ingredienti come carne di manzo, patate, anacardi, curry e latte di cocco. È una pietanza ampiamente apprezzata in Thailandia per la sua combinazione unica di sapori.",
+                "price" => 15,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_4",
+                "name" => "Som Tum",
+                "ingredients" => "Papaya verde, Pomodori ciliegia, Peperoncini, Arachidi, Salsa di pesce",
+                "description" => "Il Som Tum è un'insalata di papaya verde piccante e rinfrescante, preparata con ingredienti come papaya verde, pomodori ciliegia, peperoncini, arachidi tritate e salsa di pesce. È un piatto popolare per la sua combinazione unica di sapori.",
+                "price" => 8,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_5",
+                "name" => "Khao Soi",
+                "ingredients" => "Tagliatelle di riso, Curry, Latte di cocco, Cipolla, Lime",
+                "description" => "Il Khao Soi è una zuppa di tagliatelle di riso al curry, con un brodo ricco e cremoso fatto con curry, latte di cocco, cipolla e lime. È una pietanza tipica del nord della Thailandia, apprezzata per il suo sapore delizioso e avvolgente.",
+                "price" => 13,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_6",
+                "name" => "Gai Pad Med Mamuang",
+                "ingredients" => "Pollo, Anacardi, Peperoni, Cipolle, Salsa di ostriche",
+                "description" => "Il Gai Pad Med Mamuang è un piatto di pollo saltato con anacardi, peperoni, cipolle e salsa di ostriche. È un piatto thailandese popolare per la sua combinazione di sapori dolci e salati, e per la croccantezza degli anacardi.",
+                "price" => 11,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_7",
+                "name" => "Gaeng Keow Wan",
+                "ingredients" => "Pollo, Curry verde, Latte di cocco, Melanzane, Basilico thai",
+                "description" => "Il Gaeng Keow Wan è un curry verde thai con pollo, latte di cocco, melanzane e basilico thai. È noto per il suo sapore ricco e piccante, e per la freschezza delle erbe aromatiche utilizzate nella preparazione.",
+                "price" => 14,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_8",
+                "name" => "Larb Moo",
+                "ingredients" => "Maiale macinato, Lime, Menta, Cipolla rossa, Peperoncino",
+                "description" => "Il Larb Moo è un'insalata di maiale macinato condita con lime, menta, cipolla rossa e peperoncino. È un piatto piccante e rinfrescante, ampiamente consumato in tutto il paese.",
+                "price" => 9,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_9",
+                "name" => "Yam Nua",
+                "ingredients" => "Manzo alla griglia, Pomodori, Cetrioli, Cipolla, Salsa di pesce",
+                "description" => "Lo Yam Nua è un'insalata di manzo alla griglia con pomodori, cetrioli, cipolle e salsa di pesce. È una pietanza popolare per la sua combinazione di sapori freschi e piccanti, e per la tenerezza della carne di manzo.",
+                "price" => 16,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_10",
+                "name" => "Kao Niew Mamuang",
+                "ingredients" => "Riso glutinoso, Mango, Latte di cocco, Zucchero di palma, Semi di sesamo",
+                "description" => "Il Kao Niew Mamuang è un dessert thailandese tradizionale composto da riso glutinoso, mango dolce, latte di cocco e zucchero di palma. È un dessert leggero e delizioso, molto apprezzato durante la stagione delle manghi.",
+                "price" => 7,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_11",
+                "name" => "Kai Med Ma Muang",
+                "ingredients" => "Pollo, Anacardi, Peperoncini, Cipolle, Salsa di ostriche",
+                "description" => "Il Kai Med Ma Muang è un piatto di pollo con anacardi, peperoncini, cipolle e salsa di ostriche. Ha un sapore dolce e salato con un tocco piccante dai peperoncini.",
+                "price" => 12,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_12",
+                "name" => "Gaeng Phed Ped Yang",
+                "ingredients" => "Anatra, Curry rosso, Latte di cocco, Pomodori ciliegia, Peperoncini",
+                "description" => "Il Gaeng Phed Ped Yang è un curry rosso con anatra, latte di cocco, pomodori ciliegia e peperoncini. È un piatto saporito e aromatico con un tocco piccante.",
+                "price" => 14,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_13",
+                "name" => "Pla Muk Pad Prik",
+                "ingredients" => "Calamari, Peperoncini, Cipolle, Basilico thai, Salsa di soia",
+                "description" => "Il Pla Muk Pad Prik è un piatto di calamari saltati con peperoncini, cipolle, basilico thai e salsa di soia. È un piatto semplice ma gustoso.",
+                "price" => 13,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_14",
+                "name" => "Yum Woon Sen",
+                "ingredients" => "Vermicelli di soia, Gamberi, Carote, Peperoncini, Lime",
+                "description" => "Lo Yum Woon Sen è un'insalata di vermicelli di soia con gamberi, carote, peperoncini e lime. È fresco, piccante e ricco di sapori.",
+                "price" => 11,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_15",
+                "name" => "Kuay Teow Reua",
+                "ingredients" => "Tagliatelle di riso, Carne di maiale, Brodo di manzo, Cipolle, Basilico thai",
+                "description" => "Il Kuay Teow Reua è una zuppa di tagliatelle di riso con carne di maiale, brodo di manzo, cipolle e basilico thai. È un comfort food molto apprezzato in Thailandia.",
+                "price" => 10,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_16",
+                "name" => "Kai Jeow",
+                "ingredients" => "Uova, Cipolle, Peperoncini, Salsa di pesce, Riso",
+                "description" => "Il Kai Jeow è una frittata di uova con cipolle, peperoncini e salsa di pesce. È spesso servito con riso e condimenti.",
+                "price" => 8,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_17",
+                "name" => "Pla Rad Prik",
+                "ingredients" => "Pesce, Peperoncini, Aglio, Salsa di pesce, Basilico thai",
+                "description" => "Il Pla Rad Prik è un pesce fritto con peperoncini, aglio, salsa di pesce e basilico thai. È un piatto croccante e saporito.",
+                "price" => 15,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_18",
+                "name" => "Khao Niew Moo Ping",
+                "ingredients" => "Riso glutinoso, Maiale marinato, Salsa di soia dolce, Salsa piccante",
+                "description" => "Il Khao Niew Moo Ping è un piatto di riso glutinoso con maiale marinato, salsa di soia dolce e salsa piccante. È un cibo di strada popolare in Thailandia.",
+                "price" => 9,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_19",
+                "name" => "Gai Tod",
+                "ingredients" => "Pollo, Farina di riso, Spezie, Salsa piccante",
+                "description" => "Il Gai Tod è il pollo fritto in stile thailandese, preparato con farina di riso e spezie. È spesso servito con una salsa piccante per un tocco extra di sapore.",
+                "price" => 10,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_20",
+                "name" => "Khanom Krok",
+                "ingredients" => "Farina di riso, Latte di cocco, Zucchero, Mais, Cipolle",
+                "description" => "Il Khanom Krok è un dolce thailandese tradizionale fatto con farina di riso, latte di cocco, zucchero, mais e cipolle. È cotto in piccoli stampi e ha una consistenza cremosa e dolce.",
+                "price" => 7,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_1",
+                "name" => "Martini Dry",
+                "ingredients" => "Gin, Vermouth secco, Olive",
+                "description" => "Il Martini Dry è un cocktail classico a base di gin e vermouth secco, servito con un'oliva come guarnizione. È un cocktail elegante e raffinato, perfetto per un aperitivo.",
+                "price" => 12,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_2",
+                "name" => "Negroni",
+                "ingredients" => "Gin, Vermouth rosso, Campari",
+                "description" => "Il Negroni è un cocktail dal carattere deciso preparato con gin, vermouth rosso e Campari. È un cocktail amaro e aromatico, ideale per gli amanti dei sapori intensi.",
+                "price" => 11,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_3",
+                "name" => "Aperol Spritz",
+                "ingredients" => "Aperol, Prosecco, Soda, Arancia",
+                "description" => "L'Aperol Spritz è un cocktail leggero e rinfrescante a base di Aperol, prosecco, soda e una fetta d'arancia come guarnizione. È un cocktail estivo molto popolare in Europa.",
+                "price" => 10,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_4",
+                "name" => "Mojito",
+                "ingredients" => "Rum bianco, Menta, Lime, Zucchero, Soda",
+                "description" => "Il Mojito è un cocktail cubano a base di rum bianco, menta, lime, zucchero e soda. È una bevanda fresca e vigorosa, perfetta per le giornate calde.",
+                "price" => 11,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_5",
+                "name" => "Moscow Mule",
+                "ingredients" => "Vodka, Ginger Beer, Lime",
+                "description" => "Il Moscow Mule è un cocktail rinfrescante a base di vodka, ginger beer e lime. È servito in una tazza di rame, che contribuisce al suo aspetto distintivo.",
+                "price" => 12,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_6",
+                "name" => "Daiquiri",
+                "ingredients" => "Rum bianco, Succo di lime, Sciroppo di zucchero",
+                "description" => "Il Daiquiri è un cocktail classico a base di rum bianco, succo di lime e sciroppo di zucchero. È un cocktail fresco e bilanciato, perfetto per gli amanti dei sapori citrici.",
+                "price" => 11,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_7",
+                "name" => "Old Fashioned",
+                "ingredients" => "Bourbon, Zucchero, Angostura, Acqua, Scorza d'arancia",
+                "description" => "L'Old Fashioned è un cocktail classico a base di bourbon, zucchero, angostura, acqua e una scorza d'arancia. È un cocktail robusto e ricco di storia, perfetto per gli intenditori.",
+                "price" => 13,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_8",
+                "name" => "Gin Tonic",
+                "ingredients" => "Gin, Tonic Water, Limone o Lime",
+                "description" => "Il Gin Tonic è un cocktail semplice e rinfrescante a base di gin e tonica, servito con una fetta di limone o lime. È un cocktail leggero e versatile, amato in tutto il mondo.",
+                "price" => 10,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_9",
+                "name" => "Bellini",
+                "ingredients" => "Prosecco, Succo di pesca",
+                "description" => "Il Bellini è un cocktail elegante e rinfrescante a base di prosecco e succo di pesca. È un cocktail leggermente dolce e fruttato, perfetto per celebrare momenti speciali.",
+                "price" => 12,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_10",
+                "name" => "Cosmopolitan",
+                "ingredients" => "Vodka, Triple Sec, Succo di lime, Succo di mirtillo rosso",
+                "description" => "Il Cosmopolitan è un cocktail elegante e rinfrescante a base di vodka, triple sec, succo di lime e succo di mirtillo rosso. È un cocktail iconico, amato per il suo colore e il suo sapore unico.",
+                "price" => 11,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_11",
+                "name" => "Margarita",
+                "ingredients" => "Tequila, Triple Sec, Succo di lime, Sciroppo di agave",
+                "description" => "La Margarita è un cocktail classico a base di tequila, triple sec, succo di lime e sciroppo di agave. È una bevanda fresca e fruttata, perfetta per le serate estive.",
+                "price" => 10,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_12",
+                "name" => "Whiskey Sour",
+                "ingredients" => "Bourbon, Succo di limone, Sciroppo di zucchero",
+                "description" => "Il Whiskey Sour è un cocktail classico a base di bourbon, succo di limone e sciroppo di zucchero. È un cocktail bilanciato e pieno di sapore, perfetto per gli amanti del whiskey.",
+                "price" => 11,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_13",
+                "name" => "White Russian",
+                "ingredients" => "Vodka, Liquore al caffè, Crema",
+                "description" => "Il White Russian è un cocktail cremoso e avvolgente a base di vodka, liquore al caffè e crema. È un cocktail decadente e indulgente, perfetto per una serata rilassante.",
+                "price" => 12,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_14",
+                "name" => "Irish Coffee",
+                "ingredients" => "Whiskey irlandese, Caffè caldo, Zucchero, Crema",
+                "description" => "L'Irish Coffee è un cocktail caldo e confortante a base di whiskey irlandese, caffè caldo, zucchero e crema. È una bevanda perfetta da gustare durante le fredde serate invernali.",
+                "price" => 10,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_15",
+                "name" => "French 75",
+                "ingredients" => "Gin, Succo di limone, Sciroppo di zucchero, Champagne",
+                "description" => "Il French 75 è un cocktail elegante e frizzante a base di gin, succo di limone, sciroppo di zucchero e champagne. È una bevanda festosa, perfetta per le occasioni speciali.",
+                "price" => 13,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_16",
+                "name" => "Kir Royale",
+                "ingredients" => "Champagne, Crème de cassis",
+                "description" => "Il Kir Royale è un cocktail semplice ed elegante a base di champagne e crème de cassis. È un cocktail delicato e aromatico, perfetto per un brindisi.",
+                "price" => 12,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_17",
+                "name" => "Gimlet",
+                "ingredients" => "Gin, Succo di lime, Sciroppo di zucchero",
+                "description" => "Il Gimlet è un cocktail classico a base di gin, succo di lime e sciroppo di zucchero. È un cocktail fresco e bilanciato, perfetto per gli amanti dei sapori citrici.",
+                "price" => 11,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_18",
+                "name" => "Sazerac",
+                "ingredients" => "Whiskey, Assenzio, Zucchero, Bitter, Scorza di limone",
+                "description" => "Il Sazerac è un cocktail classico a base di whiskey, assenzio, zucchero, bitter e una scorza di limone. È un cocktail robusto e pieno di carattere, perfetto per gli intenditori.",
+                "price" => 13,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_19",
+                "name" => "Tom Collins",
+                "ingredients" => "Gin, Succo di limone, Sciroppo di zucchero, Soda",
+                "description" => "Il Tom Collins è un cocktail classico a base di gin, succo di limone, sciroppo di zucchero e soda. È un cocktail leggero e rinfrescante, perfetto per le calde giornate estive.",
+                "price" => 10,
+                "visible" => true,
+                "user_id" => 5
+            ],
+            [
+                "image" => "URL_dell_immagine_20",
+                "name" => "Manhattan",
+                "ingredients" => "Whiskey, Vermouth rosso, Bitter",
+                "description" => "Il Manhattan è un cocktail elegante e robusto a base di whiskey, vermouth rosso e bitter. È un cocktail amaro e avvolgente, perfetto per gli amanti del whiskey.",
+                "price" => 12,
+                "visible" => true,
+                "user_id" => 5
+            ],
         ];
         foreach ($foods as $food) {
 

@@ -1,95 +1,103 @@
 @extends('layouts.admin')
 
 @section('content')
-
-<h1 class="text-center mt-3">Nuovo piatto</h2>
+    <h1 class="text-center mt-3">Nuovo piatto</h1>
 
     <div class="container-sm mt-4 bg-opacity-50 bg-black text-light">
-        <div class="row">
+        <div class="row g-3">
             <form action="{{ route('admin.foods.store') }}" method="POST">
                 @csrf
-
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nome Piatto</label>
-                    <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name"
-                        value="{{ old('name')}} ">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Nome Piatto *</label>
+                    <input type="text" class="form-control @error('name') is-invalid @enderror" id="name"
+                        name="name" value="{{ old('name') }} ">
                     @error('name')
-                    <div class="invalid-feedback">{{ $message }}</div>
+                        <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
-
-                <div class="mb-3">
+                <div class="col-md-6">
+                    <label for="price" class="form-label">Prezzo *</label>
+                    <input type="number" class="form-control @error('price') is-invalid @enderror" id="price"
+                        name="price" value="{{ old('price') }} ">
+                    @error('price')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div class="col-md-6">
                     <label for="ingredients" class="form-label">Ingredienti</label>
                     <input type="text" class="form-control @error('ingredients') is-invalid @enderror" id="ingredients"
-                        name="ingredients" value="{{ old('ingredients')}} ">
+                        name="ingredients" value="{{ old('ingredients') }} ">
                     @error('ingredients')
-                    <div class="invalid-feedback">{{ $message }}</div>
+                        <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
-
-
-                <div class="mb-3">
-                    <label for="visible" class="form-label">Disponibile</label>
-                    <input type="text" class="form-control @error('visible') is-invalid @enderror" id="visible"
-                        name="visible" value="{{ old('visible')}} ">
-                    @error('visible')
-                    <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
-
-
-                <div class="mb-3">
-                    <label for="price" class="form-label">Prezzo</label>
-                    <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" name="price"
-                        value="{{ old('price')}} ">
-                    @error('price')
-                    <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
-
-
-
-
-                <div class="mb-3">
-                    <label for="description" class="form-label">Descrizione</label>
-                    <input type="text" class="form-control @error('description') is-invalid @enderror" id="description"
-                        name="description" value="{{ old('description')}} ">
-                    @error('description')
-                    <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
-
-
-                <div class="mb-3">
+                <div class="col-md-6">
                     <label for="image" class="form-label">Immagine</label>
-                    <input type="text" class="form-control @error('image') is-invalid @enderror" id="image" name="image"
-                        value="{{ old('image')}} ">
+                    <input type="file" class="form-control @error('image') is-invalid @enderror" id="image"
+                        name="image" value="{{ old('image') }} ">
                     @error('image')
-                    <div class="invalid-feedback">{{ $message }}</div>
+                        <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
+                <div class="col-md-6">
+                    <label for="description" class="form-label">Descrizione</label>
+                    <textarea class="form-control @error('description') is-invalid @enderror" id="description" rows="3"
+                        name="description" value="{{ old('description') }}"></textarea>
+                    @error('description')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div class="col-md-4">
+                    <label for="visible" class="form-label">Disponibile *</label>
+                    <div class="form-check">
+                        <input class="form-check-input @error('visible') is-invalid @enderror" id="visible" name="visible"
+                            value="1" type="radio">
+                        @error('visible')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                        <label class="form-check-label" for="visible">
+                            Si
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input @error('visible2') is-invalid @enderror" id="visible2"
+                            name="visible" value="0" type="radio">
+                        @error('visible2')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                        <label class="form-check-label" for="visible2">
+                            No
+                        </label>
+                    </div>
+                </div>
 
-                <div class="mb-3">
+                <div class="col-md-2">
+                    <div class="logo_delivbeboo">
+                        <img class="logo_deliveboo1 w-50" src="/logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-12 text-center">
                     <div>
-                        <label for="tags" class="form-label text-white">Allergeni</label>
+                        <label for="tags" class="form-label">Allergeni *</label>
                     </div>
 
-                    <input class="form-check-input" type="checkbox" name="tags[]" id="tags" value="">Nessuno
+                    <input class="form-check-input" type="checkbox" name="tags[]" id="tags" value="">
+                    Nessuno
                     @foreach ($tags as $tag)
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="tags[]" id="tags" value="{{ $tag->id }}">
-                        <label class="form-check-label" for="{{ $tag->id }}">{{ $tag->name}}</label>
-                    </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="tags[]" id="tags"
+                                value="{{ $tag->id }}">
+                            <label class="form-check-label" for="{{ $tag->id }}">{{ $tag->name }}</label>
+                        </div>
                     @endforeach
                     @error('tags')
-                    <div class="invalid-feedback">{{ $message }}</div>
+                        <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
-
-                <div class="d-flex justify-content-center mt-4">
+                <div class="d-flex justify-content-center mt-5 mb-5">
                     <button type="submit" class="btn btn-primary">Inserisci Piatto</button>
                 </div>
             </form>
         </div>
     </div>
-    @endsection
+@endsection

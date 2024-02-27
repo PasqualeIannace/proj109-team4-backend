@@ -29,7 +29,6 @@ class UserRestaurantTypeSeeder extends Seeder
             $RestaurantType = Restaurant_type::find($restype['restaurant_type_id']);
             $user->types()->attach(
                 $RestaurantType->id,
-
             );
         }
     }

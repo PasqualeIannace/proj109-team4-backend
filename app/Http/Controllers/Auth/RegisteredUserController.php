@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Restaurant_type;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
@@ -20,7 +21,8 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
-        return view('auth.register');
+        $types = Restaurant_type::all();
+        return view('auth.register', compact('types'));
     }
 
     /**
@@ -37,6 +39,7 @@ class RegisteredUserController extends Controller
             'activity_name' => ['required', 'string', 'max:500'],
             'address' => ['required', 'string', 'max:500'],
             'VAT_number' => ['required', 'string', 'max:11', 'unique:' . User::class],
+            'types' => ['required', 'array'],
 
 
         ]);
@@ -48,14 +51,21 @@ class RegisteredUserController extends Controller
             'activity_name' => $request->activity_name,
             'address' => $request->address,
             'VAT_number' => $request->VAT_number,
-
+            /* 'restaurant_type' => $request->input('types'),
+ */
 
         ]);
+
+        /*  $types = Restaurant_type::all(); */
+
+        $user->types()->sync($request->input('types'));
+
 
         event(new Registered($user));
 
         Auth::login($user);
 
         return redirect(RouteServiceProvider::HOME);
+        /*         return view('auth.register', compact('types')); */
     }
 }

@@ -27,7 +27,7 @@ class UserRestaurantTypeSeeder extends Seeder
             ],
             [
                 'user_id' => 2,
-                'restaurant_type_id' => 5,
+                'restaurant_type_id' => 1,
             ],
             [
                 'user_id' => 2,
@@ -39,7 +39,7 @@ class UserRestaurantTypeSeeder extends Seeder
             ],
             [
                 'user_id' => 3,
-                'restaurant_type_id' => 1,
+                'restaurant_type_id' => 2,
             ],
             [
                 'user_id' => 4,

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container-sm m-4 text-black">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center myDiv m-auto">
             <img class="m-4 text-center fs-2" src="{{ $user->logo_activity }}" alt="{{ $user->activity_name }}">
             {{-- {{ddd($user->activity_name);}} --}}
         </div>

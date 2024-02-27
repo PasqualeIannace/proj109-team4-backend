@@ -81,7 +81,7 @@ body {
   transform: translate(10%, 20%);
 }
 
-.myDiv{
+.myDiv {
   width: 230px;
   height: 130px;
 }
@@ -158,8 +158,31 @@ ol::-webkit-scrollbar-thumb {
   transform: rotateY(180deg);
 }
 
+// RESTAURANT LEFT MENU
+.bg-click {
+  border-radius: 2em;
+  background-color: #FD5933;
+}
+
+.bg-unclick {
+  border-radius: 2em;
+  background-color: #492A84;
+
+  &:hover {
+    background-color: #160934;
+  }
+}
+
+.nav-item {
+  padding: 0.5em;
+}
+
 // CLASSI ATOMICHE
 
 .top-1em {
   top: 1em;
+}
+
+.logo-width {
+  width: 2.5em;
 }

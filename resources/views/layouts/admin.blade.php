@@ -28,47 +28,47 @@
 
         <div class="container-fluid vh-100">
             <div class="row h-100">
-                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark navbar-dark sidebar collapse">
+                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
                     <div class="position-sticky pt-1 top-1em">
                         <ul class="nav flex-column">
 
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="/">
-                                    <i class="fa-solid fa-home-alt fa-lg fa-fw"></i> Home
-                                </a>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.orders.index' ? 'bg-secondary' : '' }}"
-                                    href="{{route('admin.orders.index')}}">
-                                    <i class="fa-solid fa-list" style="color: #ffffff;"></i> Ordini
+                                <a class="nav-link text-white bg-unclick" href="/">
+                                    <img src="/logo.png" class="logo-width"> Home
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.foods.index' ? 'bg-secondary' : '' }}"
-                                    href="{{route('admin.foods.index')}}">
-                                    <i class="fa-solid fa-book-open"></i> Piatti
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.foods.create' ? 'bg-secondary' : '' }}"
-                                    href="{{route('admin.foods.create')}}">
-                                    <i class="fa-solid fa-utensils"></i> Aggiungi Piatto
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-secondary' : '' }}"
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-click' : 'bg-unclick' }}"
                                     href="{{route('admin.dashboard')}}">
                                     <i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> Dashboard
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="{{ route('logout') }}"
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.orders.index' ? 'bg-click' : 'bg-unclick' }}"
+                                    href="{{route('admin.orders.index')}}">
+                                    <i class="fa-solid fa-list" style="color: #ffffff;"></i> Ordini
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.foods.index' ? 'bg-click' : 'bg-unclick' }}"
+                                    href="{{route('admin.foods.index')}}">
+                                    <i class="fa-solid fa-book-open"></i> Piatti
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.foods.create' ? 'bg-click' : 'bg-unclick' }}"
+                                    href="{{route('admin.foods.create')}}">
+                                    <i class="fa-solid fa-utensils"></i> Aggiungi Piatto
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white bg-unclick" href="{{ route('logout') }}"
                                     onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                     <i class="fa-solid fa-sign-out-alt fa-lg fa-fw"></i> {{ __('Logout') }}
                                 </a>

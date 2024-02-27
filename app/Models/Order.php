@@ -9,11 +9,11 @@ class Order extends Model
 {
     use HasFactory;
     public $timestamps = false;
-    protected $fillable = 
+    protected $fillable =
     [
         //qui avevo inserito 'user_id' ma non esiste questa colonna D
         //'customer_id',
-        'message', 
+        'message',
         'order_date',
         'total_price',
     ];
@@ -24,5 +24,3 @@ class Order extends Model
         return $this->belongsToMany(Food::class)->withPivot('quantity');; // , 'food_order', 'order_id', 'food_id'
     }
 }
-
-

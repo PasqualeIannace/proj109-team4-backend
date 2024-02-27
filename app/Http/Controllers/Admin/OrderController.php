@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Food;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Order;
 use Illuminate\Http\Request;
@@ -20,7 +21,9 @@ class OrderController extends Controller
     public function index(Order $order)
     {
         $userId = Auth::id();
-        
+
+        // $trashedAndNotTrashed = Food::withTrashed()->get(); SOFT DELETE
+
         //$order = Order::find($orderId);
         //$orders = Order::all();        
         // $orders = Order::whereHas('food', function ($query) use ($userId) {

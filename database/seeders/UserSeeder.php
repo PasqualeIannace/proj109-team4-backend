@@ -33,7 +33,7 @@ class Userseeder extends Seeder
             $new_user->email = "israr.muhammad@libero.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Taj Mahal Restaurant";
-            $new_user->logo_activity = "../../public/indian.png";
+            $new_user->logo_activity = "indian.png";
             $new_user->address = "Via Gandhi, 145, Milano (MI)";
             $new_user->VAT_number = "77634180036";
             $new_user->save();
@@ -43,7 +43,7 @@ class Userseeder extends Seeder
             $new_user->email = "pasquale.iannace@hotmail.it";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Pasquale's Pizzeria";
-            $new_user->logo_activity = "../../public/pizza.png";
+            $new_user->logo_activity = "pizza.png";
             $new_user->address = "Via Roma, 1, Roma (RM)";
             $new_user->VAT_number = "12345678911";
             $new_user->save();
@@ -53,7 +53,7 @@ class Userseeder extends Seeder
             $new_user->email = "francesca.picoco96@gmail.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "MOYA";
-            $new_user->logo_activity= "../../public/cinese.png";
+            $new_user->logo_activity= "cinese.png";
             $new_user->address = "Via Bartolomeo, 11, Milano(MI)";
             $new_user->VAT_number = "12345675710";
             $new_user->save();

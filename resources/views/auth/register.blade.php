@@ -111,8 +111,19 @@
                                 </div>
                             </div>
 
+                            <div class="mb-4 row">
+                                <label for="exampleSelect" class="form-label">Select Restaurant Type/s</label>
+                                <select class="form-select" name="types[]" id="types" multiple>
+
+                                    @foreach ($types as $type)
+                                        <option value="{{ $type->id }}">{{ $type->name }}</option>
+                                    @endforeach
+
+                                </select>
+                            </div>
+
                             <div class="mb-4 row mb-0">
-                                <div class="col-md-6 offset-md-4">
+                                <div class="col-md-6 offset-md-5">
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('Register') }}
                                     </button>

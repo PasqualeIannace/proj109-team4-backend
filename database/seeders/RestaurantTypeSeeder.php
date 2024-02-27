@@ -18,16 +18,28 @@ class RestaurantTypeSeeder extends Seeder
         $types = [
             [
 
-                'name' => 'Italian',
+                'name' => 'Italiano',
             ],
             [
                 'name' => 'Cinese',
             ],
             [
-                'name' => 'Japanese',
+                'name' => 'Giapponese',
             ],
             [
-                'name' => 'Indian',
+                'name' => 'Indiano',
+            ],
+            [
+                'name' => 'Ristorante',
+            ],
+            [
+                'name' => 'Pub',
+            ],
+            [
+                'name' => 'Agriturismo',
+            ],
+            [
+                'name' => 'Pizzeria',
             ],
 
         ];

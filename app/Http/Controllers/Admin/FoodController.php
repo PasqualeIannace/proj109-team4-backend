@@ -24,7 +24,7 @@ class FoodController extends Controller
                 'image' => 'required',
                 'name' => 'required|max:50',
                 'ingredients' => 'required|max:200',
-                'description' => 'required|max:200',
+                'description' => 'required|max:500',
                 'price' => 'required',
                 'visible' => 'required',
             ],

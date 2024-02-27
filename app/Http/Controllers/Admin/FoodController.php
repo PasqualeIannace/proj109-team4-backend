@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;  //aggiungo il contr Auth
 use App\Models\Food;
 use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
 class FoodController extends Controller
@@ -79,6 +80,9 @@ class FoodController extends Controller
         $validatedData = $this->validation($request->all());
         $validatedData['user_id'] = Auth::id();
 
+        $imagePath = Storage::disk('public')->put('/images', $request['image']);
+        $validatedData['image'] = $imagePath;
+
         $newFood = Food::create($validatedData);
 
         if ($request->tags) {
@@ -108,6 +112,7 @@ class FoodController extends Controller
     public function edit(String $id)
     {
         $editFood = Food::find($id);
+        // dd($editFood->image); // Debugging statement
         $tags = Tag::all();
         return view('admin.foods.edit', compact('editFood', 'tags'));
     }
@@ -123,6 +128,18 @@ class FoodController extends Controller
     {
         $data = $request->all();
         $valid_data = $this->validation($data);
+
+        if ($request->hasFile('image')) {
+            // Delete the old image if it exists
+            if ($food->image) {
+                Storage::disk('public')->delete($food->image);
+            }
+
+            // Store the new image
+            $imagePath = Storage::disk('public')->put('/images', $request['image']);
+            $valid_data['image'] = $imagePath;
+        }
+
         $food->update($valid_data);
 
         if ($request->filled("tags")) {

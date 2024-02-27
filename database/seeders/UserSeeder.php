@@ -116,7 +116,7 @@ class Userseeder extends Seeder
             $new_user->name = "Antonio Ferrari";
             $new_user->email = "antonio.ferrari@example.com";
             $new_user->password = Hash::make('password');
-            $new_user->activity_name = "Trattoria Bella Italia";
+            $new_user->activity_name = "Agriturismo Bella Italia";
             $new_user->logo_activity= "../../public/italian.png";
             $new_user->address = "Via Roma, 10, Napoli (NA)";
             $new_user->VAT_number = "45678901234";
@@ -149,7 +149,7 @@ class Userseeder extends Seeder
             $new_user->name = "Francesca De Luca";
             $new_user->email = "francesca.deluca@example.com";
             $new_user->password = Hash::make('password');
-            $new_user->activity_name = "Osteria del Sole";
+            $new_user->activity_name = "Agriturismo del Sole";
             $new_user->logo_activity= "../../public/italian.png";
             $new_user->address = "Via Dante Alighieri, 7, Venezia (VE)";
             $new_user->VAT_number = "78901234567";
@@ -182,7 +182,7 @@ class Userseeder extends Seeder
             $new_user->name = "Marco Conti";
             $new_user->email = "marco.conti@example.com";
             $new_user->password = Hash::make('password');
-            $new_user->activity_name = "Trattoria da Marco";
+            $new_user->activity_name = "Ristorante da Marco";
             $new_user->logo_activity= "../../public/italian.png";
             $new_user->address = "Corso Vittorio Emanuele, 30, Catania (CT)";
             $new_user->VAT_number = "01234567890";

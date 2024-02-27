@@ -41,6 +41,12 @@ class RestaurantTypeSeeder extends Seeder
             [
                 'name' => 'Pizzeria',
             ],
+            [
+                'name' => 'Thailandese',
+            ],
+            [
+                'name' => 'Cafe',
+            ],
 
         ];
 

@@ -12,9 +12,9 @@
                 <div class="myImg">
                     @if ($food->image)
                     @if (filter_var($food->image, FILTER_VALIDATE_URL))
-                    <img src="{{ $food->image }}" class="w-100" alt="">
+                    <img src="{{ $food->image }}" class="w-100 h-100" alt="">
                     @else
-                    <img src="{{ asset('storage/' . $food->image) }}" class="w-100" alt="">
+                    <img src="{{ asset('storage/' . $food->image) }}" class="w-100 h-100" alt="">
                     @endif
                     @else
                     <p>No image available</p>

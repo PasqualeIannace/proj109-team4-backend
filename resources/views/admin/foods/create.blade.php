@@ -79,9 +79,9 @@
                         </div>
 
                         <div class="form-check">
-                            <input class="form-check-input @error('visible2') is-invalid @enderror" id="visible2"
+                            <input class="form-check-input @error('visible') is-invalid @enderror" id="visible"
                                 name="visible" value="0" type="radio">
-                            @error('visible2')
+                            @error('visible')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                             <label class="form-check-label" for="visible2">

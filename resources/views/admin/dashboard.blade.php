@@ -11,7 +11,7 @@
         @if (Auth::user()->types->count() > 0)
         <ul>
             @foreach (Auth::user()->types as $type)
-            <li>{{ $type->name }}</li>
+            <li class="mybg">{{ $type->name }}</li>
             @endforeach
         </ul>
         @else

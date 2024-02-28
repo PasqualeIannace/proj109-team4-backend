@@ -1133,4 +1133,419 @@ return
             "order_id" => 62,
             "quantity" => 1
         ],
+        //order31 //thomas
+        [
+            'food_id' => 35,
+            'order_id' => 31,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 42,
+            'order_id' => 31,
+            'quantity' => 1,
+        ],
+        //order32
+        [
+            'food_id' => 38,
+            'order_id' => 32,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 43,
+            'order_id' => 32,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 31,
+            'order_id' => 32,
+            'quantity' => 1,
+        ],
+        //order 33
+        [
+            'food_id' => 44,
+            'order_id' => 33,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 39,
+            'order_id' => 33,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 33,
+            'order_id' => 33,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 41,
+            'order_id' => 33,
+            'quantity' => 2,
+        ],
+        //order 34
+        [
+            'food_id' => 35,
+            'order_id' => 34,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 42,
+            'order_id' => 34,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 38,
+            'order_id' => 34,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 43,
+            'order_id' => 34,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 31,
+            'order_id' => 34,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 44,
+            'order_id' => 34,
+            'quantity' => 2,
+        ],
+        //order35
+        [
+            'food_id' => 37,
+            'order_id' => 35,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 32,
+            'order_id' => 35,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 41,
+            'order_id' => 35,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 44,
+            'order_id' => 35,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 34,
+            'order_id' => 35,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 39,
+            'order_id' => 35,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 43,
+            'order_id' => 35,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 30,
+            'order_id' => 35,
+            'quantity' => 2,
+        ],
+        //order36
+        [
+            'food_id' => 40,
+            'order_id' => 36,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 43,
+            'order_id' => 36,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 33,
+            'order_id' => 36,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 42,
+            'order_id' => 36,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 35,
+            'order_id' => 36,
+            'quantity' => 1,
+        ],
+        //order37
+        [
+            'food_id' => 36,
+            'order_id' => 37,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 44,
+            'order_id' => 37,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 30,
+            'order_id' => 37,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 45,
+            'order_id' => 37,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 32,
+            'order_id' => 37,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 39,
+            'order_id' => 37,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 43,
+            'order_id' => 37,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 38,
+            'order_id' => 37,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 41,
+            'order_id' => 37,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 34,
+            'order_id' => 37,
+            'quantity' => 2,
+        ],
+        //order 38
+        [
+            'food_id' => 42,
+            'order_id' => 38,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 33,
+            'order_id' => 38,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 35,
+            'order_id' => 38,
+            'quantity' => 3,
+        ],
+        //order39
+        [
+            'food_id' => 37,
+            'order_id' => 39,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 40,
+            'order_id' => 39,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 44,
+            'order_id' => 39,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 43,
+            'order_id' => 39,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 31,
+            'order_id' => 39,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 45,
+            'order_id' => 39,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 34,
+            'order_id' => 39,
+            'quantity' => 3,
+        ],
+        //order40
+        [
+            'food_id' => 32,
+            'order_id' => 40,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 41,
+            'order_id' => 40,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 39,
+            'order_id' => 40,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 43,
+            'order_id' => 40,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 45,
+            'order_id' => 40,
+            'quantity' => 1,
+        ],
+        //order41
+        [
+            'food_id' => 33,
+            'order_id' => 41,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 42,
+            'order_id' => 41,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 40,
+            'order_id' => 41,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 44,
+            'order_id' => 41,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 35,
+            'order_id' => 41,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 43,
+            'order_id' => 41,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 45,
+            'order_id' => 41,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 39,
+            'order_id' => 41,
+            'quantity' => 2,
+        ],
+        //order42
+        [
+            'food_id' => 36,
+            'order_id' => 42,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 38,
+            'order_id' => 42,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 45,
+            'order_id' => 42,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 40,
+            'order_id' => 42,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 41,
+            'order_id' => 42,
+            'quantity' => 1,
+        ],
+        //order43
+        [
+            'food_id' => 42,
+            'order_id' => 43,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 44,
+            'order_id' => 43,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 41,
+            'order_id' => 43,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 43,
+            'order_id' => 43,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 45,
+            'order_id' => 43,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 30,
+            'order_id' => 43,
+            'quantity' => 2,
+        ],
+        //order44
+        [
+            'food_id' => 35,
+            'order_id' => 44,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 36,
+            'order_id' => 44,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 38,
+            'order_id' => 44,
+            'quantity' => 3,
+        ],
+        //order45
+        [
+            'food_id' => 30,
+            'order_id' => 45,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 32,
+            'order_id' => 45,
+            'quantity' => 1,
+        ],
+        [
+            'food_id' => 35,
+            'order_id' => 45,
+            'quantity' => 3,
+        ],
+        [
+            'food_id' => 40,
+            'order_id' => 45,
+            'quantity' => 2,
+        ],
+        [
+            'food_id' => 42,
+            'order_id' => 45,
+            'quantity' => 1,
+        ]
     ];

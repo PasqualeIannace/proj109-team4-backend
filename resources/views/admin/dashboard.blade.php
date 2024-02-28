@@ -30,15 +30,15 @@
 
             <ol class="overflow-y-scroll h-90 mt-3">
                 @foreach ($foods as $food)
-                <li class="d-flex p-3 menu-item">
+                <li class="d-flex p-3 menu-item c-white-to-violet">
                     <a href="{{ route('admin.foods.edit', $food->id) }}" class="btn d-flex text-white">
                         <div class="small_img">
                             <div class="img-container">
                                 @if ($food->image)
                                 @if (filter_var($food->image, FILTER_VALIDATE_URL))
-                                <img src="{{ $food->image }}" class="w-100" alt="">
+                                <img src="{{ $food->image }}" class="w-100 cerchio object-fit-cover obj-pos-center" alt="">
                                 @else
-                                <img src="{{ asset('storage/' . $food->image) }}" class="w-100" alt="">
+                                <img src="{{ asset('storage/' . $food->image) }}" class="w-100 object-fit-cover obj-pos-center" alt="">
                                 @endif
                                 @else
                                 <p>No image available</p>

@@ -89,9 +89,10 @@
                         </div>
                         @foreach ($tags as $tag)
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="tags[]" id="tags"
-                                    value="{{ old('tags') ?? $tag->id }}">
-                                <label class="form-check-label" for="{{ $tag->id }}"><span
+                                <input class="form-check-input" type="checkbox" name="tags[]" id="tag_{{ $tag->id }}"
+                                    value="{{ $tag->id }}"
+                                    {{ in_array($tag->id, old('tags', [])) ? 'checked' : '' }}>
+                                <label class="form-check-label" for="tag_{{ $tag->id }}"><span
                                         class="text-light">{{ $tag->name }}</span></label>
                             </div>
                         @endforeach

@@ -62,7 +62,7 @@ class OrderController extends Controller
                                 ->withTrashed() // Include soft-deleted foods
                                 ->withPivot('quantity');
                       }])->first();
-    
+
         return view("admin.orders.show", compact("order"));
     }
 }

@@ -44,9 +44,9 @@ class FoodController extends Controller
                 'description.max' => 'Numero caratteri consentiti superato',
                 'price.required' => 'Requisito Necessario',
                 'visible.required' => 'Requisito Necessario',
-                'image.required_without:image_url' => 'Select an image file to upload or provide an Image URL.',
-                'image_url.required_without:image' => 'Provide an Image URL or select an image file to upload.',
-                'image_url.url' => 'The Image URL must be a valid URL.',
+                'image.required_without' => 'Seleziona un File o un Url Image',
+                'image_url.required_without' => 'Inserisci un Url Image o seleziona un File.',
+                'image_url.url' => 'Url inserito non valido.',
             ]
         );
 

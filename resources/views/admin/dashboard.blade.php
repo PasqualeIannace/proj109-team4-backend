@@ -36,9 +36,9 @@
                             <div class="img-container">
                                 @if ($food->image)
                                 @if (filter_var($food->image, FILTER_VALIDATE_URL))
-                                <img src="{{ $food->image }}" class="w-100" alt="">
+                                <img src="{{ $food->image }}" class="w-100 cerchio object-fit-cover obj-pos-center" alt="">
                                 @else
-                                <img src="{{ asset('storage/' . $food->image) }}" class="w-100" alt="">
+                                <img src="{{ asset('storage/' . $food->image) }}" class="w-100 object-fit-cover obj-pos-center" alt="">
                                 @endif
                                 @else
                                 <p>No image available</p>

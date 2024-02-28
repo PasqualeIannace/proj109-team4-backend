@@ -30,7 +30,7 @@ class FoodController extends Controller
             [
                 'name' => 'required|max:50',
                 'ingredients' => 'required|max:200',
-                'description' => 'required|max:200',
+                'description' => 'max:500',
                 'price' => 'required',
                 'visible' => 'required',
                 'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048|required_without:image_url',
@@ -41,7 +41,6 @@ class FoodController extends Controller
                 'name.max' => 'Numero caratteri consentiti superato',
                 'ingredients.required' => 'Requisito Necessario',
                 'ingredients.max' => 'Numero caratteri consentiti superato',
-                'description.required' => 'Requisito Necessario',
                 'description.max' => 'Numero caratteri consentiti superato',
                 'price.required' => 'Requisito Necessario',
                 'visible.required' => 'Requisito Necessario',

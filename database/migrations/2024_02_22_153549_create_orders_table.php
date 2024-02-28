@@ -21,6 +21,11 @@ return new class extends Migration
             $table->boolean("payment_status");
             $table->date("order_date");
             $table->decimal("total_price");
+            $table->string('name_surname', 100);
+            $table->string('address', 100);
+            $table->string("phone_number", 50);
+            $table->string('email', 50);
+            $table->timestamps();
         });
     }
 

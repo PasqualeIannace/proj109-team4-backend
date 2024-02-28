@@ -114,12 +114,12 @@ class FoodController extends Controller
 
         $newFood = Food::create($validatedData);
 
-        // if ($request->tags) {
-        //     $newFood->tags()->attach($request->tags);
-        // }
+        //  if ($request->tags) {
+        //      $newFood->tags()->attach($request->tags);
+        //  }
         if ($request->filled("tags")) {
             $data["tags"] = array_filter($data["tags"]) ? $data["tags"] : [];
-            $food->tags()->sync($data["tags"]);
+            $newFood->tags()->sync($data["tags"]);
         }
 
         return redirect()->route('admin.foods.index');

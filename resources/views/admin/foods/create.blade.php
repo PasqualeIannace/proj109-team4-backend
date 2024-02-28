@@ -97,8 +97,8 @@
                     </div>
                 </div>
             </div>
-            <div class="mb-3">
-                <div>
+            <div class="mb-3 mt-4">
+                <div class="d-flex justify-content-center mb-3">
                     <label for="tags" class="form-label text-white">Allergeni</label>
                 </div>
                 <div class="d-flex justify-content-around">

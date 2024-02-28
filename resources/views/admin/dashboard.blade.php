@@ -30,7 +30,7 @@
 
             <ol class="overflow-y-scroll h-90 mt-3">
                 @foreach ($foods as $food)
-                <li class="d-flex p-3 menu-item">
+                <li class="d-flex p-3 menu-item c-white-to-violet">
                     <a href="{{ route('admin.foods.edit', $food->id) }}" class="btn d-flex text-white">
                         <div class="small_img">
                             <div class="img-container">

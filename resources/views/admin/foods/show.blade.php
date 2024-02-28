@@ -6,7 +6,15 @@
         <div class="card myShowBg myM" style="max-width: 1040px;">
             <div class="row g-0">
                 <div class="col-md-4 d-flex align-items-center">
-                    <img src="{{ $food->image }}" class="img-fluid rounded-start" alt="...">
+                    @if ($food->image)
+                        @if (filter_var($food->image, FILTER_VALIDATE_URL))
+                            <img src="{{ $food->image }}" class="w-100" alt="">
+                        @else
+                            <img src="{{ asset('storage/' . $food->image) }}" class="w-100" alt="">
+                        @endif
+                    @else
+                        <p>No image available</p>
+                    @endif
                 </div>
                 <div class="col-md-8 text-light">
                     <div class="card-body">

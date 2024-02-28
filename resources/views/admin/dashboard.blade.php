@@ -57,8 +57,32 @@
         </div>
         <div class="statistic text-white mt-6">
             <p class="text-center fs-4">Le tue Statistiche</p>
-            <img src="https://s.tmimgcdn.com/scr/1200x750/137800/elementi-di-infografica-statistica-economica-del-grafico_137852-original.jpg"
-                class="w-100 d-flex align-items-center">
+            <div>
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <script>
+                const ctx = document.getElementById('myChart');
+              
+                new Chart(ctx, {
+                  type: 'bar',
+                  data: {
+                    labels: ['Italiano', 'Cinese', 'Giapponese', 'Indiano', 'Thailandese'],
+                    datasets: [{
+                      label: '# of Votes',
+                      data: [12, 19, 3, 5, 2, 3],
+                      borderWidth: 1
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+            </script>
         </div>
     </div>
 

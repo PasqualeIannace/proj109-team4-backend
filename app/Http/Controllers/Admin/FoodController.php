@@ -94,8 +94,8 @@ class FoodController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
+    public function store(Request $request,  Food $food)
+    {    $data = $request->all();
         $validatedData = $this->validation($request->all());
         $validatedData['user_id'] = Auth::id();
 
@@ -114,8 +114,12 @@ class FoodController extends Controller
 
         $newFood = Food::create($validatedData);
 
-        if ($request->tags) {
-            $newFood->tags()->attach($request->tags);
+        // if ($request->tags) {
+        //     $newFood->tags()->attach($request->tags);
+        // }
+        if ($request->filled("tags")) {
+            $data["tags"] = array_filter($data["tags"]) ? $data["tags"] : [];
+            $food->tags()->sync($data["tags"]);
         }
 
         return redirect()->route('admin.foods.index');

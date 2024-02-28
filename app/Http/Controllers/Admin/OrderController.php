@@ -49,6 +49,20 @@ class OrderController extends Controller
         //         ->withPivot('quantity');
         // }])->get();
 
+
+        $userId = Auth::id();
+
+        // Recupera l'ordine solo se appartiene all'utente autenticato (il tuo ristorante)
+        $order = Order::where('id', $order->id)
+                      ->whereHas('foods', function ($query) use ($userId) {
+                          $query->where('user_id', $userId)
+                                ->withTrashed(); // Include soft-deleted foods
+                      })->with(['foods' => function ($query) use ($userId) {
+                          $query->where('user_id', $userId)
+                                ->withTrashed() // Include soft-deleted foods
+                                ->withPivot('quantity');
+                      }])->first();
+    
         return view("admin.orders.show", compact("order"));
     }
 }

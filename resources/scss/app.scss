@@ -12,11 +12,6 @@ body {
 	//background-color: rgb(67, 98, 99);
 }
 
-.plateLf {
-	height: 80vh;
-	border-radius: 10px;
-}
-
 .small_img {
 	// width: 100px;
 	// height: 100px; 
@@ -59,13 +54,6 @@ body {
 	transition: opacity 0.3s ease;
 }
 
-.statistic {
-	width: 700px;
-	height: 700px;
-	background-color: rgba(58, 101, 194, 0.546);
-	border-radius: 10px;
-}
-
 .mybg {
 	background-color: rgba(58, 101, 194, 0.546);
 }
@@ -89,24 +77,6 @@ body {
 .myDiv {
 	width: 230px;
 	height: 130px;
-}
-
-.h-85 {
-	height: 85%;
-}
-
-ol::-webkit-scrollbar {
-	width: 16px;
-}
-
-ol::-webkit-scrollbar-track {
-	background-color: #e4e4e4;
-	border-radius: 100px;
-}
-
-ol::-webkit-scrollbar-thumb {
-	background-color: black;
-	border-radius: 100px;
 }
 
 //LARAVEL BUTTON
@@ -183,7 +153,7 @@ ol::-webkit-scrollbar-thumb {
 }
 
 .dash-menu-width {
-	height: calc(100% - 85% - 1rem);
+	height: calc(100% - 90% - 1rem);
 }
 
 // DASHBOARD
@@ -198,6 +168,46 @@ ol::-webkit-scrollbar-thumb {
 	}
 }
 
+ol::-webkit-scrollbar {
+	width: 0.8em;
+}
+
+ol::-webkit-scrollbar-track {
+	background-color: #e4e4e4;
+	border-radius: 0.35em;
+}
+
+ol::-webkit-scrollbar-thumb {
+	background-color: #160934;
+	border-radius: 0.35em;
+
+	&:hover {
+		background-color: #FD5933;
+	}
+}
+
+.plateLf {
+	height: 80vh;
+	border-radius: 1.5em;
+}
+
+.link {
+	a {
+		text-decoration: none;
+	}
+
+	&:hover p {
+		color: #160934;
+	}
+}
+
+.statistic {
+	width: 700px;
+	height: 700px;
+	background-color: rgba(58, 101, 194, 0.546);
+	border-radius: 2em;
+}
+
 // CLASSI ATOMICHE
 
 .top-1em {
@@ -206,4 +216,8 @@ ol::-webkit-scrollbar-thumb {
 
 .logo-width {
 	width: 2.5em;
+}
+
+.h-90 {
+	height: 90%;
 }

@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Intervention\Image\Facades\Image;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Http;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
 
 class FoodController extends Controller
 {
@@ -120,18 +123,33 @@ class FoodController extends Controller
     }
 
     // Add this method to handle image download
+
+
     private function downloadImage($imageUrl)
     {
-        $extension = pathinfo($imageUrl, PATHINFO_EXTENSION);
-        $fileName = 'downloaded_image_' . time() . '.' . $extension;
-        $path = storage_path('app/public/images/') . $fileName;
+        try {
+            $client = new Client([
+                'verify' => false, // Disable SSL certificate verification
+            ]);
 
-        // Download and save the image locally
-        $imageContent = file_get_contents($imageUrl);
-        file_put_contents($path, $imageContent);
+            $response = $client->get($imageUrl);
+            $imageContent = $response->getBody()->getContents();
 
-        return 'images/' . $fileName;
+            // Save the image locally
+            $fileName = 'downloaded_image_' . time() . '.jpg';
+            $path = storage_path('app/public/images/') . $fileName;
+            file_put_contents($path, $imageContent);
+
+            return 'images/' . $fileName;
+        } catch (RequestException $e) {
+            // Handle the exception, e.g., log or throw a specific error
+            // Note: Disabling SSL verification might expose your application to security risks
+            // Only use this option if you trust the source of the images.
+            return null;
+        }
     }
+
+
 
 
 

@@ -96,25 +96,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-4">
-                    <div class="col-12 text-center">
+                <div class="mb-3">
+                    <div>
+                        <label for="tags" class="form-label text-white">Allergeni</label>
+                    </div>
+                    <div class="d-flex justify-content-around">
                         <div>
-                            <label for="tags" class="form-label">Allergeni *</label>
+                            <input class="form-check-input" type="checkbox" name="tags[]" id="tags"
+                                value=""><span class="text-light">Nessuno</span>
                         </div>
-
-                        <input class="form-check-input" type="checkbox" name="tags[]" id="tags" value="">
-                        Nessuno
                         @foreach ($tags as $tag)
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" name="tags[]" id="tags"
-                                    value="{{ $tag->id }}">
-                                <label class="form-check-label" for="{{ $tag->id }}">{{ $tag->name }}</label>
+                                <input class="form-check-input" type="checkbox" name="tags[]"
+                                    id="tag_{{ $tag->id }}" value="{{ $tag->id }}"
+                                    {{ in_array($tag->id, old('tags', [])) ? 'checked' : '' }}>
+                                <label class="form-check-label" for="tag_{{ $tag->id }}"><span
+                                        class="text-light">{{ $tag->name }}</span></label>
                             </div>
                         @endforeach
                         @error('tags')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
+
                 </div>
 
                 <div class="d-flex justify-content-center mt-5 mb-5">

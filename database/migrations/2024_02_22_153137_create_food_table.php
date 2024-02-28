@@ -24,6 +24,7 @@ return new class extends Migration
             $table->decimal('price');
             $table->boolean('visible');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

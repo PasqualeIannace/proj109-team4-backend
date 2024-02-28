@@ -22,20 +22,33 @@ class OrderController extends Controller
     {
         $userId = Auth::id();
 
-        // $trashedAndNotTrashed = Food::withTrashed()->get(); SOFT DELETE
-
-        //$order = Order::find($orderId);
-        //$orders = Order::all();        
-        // $orders = Order::whereHas('food', function ($query) use ($userId) {
-
-        //      $query->where('user_id', $userId);
-        // })->orderBy('name')->get();
 
         $orders = Order::whereHas('foods', function ($query) use ($userId) {
-            $query->where('user_id', $userId);
+            $query->where('user_id', $userId)
+                ->withTrashed(); // Include soft-deleted foods
         })->with(['foods' => function ($query) use ($userId) {
-            $query->where('user_id', $userId)->withPivot('quantity');
+            $query->where('user_id', $userId)
+                ->withTrashed() // Include soft-deleted foods
+                ->withPivot('quantity');
         }])->get();
+
         return view("admin.orders.index", compact("orders"));
+    }
+
+    public function show(Order $order)
+    {
+        // $userId = Auth::id();
+
+
+        // $orders = Order::whereHas('foods', function ($query) use ($userId) {
+        //     $query->where('user_id', $userId)
+        //         ->withTrashed(); // Include soft-deleted foods
+        // })->with(['foods' => function ($query) use ($userId) {
+        //     $query->where('user_id', $userId)
+        //         ->withTrashed() // Include soft-deleted foods
+        //         ->withPivot('quantity');
+        // }])->get();
+
+        return view("admin.orders.show", compact("order"));
     }
 }

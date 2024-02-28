@@ -37,7 +37,7 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <label for="image" class="form-label text-white">Upload Image</label>
+                        <label for="image" class="form-label text-white">Immagine scaricata</label>
                         <input type="file" class="form-control @error('image') is-invalid @enderror" id="image"
                             name="image">
                         @error('image')
@@ -47,7 +47,7 @@
 
                     <!-- For Image URL -->
                     <div class="col-md-6">
-                        <label for="image_url" class="form-label text-white">Image URL</label>
+                        <label for="image_url" class="form-label text-white">URL immagine</label>
                         <input type="text" class="form-control @error('image_url') is-invalid @enderror" id="image_url"
                             name="image_url" value="{{ old('image_url', $food->image_url ?? '') }}">
                         @error('image_url')

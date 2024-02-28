@@ -21,7 +21,6 @@ class DatabaseSeeder extends Seeder
             RestaurantTypeSeeder::class,
             UserRestaurantTypeSeeder::class,
             OrderSeeder::class,
-            CustomerSeeder::class,
             FoodSeeder::class,
             TagSeeder::class,
             FoodTagSeeder::class,

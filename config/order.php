@@ -6,10 +6,10 @@ return
             "payment_status" => "1",
             "order_date" => "2018-07-23",
             "total_price" => 54.30,
-            "name_surname" => "",
-            "address" => "",
-            "phone_number" => "",
-            "email" => ""
+            'name_surname' => 'Mario Rossi',
+            'address' => 'Via generica, 13, Roma (RM)',
+            'phone_number' => '3332574589',
+            'email' => 'mario.rossi@gmail.com',
         ],
         [
             "message" => "Salve vorrei l'uovo ben cotto",

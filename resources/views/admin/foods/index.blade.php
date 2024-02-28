@@ -50,9 +50,9 @@
                     {{-- BUTTON1 --}}
                     {{-- <button type="submit" onclick="confirmDelete()" class="btn btn-outline-danger" id="confirmDeleteBtn">Elimina</button> --}}
                     {{-- BUTTON2 MODAL --}}
-                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" onclick="confirmDelete('{{ route('admin.foods.destroy', $food->id) }}')">
+                    {{-- <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" onclick="confirmDelete('{{ route('admin.foods.destroy', $food->id) }}')">
                         Elimina
-                    </button>
+                    </button> --}}
                     {{-- BUTTON3 ALERT --}}
                     <button type="submit" onclick="return confirm('Sei sicuro di voler eliminare questo elemento?')" class="btn btn-outline-danger" id="sure">Elimina</button>
                 </form>

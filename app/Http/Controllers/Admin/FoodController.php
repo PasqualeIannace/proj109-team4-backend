@@ -8,6 +8,8 @@ use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
+use Intervention\Image\Facades\Image;
+use Illuminate\Validation\Rule;
 
 class FoodController extends Controller
 {
@@ -18,18 +20,20 @@ class FoodController extends Controller
      */
     public function validation($data)
     {
+
+
         $validated = Validator::make(
             $data,
-            [    //accetta 3 argomenti dato da validare, primo array con regole e secondo array con messaggi
-                'image' => 'required',
+            [
                 'name' => 'required|max:50',
                 'ingredients' => 'required|max:200',
-                'description' => 'required|max:500',
+                'description' => 'required|max:200',
                 'price' => 'required',
                 'visible' => 'required',
+                'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048|required_without:image_url',
+                'image_url' => 'nullable|url|max:255|required_without:image',
             ],
             [
-                'image' => 'Requisito Necessario',
                 'name.required' => 'Requisito Necessario',
                 'name.max' => 'Numero caratteri consentiti superato',
                 'ingredients.required' => 'Requisito Necessario',
@@ -38,11 +42,24 @@ class FoodController extends Controller
                 'description.max' => 'Numero caratteri consentiti superato',
                 'price.required' => 'Requisito Necessario',
                 'visible.required' => 'Requisito Necessario',
-
+                'image.required_without:image_url' => 'Select an image file to upload or provide an Image URL.',
+                'image_url.required_without:image' => 'Provide an Image URL or select an image file to upload.',
+                'image_url.url' => 'The Image URL must be a valid URL.',
             ]
-        )->validate();
-        return $validated;
+        );
+
+        // Check if the provided image URL is absolute, if not, make it absolute
+        if ($data['image_url'] && !filter_var($data['image_url'], FILTER_VALIDATE_URL)) {
+            $data['image_url'] = url($data['image_url']);
+        }
+
+        $validated->validate();
+
+        return $validated->validated();
     }
+
+
+
 
     public function index()
     { {
@@ -80,8 +97,18 @@ class FoodController extends Controller
         $validatedData = $this->validation($request->all());
         $validatedData['user_id'] = Auth::id();
 
-        $imagePath = Storage::disk('public')->put('/images', $request['image']);
-        $validatedData['image'] = $imagePath;
+        // Check if the image is uploaded from a URL
+        if ($request->filled('image_url')) {
+            // Download and save the image locally
+            $downloadedImagePath = $this->downloadImage($request->input('image_url'));
+
+            // Save the downloaded image path to the database
+            $validatedData['image'] = $downloadedImagePath;
+        } else {
+            // Handle image upload from local storage
+            $imagePath = Storage::disk('public')->put('/images', $request->file('image'));
+            $validatedData['image'] = $imagePath;
+        }
 
         $newFood = Food::create($validatedData);
 
@@ -91,6 +118,22 @@ class FoodController extends Controller
 
         return redirect()->route('admin.foods.index');
     }
+
+    // Add this method to handle image download
+    private function downloadImage($imageUrl)
+    {
+        $extension = pathinfo($imageUrl, PATHINFO_EXTENSION);
+        $fileName = 'downloaded_image_' . time() . '.' . $extension;
+        $path = storage_path('app/public/images/') . $fileName;
+
+        // Download and save the image locally
+        $imageContent = file_get_contents($imageUrl);
+        file_put_contents($path, $imageContent);
+
+        return 'images/' . $fileName;
+    }
+
+
 
     /**
      * Display the specified resource.
@@ -130,25 +173,34 @@ class FoodController extends Controller
         $valid_data = $this->validation($data);
 
         if ($request->hasFile('image')) {
-            // Delete the old image if it exists
+            // Handle file upload
+            $imagePath = Storage::disk('public')->put('/images', $request->file('image'));
+            $valid_data['image'] = $imagePath;
+
+            // If there was a previous image, delete it
             if ($food->image) {
                 Storage::disk('public')->delete($food->image);
             }
+        } elseif ($request->filled('image_url')) {
+            // If image URL is provided, use it directly
+            $valid_data['image'] = $request->image_url;
 
-            // Store the new image
-            $imagePath = Storage::disk('public')->put('/images', $request['image']);
-            $valid_data['image'] = $imagePath;
+            // If there was a previous image, delete it
+            if ($food->image) {
+                Storage::disk('public')->delete($food->image);
+            }
         }
 
         $food->update($valid_data);
 
         if ($request->filled("tags")) {
-            $data["tags"] = array_filter($data["tags"]) ? $data["tags"] : [];  //Livecoding con Luca
+            $data["tags"] = array_filter($data["tags"]) ? $data["tags"] : [];
             $food->tags()->sync($data["tags"]);
         }
 
         return redirect()->route('admin.foods.index');
     }
+
 
     /**
      * Remove the specified resource from storage.

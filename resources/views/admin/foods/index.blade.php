@@ -10,7 +10,15 @@
                             <h3><em class="grey">{{ $food->name }}</em></h3>
                         </div>
                         <div class="myImg">
-                            <img src="{{ asset('storage/' . $food->image) }}" class="w-100" alt="...">
+                            @if ($food->image)
+                                @if (filter_var($food->image, FILTER_VALIDATE_URL))
+                                    <img src="{{ $food->image }}" class="w-100" alt="">
+                                @else
+                                    <img src="{{ asset('storage/' . $food->image) }}" class="w-100" alt="">
+                                @endif
+                            @else
+                                <p>No image available</p>
+                            @endif
                         </div>
                     </div>
                     <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">

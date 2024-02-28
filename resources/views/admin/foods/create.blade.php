@@ -34,13 +34,25 @@
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
-                    <div class="col-md-6">
-                        <label for="image" class="form-label">Immagine</label>
-                        <input type="file" class="form-control @error('image') is-invalid @enderror" id="image"
-                            name="image" value="{{ old('image') }} ">
-                        @error('image')
-                            <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <label for="image" class="form-label text-white">Upload Image</label>
+                            <input type="file" class="form-control @error('image') is-invalid @enderror" id="image"
+                                name="image">
+                            @error('image')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
+
+                        <!-- For Image URL -->
+                        <div class="col-md-6">
+                            <label for="image_url" class="form-label text-white">Image URL</label>
+                            <input type="text" class="form-control @error('image_url') is-invalid @enderror"
+                                id="image_url" name="image_url" value="{{ old('image_url', $food->image_url ?? '') }}">
+                            @error('image_url')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
+                        </div>
                     </div>
                 </div>
                 <div class="row mt-4">

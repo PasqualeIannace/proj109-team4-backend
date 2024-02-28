@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string("image");
             $table->string("name");
             $table->text("ingredients");
-            $table->text("description");
+            $table->text("description")->nullable();
             $table->decimal('price');
             $table->boolean('visible');
             $table->timestamps();

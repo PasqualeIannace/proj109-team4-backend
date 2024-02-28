@@ -47,11 +47,14 @@
                 <form action="{{ route('admin.foods.destroy', $food->id) }}" method="POST" class="d-inline-block" id="delete-form">
                     @csrf
                     @method('DELETE')
+                    {{-- BUTTON1 --}}
                     {{-- <button type="submit" onclick="confirmDelete()" class="btn btn-outline-danger" id="confirmDeleteBtn">Elimina</button> --}}
+                    {{-- BUTTON2 MODAL --}}
                     <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" onclick="confirmDelete('{{ route('admin.foods.destroy', $food->id) }}')">
                         Elimina
                     </button>
-                    {{-- <button type="submit" onclick="return confirm('Sei sicuro di voler eliminare questo elemento?')" class="btn btn-outline-danger" id="sure">Elimina</button> --}}
+                    {{-- BUTTON3 ALERT --}}
+                    <button type="submit" onclick="return confirm('Sei sicuro di voler eliminare questo elemento?')" class="btn btn-outline-danger" id="sure">Elimina</button>
                 </form>
 
                 {{-- MODAL --}}

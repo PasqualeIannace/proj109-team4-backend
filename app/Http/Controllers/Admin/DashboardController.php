@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Food;
+use App\Models\Order;
 use Illuminate\Pagination\Paginator;
 use App\CustomPaginator;
 use Illuminate\Support\Facades\Auth;
@@ -32,6 +33,16 @@ class DashboardController extends Controller
         //        'path' => LengthAwarePaginator::resolveCurrentPath(),
         //    ]
         //);
-        return view('admin.dashboard', compact('foods', 'userId', "user"));
+         
+        $orders = Order::whereHas('foods', function ($query) use ($userId) {
+            $query->where('user_id', $userId)
+                ->withTrashed(); // Include soft-deleted foods
+        })->with(['foods' => function ($query) use ($userId) {
+            $query->where('user_id', $userId)
+                ->withTrashed() // Include soft-deleted foods
+                ->withPivot('quantity');
+        }])->first();
+
+        return view('admin.dashboard', compact('foods', 'userId', "user" , "orders"));
     }
 }

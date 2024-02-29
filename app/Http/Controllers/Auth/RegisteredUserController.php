@@ -47,7 +47,12 @@ class RegisteredUserController extends Controller
         ]);
 
         // $imagePath = Storage::disk('public')->put('/images', $request->file('logo_activity'));
-        // $validatedData['logo_activity'] = $imagePath;
+        // $request->logo_activity = $imagePath;
+
+        $imagePath = $request->file('logo_activity')->store('public/images');
+        $imageUrl = Storage::disk('public')->url($imagePath);
+        $request->logo_activity = $imageUrl;
+
 
         $user = User::create([
             'name' => $request->name,

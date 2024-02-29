@@ -82,7 +82,7 @@
 
     <hr class="text-white">
     <div class="text-white">
-        <h3>Prezzo totale da pagare: €</h3>
+        <h3>Prezzo totale da pagare: € {{ $totalOrderPrice }}</h3>
         <div>
             @if ($order->payment_status = 1)
             Il pagamento è avvenuto con successo

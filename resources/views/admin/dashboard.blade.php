@@ -33,7 +33,7 @@
                 <li class="d-flex p-3 menu-item c-white-to-violet">
                     <a href="{{ route('admin.foods.edit', $food->id) }}" class="btn d-flex text-white">
                         <div class="small_img">
-                            <div class="img-container">
+                            <div class="img-container position-relative">
                                 @if ($food->image)
                                 @if (filter_var($food->image, FILTER_VALIDATE_URL))
                                 <img src="{{ $food->image }}" class="w-100 cerchio object-fit-cover obj-pos-center" alt="">
@@ -55,25 +55,29 @@
                 @endforeach
             </ol>
         </div>
+
+
+        
         <div class="statistic text-white mt-6">
             <p class="text-center fs-4">Le tue Statistiche</p>
             <div>
                 <canvas id="myChart"></canvas>
             </div>
 
-            <script>
+            {{-- <script>
                 const ctx = document.getElementById('myChart');
             
-                // I dati degli ordini ottenuti dal backend
-                const orderData = { $orders }; 
-            
+                I dati degli ordini ottenuti dal backend
+                const orderData = { json_encode($orders) };
+                
+                console.log(prova);
                 new Chart(ctx, {
                     type: 'bar',
                     data: {
-                        labels: orderData.labels,
+                        labels: ['Italiano', 'Cinese', 'Giapponese', 'Indiano', 'Thailandese'],
                         datasets: [{
-                            label: 'Numero di ordini',
-                            data: orderData.data,
+                            label: '# of Votes',
+                            data: [$orders],
                             backgroundColor: 'rgba(75, 192, 192, 0.2)',
                             borderColor: 'rgba(75, 192, 192, 1)', 
                             borderWidth: 1
@@ -87,7 +91,8 @@
                         }
                     }
                 });
-            </script>
+
+             </script> --}}
 
             {{-- <script>
                 const ctx = document.getElementById('myChart');
@@ -111,6 +116,39 @@
                   }
                 });
             </script> --}}
+<script>
+            var dynamicLabels = {!! json_encode($labels) !!};
+            var ordersData = {!! json_encode($data) !!};
+        
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'polarArea',
+                data: {
+                    labels: dynamicLabels,
+                    datasets: [{
+                        label: '# of Orders',
+                        data: ordersData,
+                        backgroundColor: [
+                                        'rgba(255, 99, 132)',
+                                        'rgba(54, 162, 235)',
+                                        'rgba(255, 206, 86)',
+                                        'rgba(75, 192, 192)',
+                                        'rgba(153, 102, 255)',
+                                        'rgba(255, 159, 64)'
+                                    ],
+                        borderColor: [ 'rgba(0,0,0)'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
         </div>
     </div>
 

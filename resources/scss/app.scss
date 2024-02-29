@@ -139,6 +139,7 @@ ol::-webkit-scrollbar-thumb {
 .plateLf {
 	height: 80vh;
 	border-radius: 1.5em;
+	margin: 2rem;
 }
 
 .link {
@@ -152,10 +153,11 @@ ol::-webkit-scrollbar-thumb {
 }
 
 .statistic {
-	width: 700px;
-	height: 700px;
-	background-color: #492a84db;
+	min-width: 80vh;
+	min-height: 80vh;
+	background-color: #583894db;
 	border-radius: 2em;
+	margin: 2rem;
 }
 
 // FOOD INDEX

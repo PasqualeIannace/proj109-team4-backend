@@ -63,6 +63,12 @@ class OrderController extends Controller
                                 ->withPivot('quantity');
                       }])->first();
 
-        return view("admin.orders.show", compact("order"));
+      $totalOrderPrice = 0;
+      foreach ($order->foods as $food) {
+          $totalFoodPrice = $food->price * $food->pivot->quantity;  // Calcola il prezzo totale del cibo moltiplicando il prezzo per la quantità
+          $totalOrderPrice += $totalFoodPrice;
+      }          
+
+        return view("admin.orders.show", compact("order" , "totalOrderPrice"));
     }
 }

@@ -64,15 +64,17 @@ class FoodController extends Controller
 
 
     public function index()
-    { {
-            //Recupera l'ID dell'utente autenticato
-            $userId = Auth::id();
-            //Recupera solo i Food collegati all'utente autenticato
-            $foods = Food::where('user_id', $userId)->get();
-            //$foods = Food::all();
-            return view("admin.foods.index", compact("foods"));
-        }
+    {
+      //Recupera l'ID dell'utente autenticato
+      $userId = Auth::id();
+      //Recupera solo i Food collegati all'utente autenticato
+      //$foods = Food::where('user_id', $userId)->get();
+      $foods = Food::where('user_id', $userId)
+      ->where('visible', true) // Assicurati che il campo 'visible' esista nella tua tabella 'foods'
+      ->get();
+      return view("admin.foods.index", compact("foods"));
     }
+
 
     /**
      * Show the form for creating a new resource.

@@ -21,8 +21,9 @@
                 </div>
                 <div class="col-md-6">
                     <label for="price" class="form-label">Prezzo</label>
-                    <input type="text" step="0.01" min="0.01" class="form-control @error('price') is-invalid @enderror"
-                        id="price" name="price" value="{{ old('price') ?? $editFood->price }} ">
+                    <input type="number" step="0.01" min="0.01"
+                        class="form-control @error('price') is-invalid @enderror" id="price" name="price"
+                        value="{{ old('price') ?? $editFood->price }} ">
                     @error('price')
                     <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
@@ -51,7 +52,7 @@
                     <div class="col-md-6">
                         <label for="image_url" class="form-label text-white">URL immagine</label>
                         <input type="text" class="form-control @error('image_url') is-invalid @enderror" id="image_url"
-                            name="image_url" value="{{ old('image_url', $editFood->image_url ?? '') }}">
+                            name="image_url" value="{{ old('image_url', $food->image_url ?? '') }}">
                         @error('image_url')
                         <div class="invalid-feedback">{{ $message }}</div>
                         @enderror

@@ -68,9 +68,9 @@ class FoodController extends Controller
       //Recupera l'ID dell'utente autenticato
       $userId = Auth::id();
       //Recupera solo i Food collegati all'utente autenticato
-      //$foods = Food::where('user_id', $userId)->get();
+
       $foods = Food::where('user_id', $userId)
-      ->where('visible', true) // Assicurati che il campo 'visible' esista nella tua tabella 'foods'
+      //->where('visible', true)
       ->get();
       return view("admin.foods.index", compact("foods"));
     }

@@ -49,7 +49,7 @@
 
                     <!-- For Image URL -->
                     <div class="col-md-6">
-                        <label for="image_url" class="form-label text-white">Image URL</label>
+                        <label for="image_url" class="form-label text-white">URL immagine</label>
                         <input type="text" class="form-control @error('image_url') is-invalid @enderror" id="image_url"
                             name="image_url" value="{{ old('image_url', $editFood->image_url ?? '') }}">
                         @error('image_url')

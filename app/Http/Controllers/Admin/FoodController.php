@@ -96,18 +96,15 @@ class FoodController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,  Food $food)
-    {    $data = $request->all();
+    public function store(Request $request, Food $food)
+    {
+        $data = $request->all();
         $validatedData = $this->validation($request->all());
         $validatedData['user_id'] = Auth::id();
 
         // Check if the image is uploaded from a URL
         if ($request->filled('image_url')) {
-            // Download and save the image locally
-            $downloadedImagePath = $this->downloadImage($request->input('image_url'));
-
-            // Save the downloaded image path to the database
-            $validatedData['image'] = $downloadedImagePath;
+            $validatedData['image'] = $request->input('image_url');
         } else {
             // Handle image upload from local storage
             $imagePath = Storage::disk('public')->put('/images', $request->file('image'));
@@ -116,9 +113,6 @@ class FoodController extends Controller
 
         $newFood = Food::create($validatedData);
 
-        //  if ($request->tags) {
-        //      $newFood->tags()->attach($request->tags);
-        //  }
         if ($request->filled("tags")) {
             $data["tags"] = array_filter($data["tags"]) ? $data["tags"] : [];
             $newFood->tags()->sync($data["tags"]);
@@ -127,32 +121,7 @@ class FoodController extends Controller
         return redirect()->route('admin.foods.index');
     }
 
-    // Add this method to handle image download
 
-
-    private function downloadImage($imageUrl)
-    {
-        try {
-            $client = new Client([
-                'verify' => false, // Disable SSL certificate verification
-            ]);
-
-            $response = $client->get($imageUrl);
-            $imageContent = $response->getBody()->getContents();
-
-            // Save the image locally
-            $fileName = 'downloaded_image_' . time() . '.jpg';
-            $path = storage_path('app/public/images/') . $fileName;
-            file_put_contents($path, $imageContent);
-
-            return 'images/' . $fileName;
-        } catch (RequestException $e) {
-            // Handle the exception, e.g., log or throw a specific error
-            // Note: Disabling SSL verification might expose your application to security risks
-            // Only use this option if you trust the source of the images.
-            return null;
-        }
-    }
 
 
 
@@ -178,10 +147,12 @@ class FoodController extends Controller
     public function edit(String $id)
     {
         $editFood = Food::find($id);
-        // dd($editFood->image); // Debugging statement
         $tags = Tag::all();
-        return view('admin.foods.edit', compact('editFood', 'tags'));
+
+        return view('admin.foods.edit', compact('editFood', 'tags'))->with('input', $editFood->toArray());
     }
+
+
 
     /**
      * Update the specified resource in storage.

@@ -21,12 +21,30 @@
                     @endif
                 </div>
             </div>
-            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
-                <p><strong>{{ $food->ingredients }}</strong></p>
+            {{-- <div class="flip-card-back d-flex flex-column justify-content-center align-items-center"> --}}
+                <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
+                    @if (!$food->visible)
+                        <i class="fa-solid fa-exclamation-triangle text-danger"></i>
+                    @endif
+                    <p><strong>{{ $food->ingredients }}</strong></p>
+                    <p>{{ $food->description }}</p>
+                    <p>€ {{ $food->price }}</p>
+                    {{-- <p> {{ $food->visible }}</p> --}}
+                    <div>
+                        <a href="{{ route('admin.foods.edit', $food->id) }}" class="btn btn-secondary"><i
+                                class="fa-solid fa-pen-to-square fa-xl"></i></a>
+                        <a href="{{ route('admin.foods.show', $food->id) }}" class="btn btn-secondary">Show Details</a>
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                            data-bs-target="#confirmDeleteModal{{ $food->id }}">
+                            <i class="fa-solid fa-trash-can fa-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                {{-- <p><strong>{{ $food->ingredients }}</strong></p>
                 <p> {{ $food->description }}</p>
-                <p>€ {{ $food->price }}</p>
+                <p>€ {{ $food->price }}</p> --}}
                 {{-- <p> {{ $food->visible }}</p> --}}
-                <div>
+                {{-- <div>
                     <a href="{{ route('admin.foods.edit', $food->id) }}" class="btn btn-secondary"><i
                             class="fa-solid fa-pen-to-square fa-xl"></i></a>
                     <a href="{{ route('admin.foods.show', $food->id) }}" class="btn btn-secondary">Show Details</a>
@@ -34,9 +52,8 @@
                         data-bs-target="#confirmDeleteModal{{ $food->id }}">
                         <i class="fa-solid fa-trash-can fa-xl"></i>
                     </button>
-                </div>
-
-            </div>
+                </div> --}}
+            {{-- </div> --}}
         </div>
         <div class="card-body">
 

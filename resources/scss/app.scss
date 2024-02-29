@@ -238,3 +238,8 @@ ol::-webkit-scrollbar-thumb {
 .h-90 {
 	height: 86%;
 }
+
+//graph
+.chart-container .chartjs-size-monitor-expand {
+    color: white !important; /* Imposta il colore dei numeri decimali a bianco */
+}

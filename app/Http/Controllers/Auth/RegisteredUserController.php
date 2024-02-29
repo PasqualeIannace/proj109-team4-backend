@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
+use Illuminate\Support\Facades\Storage;
 
 class RegisteredUserController extends Controller
 {
@@ -37,13 +38,16 @@ class RegisteredUserController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:' . User::class],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
             'activity_name' => ['required', 'string', 'max:500'],
-            'logo_activity' => 'required',
+            'logo_activity' => ['image', 'mimes:jpeg,png,jpg,gif', 'max:2048', 'required'],
             'address' => ['required', 'string', 'max:500'],
             'VAT_number' => ['required', 'string', 'max:11', 'unique:' . User::class],
             'types' => ['required', 'array'],
 
 
         ]);
+
+        // $imagePath = Storage::disk('public')->put('/images', $request->file('logo_activity'));
+        // $validatedData['logo_activity'] = $imagePath;
 
         $user = User::create([
             'name' => $request->name,

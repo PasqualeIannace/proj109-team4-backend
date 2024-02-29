@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-sm d-flex flex-wrap p-5">
     @foreach ($foods as $food)
-    <div class="mybg bg-opacity-50 text-light flip-card">
+    <div class="mybg bg-opacity-50 text-light flip-card @if(!$food->visible) bg-secondary @endif">
         <div class="flip-card-inner">
             <div class="flip-card-front d-flex flex-column align-items-center">
                 <div class="card-title h-10">

@@ -52,12 +52,11 @@
                         <div class="col-md-6">
                             <label for="image_url" class="form-label text-white">Image URL</label>
                             <input type="text" class="form-control @error('image_url') is-invalid @enderror"
-                                id="image_url" name="image_url" value="{{ old('image_url', $editFood->image_url ?? '') }}">
+                                id="image_url" name="image_url" value="{{ old('image_url', $food->image_url ?? '') }}">
                             @error('image_url')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
-
                     </div>
                 </div>
                 <div class="row mt-4">

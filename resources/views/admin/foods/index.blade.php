@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
-                <p> {{ $food->ingredients }}</p>
+                <p><strong>{{ $food->ingredients }}</strong></p>
                 <p> {{ $food->description }}</p>
                 <p>€ {{ $food->price }}</p>
                 {{-- <p> {{ $food->visible }}</p> --}}

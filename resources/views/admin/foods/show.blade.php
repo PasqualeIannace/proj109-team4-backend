@@ -8,9 +8,9 @@
             <div class="col-md-4 d-flex align-items-center">
                 @if ($food->image)
                 @if (filter_var($food->image, FILTER_VALIDATE_URL))
-                <img src="{{ $food->image }}" class="w-100" alt="">
+                <img src="{{ $food->image }}" class="img-card" alt="">
                 @else
-                <img src="{{ asset('storage/' . $food->image) }}" class="w-100" alt="">
+                <img src="{{ asset('storage/' . $food->image) }}" class="img-card" alt="">
                 @endif
                 @else
                 <p>No image available</p>

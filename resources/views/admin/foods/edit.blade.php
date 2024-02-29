@@ -68,37 +68,38 @@
                     <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
-            </div>
 
-            <div class="col-md-4">
-                <label for="visible" class="form-label">Disponibile</label>
-                <div class="form-check">
-                    <input class="form-check-input @error('visible') is-invalid @enderror" id="visible" name="visible"
-                        value="1" type="radio">
-                    {{-- value="{{ old('visible') ?? $editFood->visible }} --}}
-                    @error('visible')
-                    <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                    <label class="form-check-label" for="visible">
-                        Si
-                    </label>
+
+                <div class="col-md-4">
+                    <label for="visible" class="form-label">Disponibile</label>
+                    <div class="form-check">
+                        <input class="form-check-input @error('visible') is-invalid @enderror" id="visible"
+                            name="visible" value="1" type="radio">
+                        {{-- value="{{ old('visible') ?? $editFood->visible }} --}}
+                        @error('visible')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                        <label class="form-check-label" for="visible">
+                            Si
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input @error('visible') is-invalid @enderror" id="visible"
+                            name="visible" value="0" type="radio">
+                        @error('visible')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                        <label class="form-check-label" for="visible2">
+                            No
+                        </label>
+                    </div>
                 </div>
 
-                <div class="form-check">
-                    <input class="form-check-input @error('visible') is-invalid @enderror" id="visible" name="visible"
-                        value="0" type="radio">
-                    @error('visible')
-                    <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                    <label class="form-check-label" for="visible2">
-                        No
-                    </label>
-                </div>
-            </div>
-
-            <div class="col-md-2">
-                <div class="logo_delivbeboo">
-                    <img class="logo_deliveboo1 w-50" src="/logo.png" alt="logo">
+                <div class="col-md-2">
+                    <div class="logo_delivbeboo">
+                        <img class="logo_deliveboo1 w-50" src="/logo.png" alt="logo">
+                    </div>
                 </div>
             </div>
     </div>

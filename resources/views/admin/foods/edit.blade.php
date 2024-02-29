@@ -40,23 +40,33 @@
                     </div>
                     <div class="row mt-4">
                         <div class="col-md-6">
+                            <p class="text-white">Current Image</p>
+                            @if (isset($editMode) && $editMode)
+                                <img src="{{ asset('storage/' . $editFood->image) }}" alt="Current Image" class="mb-2"
+                                    style="max-width: 100%">
+                            @endif
+                        </div>
+                        <div class="col-md-6">
                             <label for="image" class="form-label text-white">Carica Immagine</label>
+
                             <input type="file" class="form-control @error('image') is-invalid @enderror" id="image"
-                                name="image">
+                                name="image" value="{{ old('image_url', $editFood->image ?? '') }}">
+
                             @error('image')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
 
+
                         <!-- For Image URL -->
-                        <div class="col-md-6">
+                        {{--                         <div class="col-md-6">
                             <label for="image_url" class="form-label text-white">URL immagine</label>
                             <input type="text" class="form-control @error('image_url') is-invalid @enderror"
                                 id="image_url" name="image_url" value="{{ old('image_url', $editFood->image ?? '') }}">
                             @error('image_url')
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="row mt-4">

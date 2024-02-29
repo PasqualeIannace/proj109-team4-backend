@@ -21,9 +21,12 @@ class FoodController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function validation($data)
-    {
 
+
+
+    public function validation($data, $editMode = false)
+    {
+        $imageValidation = $editMode ? 'nullable' : 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048|required';
 
         $validated = Validator::make(
             $data,
@@ -33,8 +36,8 @@ class FoodController extends Controller
                 'description' => 'max:500',
                 'price' => 'required',
                 'visible' => 'required',
-                'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048|required_without:image_url',
-                'image_url' => 'nullable|url|max:255|required_without:image',
+                'image' => $imageValidation,
+                /* 'image_url' => 'nullable|url|max:255|required_without:image', */
             ],
             [
                 'name.required' => 'Requisito Necessario',
@@ -51,9 +54,9 @@ class FoodController extends Controller
         );
 
         // Check if the provided image URL is absolute, if not, make it absolute
-        if ($data['image_url'] && !filter_var($data['image_url'], FILTER_VALIDATE_URL)) {
+        /*         if ($data['image_url'] && !filter_var($data['image_url'], FILTER_VALIDATE_URL)) {
             $data['image_url'] = url($data['image_url']);
-        }
+        } */
 
         $validated->validate();
 
@@ -65,14 +68,14 @@ class FoodController extends Controller
 
     public function index()
     {
-      //Recupera l'ID dell'utente autenticato
-      $userId = Auth::id();
-      //Recupera solo i Food collegati all'utente autenticato
+        //Recupera l'ID dell'utente autenticato
+        $userId = Auth::id();
+        //Recupera solo i Food collegati all'utente autenticato
 
-      $foods = Food::where('user_id', $userId)
-      //->where('visible', true)
-      ->get();
-      return view("admin.foods.index", compact("foods"));
+        $foods = Food::where('user_id', $userId)
+            //->where('visible', true)
+            ->get();
+        return view("admin.foods.index", compact("foods"));
     }
 
 
@@ -149,7 +152,8 @@ class FoodController extends Controller
         $editFood = Food::find($id);
         $tags = Tag::all();
 
-        return view('admin.foods.edit', compact('editFood', 'tags'))->with('input', $editFood->toArray());
+        return view('admin.foods.edit', compact('editFood', 'tags'))->with('input', $editFood->toArray())
+            ->with('editMode', true);
     }
 
 
@@ -164,25 +168,27 @@ class FoodController extends Controller
     public function update(Request $request, Food $food)
     {
         $data = $request->all();
-        $valid_data = $this->validation($data);
+        $editMode = true;
+
+        // Modify the validation logic
+        $valid_data = $this->validation($data, $editMode);
 
         if ($request->hasFile('image')) {
             // Handle file upload
             $imagePath = Storage::disk('public')->put('/images', $request->file('image'));
-            $valid_data['image'] = $imagePath;
 
             // If there was a previous image, delete it
             if ($food->image) {
                 Storage::disk('public')->delete($food->image);
             }
+
+            $valid_data['image'] = $imagePath;
         } elseif ($request->filled('image_url')) {
             // If image URL is provided, use it directly
             $valid_data['image'] = $request->image_url;
-
-            // If there was a previous image, delete it
-            if ($food->image) {
-                Storage::disk('public')->delete($food->image);
-            }
+        } else {
+            // If no new image is provided, retain the existing image
+            $valid_data['image'] = $food->image;
         }
 
         $food->update($valid_data);
@@ -194,6 +200,9 @@ class FoodController extends Controller
 
         return redirect()->route('admin.foods.index');
     }
+
+
+
 
 
     /**

@@ -3,7 +3,8 @@
 @section('content')
     <div class="container-sm m-4 text-black">
         <div class="row justify-content-center myDiv m-auto">
-            <img class="m-4 text-center fs-2" src="{{ $user->logo_activity }}" alt="{{ $user->activity_name }}">
+            <img class="m-4 text-center fs-2" src="{{ asset('storage/' . $user->logo_activity) }}"
+                alt="{{ $user->activity_name }}">
             {{-- {{ddd($user->activity_name);}} --}}
         </div>
         <div class="types">
@@ -126,7 +127,7 @@
                             },
                             elements: {
                                 line: {
-                                    borderColor: 'rgba(255, 255, 255, 1)', 
+                                    borderColor: 'rgba(255, 255, 255, 1)',
                                     borderWidth: 2
                                 },
                                 point: {

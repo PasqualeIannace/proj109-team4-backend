@@ -158,7 +158,7 @@ ol::-webkit-scrollbar-thumb {
 
 .statistic {
 	// max-width: 73vw;
-	// max-height: 80vh;
+	height: 80vh;
 	background-color: #583894db;
 	border-radius: 2em;
 	// margin: 2rem;
@@ -247,6 +247,14 @@ ol::-webkit-scrollbar-thumb {
 
 .h-90 {
 	height: 86%;
+}
+
+.vh-70 {
+	height: 70vh;
+}
+
+.ms-2r {
+	margin-left: 2rem;
 }
 
 //graph

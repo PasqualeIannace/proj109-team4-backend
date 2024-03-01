@@ -13,6 +13,8 @@ use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Http;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Session;
 
 class FoodController extends Controller
 {
@@ -154,11 +156,29 @@ class FoodController extends Controller
     {
         $user = Auth::user();
         $editFood = Food::find($id);
-        $tags = Tag::all();
 
-        return view('admin.foods.edit', compact('editFood', 'tags', 'user'))->with('input', $editFood->toArray())
+        if (!$editFood) {
+            return $this->redirectToIndexWithAlert('Food item not found.');
+        }
+
+        if (!$this->isUserAuthorizedForEdit($editFood)) {
+            return $this->redirectToIndexWithAlert('You are not authorized to edit this food item.');
+        }
+
+        $tags = Tag::all();
+        $editMode = true;
+
+        return view('admin.foods.edit', compact('editFood', 'tags'))->with('input', $editFood->toArray())
             ->with('editMode', true);
     }
+
+    private function isUserAuthorizedForEdit(Food $food)
+    {
+        return $food->user_id === auth()->id();
+    }
+
+
+
 
 
 
@@ -176,6 +196,10 @@ class FoodController extends Controller
 
         // Modify the validation logic
         $valid_data = $this->validation($data, $editMode);
+
+        if (!$this->isUserAuthorizedForEdit($food)) {
+            $this->redirectToIndexWithAlert('You are not authorized to edit this food item.');
+        }
 
         if ($request->hasFile('image')) {
             // Handle file upload
@@ -204,8 +228,6 @@ class FoodController extends Controller
 
         return redirect()->route('admin.foods.index');
     }
-
-
 
 
 

@@ -172,6 +172,11 @@ class FoodController extends Controller
             ->with('editMode', true);
     }
 
+    private function isUserAuthorizedForEdit(Food $food)
+    {
+        return $food->user_id === auth()->id();
+    }
+
 
 
 

@@ -70,6 +70,7 @@ class FoodController extends Controller
 
     public function index()
     {
+        $user = Auth::user();
         //Recupera l'ID dell'utente autenticato
         $userId = Auth::id();
         //Recupera solo i Food collegati all'utente autenticato
@@ -77,7 +78,7 @@ class FoodController extends Controller
         $foods = Food::where('user_id', $userId)
             //->where('visible', true)
             ->get();
-        return view("admin.foods.index", compact("foods"));
+        return view("admin.foods.index", compact("foods", 'user'));
     }
 
 
@@ -89,10 +90,11 @@ class FoodController extends Controller
     public function create(Food $food)
     {
         $userId = Auth::id();
+        $user = Auth::user();
 
         $tags = Tag::all();
 
-        return view("admin.foods.create", compact("food", "userId", "tags"));
+        return view("admin.foods.create", compact("food", "userId", "tags", 'user'));
     }
 
     /**
@@ -140,7 +142,8 @@ class FoodController extends Controller
      */
     public function show(Food $food)
     {
-        return view("admin.foods.show", compact("food"));
+        $user = Auth::user();
+        return view("admin.foods.show", compact("food", 'user'));
     }
 
     /**
@@ -151,6 +154,7 @@ class FoodController extends Controller
      */
     public function edit(String $id)
     {
+        $user = Auth::user();
         $editFood = Food::find($id);
 
         if (!$editFood) {
@@ -164,17 +168,8 @@ class FoodController extends Controller
         $tags = Tag::all();
         $editMode = true;
 
-        return view('admin.foods.edit', compact('editFood', 'tags', 'editMode'));
-    }
-
-    private function isUserAuthorizedForEdit(Food $food)
-    {
-        return $food->user_id === auth()->id();
-    }
-
-    private function redirectToIndexWithAlert($message)
-    {
-        abort(403, $message);
+        return view('admin.foods.edit', compact('editFood', 'tags'))->with('input', $editFood->toArray())
+            ->with('editMode', true);
     }
 
 

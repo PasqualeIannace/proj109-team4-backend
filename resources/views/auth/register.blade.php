@@ -1,6 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
+
+{{-- VERIFICA PASSWORD CLIENT SIDE --}}
+<script>
+    window.onload = function() {
+        var password = document.getElementById("password")
+        var confirmPassword = document.getElementById("password-confirm");
+
+        function validatePassword() {
+            if (password.value != confirmPassword.value) {
+                confirmPassword.setCustomValidity("Le password non corrispondono");
+            } else {
+                confirmPassword.setCustomValidity('');
+            }
+        }
+
+        password.onchange = validatePassword;
+        confirmPassword.onkeyup = validatePassword;
+    }
+</script>
+
+
+{{-- FORM REGISTRAZIONE --}}
 <div class="container mt-4">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -44,7 +66,8 @@
                             <div class="col-md-6">
                                 <input id="password" type="password"
                                     class="form-control @error('password') is-invalid @enderror" name="password"
-                                    required autocomplete="new-password">
+                                    required autocomplete="new-password" pattern=".{8,}"
+                                    title="La password deve contenere almeno 8 caratteri">
                                 @error('password')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -58,7 +81,8 @@
                                 Password') }}</label>
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control"
-                                    name="password_confirmation" required autocomplete="new-password">
+                                    name="password_confirmation" required autocomplete="new-password" pattern=".{8,}"
+                                    title="La password deve contenere almeno 8 caratteri">
                             </div>
                         </div>
 

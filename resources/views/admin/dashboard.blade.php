@@ -13,7 +13,7 @@
     <p>No restaurant types associated with your account.</p>
     @endif
 </div>
-<div class="d-flex justify-content-around">
+<div class="d-flex justify-content-center">
     <div class="plateLf mybg">
         <div class="text-center fs-4 pt-3 dash-menu-width link">
             <a class="text-white" href="{{ route('admin.foods.index') }}">

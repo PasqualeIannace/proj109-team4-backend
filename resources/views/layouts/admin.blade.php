@@ -81,7 +81,17 @@
                             </li>
 
                         </ul>
-
+                        <div class="row justify-content-center myDiv m-auto">
+                            @if (strpos($user->logo_activity, 'logo_activity/') === 0)
+                            <!-- Se il logo_activity è nella directory logo_activity/ -->
+                            <img class="m-4 text-center fs-2" src="/{{ $user->logo_activity }}"
+                                alt="{{ $user->activity_name }}">
+                            @else
+                            <!-- Se il logo_activity è nella directory storage/ -->
+                            <img class="m-4 text-center fs-2" src="{{ asset('storage/' . $user->logo_activity) }}"
+                                alt="{{ $user->activity_name }}">
+                            @endif
+                        </div>
                     </div>
                 </nav>
 

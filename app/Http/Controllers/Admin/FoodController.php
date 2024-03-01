@@ -168,7 +168,7 @@ class FoodController extends Controller
         $tags = Tag::all();
         $editMode = true;
 
-        return view('admin.foods.edit', compact('editFood', 'tags'))->with('input', $editFood->toArray())
+        return view('admin.foods.edit', compact('editFood', 'tags', 'user'))->with('input', $editFood->toArray())
             ->with('editMode', true);
     }
 

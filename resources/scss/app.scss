@@ -84,6 +84,8 @@ body {
 // DASHBOARD
 
 .types {
+	padding-top: 2em;
+
 	li {
 		display: inline-block;
 		border-radius: 2em;
@@ -139,6 +141,7 @@ ol::-webkit-scrollbar-thumb {
 
 .plateLf {
 	height: 80vh;
+	width: 33vh;
 	border-radius: 1.5em;
 	margin: 2rem;
 }
@@ -154,8 +157,8 @@ ol::-webkit-scrollbar-thumb {
 }
 
 .statistic {
-	min-width: 80vh;
-	min-height: 80vh;
+	max-width: 73vh;
+	max-height: 80vh;
 	background-color: #583894db;
 	border-radius: 2em;
 	margin: 2rem;

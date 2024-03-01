@@ -33,7 +33,7 @@ class Userseeder extends Seeder
             $new_user->email = "israr.muhammad@libero.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Taj Mahal Restaurant";
-            $new_user->logo_activity = "indian.png";
+            $new_user->logo_activity = "logo_activity/indian.png";
             $new_user->address = "Via Gandhi, 145, Milano (MI)";
             $new_user->VAT_number = "77634180036";
             $new_user->save();
@@ -43,7 +43,7 @@ class Userseeder extends Seeder
             $new_user->email = "pasquale.iannace@hotmail.it";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Pasquale's Pizzeria";
-            $new_user->logo_activity = "pizza.png";
+            $new_user->logo_activity = "logo_activity/pizza.png";
             $new_user->address = "Via Roma, 1, Roma (RM)";
             $new_user->VAT_number = "12345678911";
             $new_user->save();
@@ -53,7 +53,7 @@ class Userseeder extends Seeder
             $new_user->email = "francesca.picoco96@gmail.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "MOYA";
-            $new_user->logo_activity = "cinese.png";
+            $new_user->logo_activity = "logo_activity/cinese.png";
             $new_user->address = "Via Bartolomeo, 11, Milano(MI)";
             $new_user->VAT_number = "12345675710";
             $new_user->save();
@@ -63,7 +63,7 @@ class Userseeder extends Seeder
             $new_user->email = "thomassalvaterra@gmail.it";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Kyiomi Sushi";
-            $new_user->logo_activity = "japan.png";
+            $new_user->logo_activity = "logo_activity/japan.png";
             $new_user->address = "Corso Umberto, 14, Mantova (MN)";
             $new_user->VAT_number = "13245869024";
             $new_user->save();
@@ -73,7 +73,7 @@ class Userseeder extends Seeder
             $new_user->email = "abdullah.azza@gmail.it";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Ristorante La Lanterna";
-            $new_user->logo_activity = "italian.png";
+            $new_user->logo_activity = "logo_activity/italian.png";
             $new_user->address = "Via Ugo Foscolo, 21, Modena (MO)";
             $new_user->VAT_number = "13245864248";
             $new_user->save();
@@ -84,7 +84,7 @@ class Userseeder extends Seeder
             $new_user->email = "miriam.ancona@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Thai Taste";
-            $new_user->logo_activity = "thai.png";
+            $new_user->logo_activity = "logo_activity/thai.png";
             $new_user->address = "Via Garibaldi, 12, Milano (MI)";
             $new_user->VAT_number = "12345678901";
             $new_user->save();
@@ -95,7 +95,7 @@ class Userseeder extends Seeder
             $new_user->email = "alice.manelli@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "The Golden Pint";
-            $new_user->logo_activity = "pub.png";
+            $new_user->logo_activity = "logo_activity/pub.png";
             $new_user->address = "Piazza Navona, 8, Roma (RM)";
             $new_user->VAT_number = "23456789012";
             $new_user->save();
@@ -106,7 +106,7 @@ class Userseeder extends Seeder
             $new_user->email = "enea.bianchi@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "La Piazza";
-            $new_user->logo_activity = "italian.png";
+            $new_user->logo_activity = "logo_activity/italian.png";
             $new_user->address = "Corso Italia, 15, Firenze (FI)";
             $new_user->VAT_number = "34567890123";
             $new_user->save();
@@ -117,7 +117,7 @@ class Userseeder extends Seeder
             $new_user->email = "antonio.ferrari@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Agriturismo Bella Italia";
-            $new_user->logo_activity = "italian.png";
+            $new_user->logo_activity = "logo_activity/italian.png";
             $new_user->address = "Via Roma, 10, Napoli (NA)";
             $new_user->VAT_number = "45678901234";
             $new_user->save();
@@ -128,7 +128,7 @@ class Userseeder extends Seeder
             $new_user->email = "luca.martini@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Caffè Centrale";
-            $new_user->logo_activity = "bar.png";
+            $new_user->logo_activity = "logo_activity/bar.png";
             $new_user->address = "Viale Venezia, 20, Torino (TO)";
             $new_user->VAT_number = "56789012345";
             $new_user->save();
@@ -139,7 +139,7 @@ class Userseeder extends Seeder
             $new_user->email = "paolo.yamamoto@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Sakura Sushi";
-            $new_user->logo_activity = "chinese_japanese.png";
+            $new_user->logo_activity = "logo_activity/chinese_japanese.png";
             $new_user->address = "Via Giuseppe Garibaldi, 9, Bologna (BO)";
             $new_user->VAT_number = "67890123456";
             $new_user->save();
@@ -150,7 +150,7 @@ class Userseeder extends Seeder
             $new_user->email = "francesca.deluca@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Agriturismo del Sole";
-            $new_user->logo_activity = "italian.png";
+            $new_user->logo_activity = "logo_activity/italian.png";
             $new_user->address = "Via Dante Alighieri, 7, Venezia (VE)";
             $new_user->VAT_number = "78901234567";
             $new_user->save();
@@ -161,7 +161,7 @@ class Userseeder extends Seeder
             $new_user->email = "giovanni.ricci@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Vecchia Osteria";
-            $new_user->logo_activity = "osteria.png";
+            $new_user->logo_activity = "logo_activity/osteria.png";
             $new_user->address = "Piazza del Popolo, 3, Perugia (PG)";
             $new_user->VAT_number = "89012345678";
             $new_user->save();
@@ -172,7 +172,7 @@ class Userseeder extends Seeder
             $new_user->email = "sara.khan@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Thai Terrace";
-            $new_user->logo_activity = "thai_indian.png";
+            $new_user->logo_activity = "logo_activity/thai_indian.png";
             $new_user->address = "Via Roma, 5, Palermo (PA)";
             $new_user->VAT_number = "90123456789";
             $new_user->save();
@@ -183,7 +183,7 @@ class Userseeder extends Seeder
             $new_user->email = "marco.conti@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Ristorante da Marco";
-            $new_user->logo_activity = "italian.png";
+            $new_user->logo_activity = "logo_activity/italian.png";
             $new_user->address = "Corso Vittorio Emanuele, 30, Catania (CT)";
             $new_user->VAT_number = "01234567890";
             $new_user->save();

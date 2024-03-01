@@ -38,18 +38,8 @@ class OrderController extends Controller
 
     public function show(Order $order)
     {
-        // $userId = Auth::id();
 
-
-        // $orders = Order::whereHas('foods', function ($query) use ($userId) {
-        //     $query->where('user_id', $userId)
-        //         ->withTrashed(); // Include soft-deleted foods
-        // })->with(['foods' => function ($query) use ($userId) {
-        //     $query->where('user_id', $userId)
-        //         ->withTrashed() // Include soft-deleted foods
-        //         ->withPivot('quantity');
-        // }])->get();
-
+        $user = Auth::user();
 
         $userId = Auth::id();
 
@@ -70,6 +60,6 @@ class OrderController extends Controller
             $totalOrderPrice += $totalFoodPrice;
         }
 
-        return view("admin.orders.show", compact("order", "totalOrderPrice"));
+        return view("admin.orders.show", compact("order", "totalOrderPrice", "user"));
     }
 }

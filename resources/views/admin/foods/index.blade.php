@@ -1,11 +1,11 @@
 @extends('layouts.admin')
 
 @section('content')
-    @if (isset($alertMessage))
+    {{--     @if (isset($alertMessage))
         <div class="alert alert-danger">
             {{ $alertMessage }}
         </div>
-    @endif
+    @endif --}}
 
     <div class="container-sm d-flex flex-wrap p-5">
         @foreach ($foods as $food)

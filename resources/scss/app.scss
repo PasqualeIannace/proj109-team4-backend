@@ -172,7 +172,7 @@ ol::-webkit-scrollbar-thumb {
 }
 
 .img-card {
-	width: 16.5em;
+	max-width: 100%;
 	height: 20.7em;
 	object-fit: cover;
 	border-radius: 2em;

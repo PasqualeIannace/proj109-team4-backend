@@ -177,7 +177,10 @@ class FoodController extends Controller
         return $food->user_id === auth()->id();
     }
 
-
+    private function redirectToIndexWithAlert($message)
+    {
+        abort(403, $message);
+    }
 
 
 

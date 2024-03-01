@@ -24,6 +24,10 @@ Route::middleware(['auth'])
         Route::resource('foods', FoodController::class);
 
         Route::resource('orders', OrderController::class);
+
+        /*  Route::get('/admin/foods/{id}/edit', [FoodController::class, 'edit'])->name('admin.foods.edit'); */
     });
+
+
 
 require __DIR__ . '/auth.php';

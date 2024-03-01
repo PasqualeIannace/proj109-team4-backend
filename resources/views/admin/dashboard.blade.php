@@ -133,7 +133,7 @@
                                     animation: {
                                         animateRotate: true,
                                         animateScale: true,
-                                        duration: 7000
+                                        duration: 3000
                                     }
                                     // onComplete: function() {
                                     //     var chartInstance = this.chart;

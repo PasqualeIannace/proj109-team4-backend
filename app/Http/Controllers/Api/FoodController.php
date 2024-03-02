@@ -5,18 +5,19 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Food;
+use Illuminate\Support\Facades\Auth;  //aggiungo il contr Auth
 
 class FoodController extends Controller
 {
-    public function index()
-    {
-        $results = Food::all();
-        $data = [
-            "success" => true,
-            "payload" => $results
-        ];
-        return response()->json($data);
-    }
+    // public function index()
+    // {
+    //     $results = Food::all();
+    //     $data = [
+    //         "success" => true,
+    //         "payload" => $results
+    //     ];
+    //     return response()->json($data);
+    // }
 
     // Metodo show che usa il success true/false
     //public function show($id)

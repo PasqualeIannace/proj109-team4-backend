@@ -70,7 +70,7 @@ class FoodController extends Controller
 
     public function index()
     {
-        $user = Auth::User(all);
+        $user = Auth::User();
         //Recupera l'ID dell'utente autenticato
         $userId = Auth::id();
         //Recupera solo i Food collegati all'utente autenticato

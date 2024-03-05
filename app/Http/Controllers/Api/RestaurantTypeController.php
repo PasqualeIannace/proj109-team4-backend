@@ -8,7 +8,7 @@ class RestaurantTypeController extends Controller
 {
     public function index()
     {
-        $restaurantTypes = Restaurant_type::all(); // Recupera tutti i tipi di ristoranti
+        $restaurantTypes = Restaurant_type::with('users')->get();
         $data = [
             "success" => true,
             "payload" => $restaurantTypes

@@ -13,7 +13,7 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <label for="name" class="form-label text-white">Nome Piatto</label>
+                        <label for="name" class="form-label text-white">Nome Piatto *</label>
                         <input type="text" class="form-control @error('name') is-invalid @enderror" id="name"
                             name="name" value="{{ old('name') ?? $editFood->name }} ">
                         @error('name')
@@ -21,7 +21,7 @@
                         @enderror
                     </div>
                     <div class="col-md-6">
-                        <label for="price" class="form-label">Prezzo</label>
+                        <label for="price" class="form-label">Prezzo *</label>
                         <input type="number" step="0.01" min="0.01"
                             class="form-control @error('price') is-invalid @enderror" id="price" name="price"
                             value="{{ old('price') ?? $editFood->price }}">
@@ -32,7 +32,7 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-6">
-                        <label for="ingredients" class="form-label">Ingredienti</label>
+                        <label for="ingredients" class="form-label">Ingredienti *</label>
                         <input type="text" class="form-control @error('ingredients') is-invalid @enderror"
                             id="ingredients" name="ingredients" value="{{ old('ingredients') ?? $editFood->ingredients }} ">
                         @error('ingredients')
@@ -48,7 +48,7 @@
                             @endif
                         </div>
                         <div class="col-md-6">
-                            <label for="image" class="form-label text-white">Carica Immagine</label>
+                            <label for="image" class="form-label text-white">Carica Immagine *</label>
 
                             <input type="file" class="form-control @error('image') is-invalid @enderror" id="image"
                                 name="image" value="{{ old('image_url', $editFood->image ?? '') }}">

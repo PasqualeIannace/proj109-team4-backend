@@ -37,7 +37,7 @@
                     </div>
                     <div class="row mt-4">
                         <div class="col-md-6">
-                            <label for="image" class="form-label text-white">Carica Immagine</label>
+                            <label for="image" class="form-label text-white">Carica Immagine *</label>
                             <input type="file" class="form-control @error('image') is-invalid @enderror" id="image"
                                 name="image">
                             @error('image')

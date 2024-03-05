@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\FoodController;
 use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\Api\RestaurantTypeController;
 use App\Models\Food;
 
 
@@ -26,4 +27,5 @@ Route::get("/foods", [FoodController::class, "index"]);
 Route::get("/foods/{id}", [FoodController::class, "show"]);
 
 Route::get("/users", [UserController::class, "index"]);
-Route::get("/uders/{id}", [UserController::class, "show"]);
+Route::get("/users/{id}", [UserController::class, "show"]);
+Route::get("/restaurant_types", [RestaurantTypeController::class, "index"]);

@@ -11,7 +11,7 @@ class FoodController extends Controller
 {
     public function index()
     {
-         $results = Food::all();
+        $results = Food::all();
         // $data = [
         //     "success" => true,
         //     "payload" => $results
@@ -22,7 +22,19 @@ class FoodController extends Controller
             "success" => true,
             "payload" => $results
         ];
-    
+
+        return response()->json($data);
+    }
+
+    public function getByUser($userId)
+    {
+        $foods = Food::where('user_id', $userId)->get();
+
+        $data = [
+            "success" => true,
+            "payload" => $foods
+        ];
+
         return response()->json($data);
     }
 

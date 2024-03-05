@@ -161,7 +161,7 @@ class FoodController extends Controller
         }
 
         if (!$this->isUserAuthorizedForEdit($editFood)) {
-            return $this->redirectToIndexWithAlert('You are not authorized to edit this food item.');
+            return $this->redirectToIndexWithAlert('Food item not found.');
         }
 
         $tags = Tag::all();

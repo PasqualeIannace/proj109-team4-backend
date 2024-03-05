@@ -28,4 +28,7 @@ Route::get("/foods/{id}", [FoodController::class, "show"]);
 
 Route::get("/users", [UserController::class, "index"]);
 Route::get("/users/{id}", [UserController::class, "show"]);
+
+Route::get('/foods/user/{userId}', [FoodController::class, 'getByUser']);
+
 Route::get("/restaurant_types", [RestaurantTypeController::class, "index"]);

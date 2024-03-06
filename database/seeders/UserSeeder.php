@@ -106,7 +106,7 @@ class Userseeder extends Seeder
             $new_user->email = "enea.bianchi@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "La Piazza";
-            $new_user->logo_activity = "logo_activity/laPiazzaRestaurant.png";
+            $new_user->logo_activity = "logo_activity/lapiazzarestaurant.png";
             $new_user->address = "Corso Italia, 15, Firenze (FI)";
             $new_user->VAT_number = "34567890123";
             $new_user->save();

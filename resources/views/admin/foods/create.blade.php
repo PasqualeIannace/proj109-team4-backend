@@ -6,6 +6,7 @@
     <div class="container-sm mt-4 bg-opacity-50 bg-black text-light">
         <div class="row g-3">
             <form action="{{ route('admin.foods.store') }}" method="POST" enctype="multipart/form-data">
+
                 @csrf
                 <div class="row">
                     <div class="col-md-6">

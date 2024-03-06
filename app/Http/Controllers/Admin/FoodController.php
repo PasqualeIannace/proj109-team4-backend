@@ -114,7 +114,7 @@ class FoodController extends Controller
         } else {
             // Handle image upload from local storage
             $imagePath = Storage::disk('public')->put('/images', $request->file('image'));
-            $validatedData['image'] = $imagePath;
+            $validatedData['image'] = url("/storage/" . $imagePath);
         }
 
         $newFood = Food::create($validatedData);
@@ -126,6 +126,9 @@ class FoodController extends Controller
 
         return redirect()->route('admin.foods.index');
     }
+
+
+
 
 
 

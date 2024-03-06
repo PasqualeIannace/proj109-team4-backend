@@ -128,14 +128,6 @@ class FoodController extends Controller
     }
 
 
-
-
-
-
-
-
-
-
     /**
      * Display the specified resource.
      *
@@ -215,10 +207,11 @@ class FoodController extends Controller
                 Storage::disk('public')->delete($food->image);
             }
 
-            $valid_data['image'] = $imagePath;
+            // Construct the complete URL for the image path
+            $valid_data['image'] = url("/storage/" . $imagePath);
         } elseif ($request->filled('image_url')) {
             // If image URL is provided, use it directly
-            $valid_data['image'] = $request->image_url;
+            $valid_data['image'] = url("/storage/" . $request->image_url);
         } else {
             // If no new image is provided, retain the existing image
             $valid_data['image'] = $food->image;
@@ -233,7 +226,6 @@ class FoodController extends Controller
 
         return redirect()->route('admin.foods.index');
     }
-
 
 
     /**

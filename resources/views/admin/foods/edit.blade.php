@@ -43,9 +43,10 @@
                         <div class="col-md-6">
                             <p class="text-white">Immagine Attuale</p>
                             @if (isset($editMode) && $editMode)
-                                <img src="{{ asset('storage/' . $editFood->image) }}" alt="Current Image" class="mb-2"
-                                    style="max-width: 100%">
+                                <img src="{{ asset('storage/images/' . basename($editFood->image)) }}" alt="Current Image"
+                                    class="mb-2" style="max-width: 100%">
                             @endif
+
                         </div>
                         <div class="col-md-6">
                             <label for="image" class="form-label text-white">Carica Immagine *</label>

@@ -139,7 +139,7 @@ class Userseeder extends Seeder
             $new_user->email = "paolo.yamamoto@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Sakura Sushi";
-            $new_user->logo_activity = "logo_activity/Red White Modern Design Concept Japanese Food Logo.png";
+            $new_user->logo_activity = "logo_activity/chinese-japanese.png.png";
             $new_user->address = "Via Giuseppe Garibaldi, 9, Bologna (BO)";
             $new_user->VAT_number = "67890123456";
             $new_user->save();
@@ -150,7 +150,7 @@ class Userseeder extends Seeder
             $new_user->email = "francesca.deluca@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Agriturismo del Sole";
-            $new_user->logo_activity = "logo_activity/Brown Vintage Bakery Shop Logo.png";
+            $new_user->logo_activity = "logo_activity/agriturismoDelSole.png";
             $new_user->address = "Via Dante Alighieri, 7, Venezia (VE)";
             $new_user->VAT_number = "78901234567";
             $new_user->save();
@@ -161,7 +161,7 @@ class Userseeder extends Seeder
             $new_user->email = "giovanni.ricci@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Vecchia Osteria";
-            $new_user->logo_activity = "logo_activity/Light Gray and Black Modern Restaurant Logo.png";
+            $new_user->logo_activity = "logo_activity/vecchiaOsteria.png";
             $new_user->address = "Piazza del Popolo, 3, Perugia (PG)";
             $new_user->VAT_number = "89012345678";
             $new_user->save();
@@ -172,7 +172,7 @@ class Userseeder extends Seeder
             $new_user->email = "sara.khan@example.com";
             $new_user->password = Hash::make('password');
             $new_user->activity_name = "Thai Terrace";
-            $new_user->logo_activity = "logo_activity/Red White Modern Design Concept Japanese Food Logo.png";
+            $new_user->logo_activity = "logo_activity/thai-indian.png";
             $new_user->address = "Via Roma, 5, Palermo (PA)";
             $new_user->VAT_number = "90123456789";
             $new_user->save();

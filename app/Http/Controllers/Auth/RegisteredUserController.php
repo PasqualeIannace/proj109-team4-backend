@@ -45,13 +45,13 @@ class RegisteredUserController extends Controller
 
 
         ]);
+        $uploadedFile = $request->file('logo_activity');
+        $imageName = uniqid('', true) . '.' . $uploadedFile->getClientOriginalExtension();
 
-        $imagePath = Storage::disk('public')->put('/images', $request->file('logo_activity'));
-        $request->logo_activity = $imagePath;
 
-        /*  $imagePath = $request->file('logo_activity')->store('/images');
-        $imageUrl = Storage::disk('public')->url($imagePath);
-        $request->logo_activity = $imageUrl; */
+        $uploadedFile->storeAs('public/images', $imageName);
+
+        $imageUrl = url('storage/images/' . $imageName);
 
 
         $user = User::create([
@@ -59,7 +59,7 @@ class RegisteredUserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'activity_name' => $request->activity_name,
-            'logo_activity' => $request->logo_activity,
+            'logo_activity' => $imageUrl,
             'address' => $request->address,
             'VAT_number' => $request->VAT_number,
             /* 'restaurant_type' => $request->input('types'),

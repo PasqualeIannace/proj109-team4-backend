@@ -81,7 +81,7 @@
                             <div class="mb-4 row">
                                 <label for="password-confirm"
                                     class="col-md-4 col-form-label text-md-right">{{ __('Confirm
-                                                                                                                                                                                                                                                                                                                                Password') }}</label>
+                                                                                                                                                                                                                                                                                                                                                                    Password') }}</label>
                                 <div class="col-md-6">
                                     <input id="password-confirm" type="password" class="form-control"
                                         name="password_confirmation" required autocomplete="new-password" pattern=".{8,}"
@@ -93,7 +93,7 @@
                             <div class="mb-4 row">
                                 <label for="activity_name"
                                     class="col-md-4 col-form-label text-md-right">{{ __('Activity
-                                                                                                                                                                                                                                                                                                                                Name') }}</label>
+                                                                                                                                                                                                                                                                                                                                                                    Name') }}</label>
                                 <div class="col-md-6">
                                     <input id="activity_name" type="text"
                                         class="form-control @error('activity_name') is-invalid @enderror"
@@ -136,7 +136,7 @@
                             <div class="mb-4 row">
                                 <label for="VAT_number"
                                     class="col-md-4 col-form-label text-md-right">{{ __('VAT
-                                                                                                                                                                                                                                                                                                                                    Number') }}</label>
+                                                                                                                                                                                                                                                                                                                                                                        Number') }}</label>
                                 <div class="col-md-6">
                                     <input id="VAT_number" type="text"
                                         class="form-control @error('VAT_number') is-invalid @enderror" name="VAT_number"

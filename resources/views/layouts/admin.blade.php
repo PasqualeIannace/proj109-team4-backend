@@ -43,28 +43,28 @@
 
                             <li class="nav-item">
                                 <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.dashboard' ? 'bg-click' : 'bg-unclick' }}"
-                                    href="{{route('admin.dashboard')}}">
+                                    href="{{ route('admin.dashboard') }}">
                                     <i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> Dashboard
                                 </a>
                             </li>
 
                             <li class="nav-item">
                                 <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.orders.index' ? 'bg-click' : 'bg-unclick' }}"
-                                    href="{{route('admin.orders.index')}}">
+                                    href="{{ route('admin.orders.index') }}">
                                     <i class="fa-solid fa-list" style="color: #ffffff;"></i> Ordini
                                 </a>
                             </li>
 
                             <li class="nav-item">
                                 <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.foods.index' ? 'bg-click' : 'bg-unclick' }}"
-                                    href="{{route('admin.foods.index')}}">
+                                    href="{{ route('admin.foods.index') }}">
                                     <i class="fa-solid fa-book-open"></i> Piatti
                                 </a>
                             </li>
 
                             <li class="nav-item">
                                 <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.foods.create' ? 'bg-click' : 'bg-unclick' }}"
-                                    href="{{route('admin.foods.create')}}">
+                                    href="{{ route('admin.foods.create') }}">
                                     <i class="fa-solid fa-utensils"></i> Aggiungi Piatto
                                 </a>
                             </li>
@@ -82,16 +82,14 @@
 
                         </ul>
                         <div class="row justify-content-center myDiv m-auto">
-                            @if (strpos($user->logo_activity, 'logo_activity/') === 0)
-                            <!-- Se il logo_activity è nella directory logo_activity/ -->
-                            <img class="m-4 text-center fs-2" src="/{{ $user->logo_activity }}"
+                            <img class="m-4 text-center fs-2"
+                                src="{{ asset('storage/images/' . basename($user->logo_activity)) }}"
                                 alt="{{ $user->activity_name }}">
-                            @else
-                            <!-- Se il logo_activity è nella directory storage/ -->
-                            <img class="m-4 text-center fs-2" src="{{ asset('storage/' . $user->logo_activity) }}"
-                                alt="{{ $user->activity_name }}">
-                            @endif
                         </div>
+
+
+
+
                     </div>
                 </nav>
 

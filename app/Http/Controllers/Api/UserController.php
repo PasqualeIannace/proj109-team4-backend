@@ -15,11 +15,15 @@ class UserController extends Controller
         // Carica i dati della relazione 'types' (restaurant_types)
         $users->with('types');
 
-        // Applica il filtro se sono stati passati parametri
         if ($request->filled('selectedTypes')) {
             $selectedTypes = $request->input('selectedTypes');
-            $users->whereHas('types', function ($query) use ($selectedTypes) {
-                $query->whereIn('id', $selectedTypes);
+        
+            $users->where(function ($query) use ($selectedTypes) {
+                foreach ($selectedTypes as $type) {
+                    $query->whereHas('types', function ($q) use ($type) {
+                        $q->where('id', $type);
+                    });
+                }
             });
         }
 

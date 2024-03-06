@@ -114,7 +114,7 @@ class FoodController extends Controller
         } else {
             // Handle image upload from local storage
             $imagePath = Storage::disk('public')->put('/images', $request->file('image'));
-            $validatedData['image'] = $imagePath;
+            $validatedData['image'] = url("/storage/" . $imagePath);
         }
 
         $newFood = Food::create($validatedData);
@@ -126,11 +126,6 @@ class FoodController extends Controller
 
         return redirect()->route('admin.foods.index');
     }
-
-
-
-
-
 
 
     /**
@@ -212,10 +207,11 @@ class FoodController extends Controller
                 Storage::disk('public')->delete($food->image);
             }
 
-            $valid_data['image'] = $imagePath;
+            // Construct the complete URL for the image path
+            $valid_data['image'] = url("/storage/" . $imagePath);
         } elseif ($request->filled('image_url')) {
             // If image URL is provided, use it directly
-            $valid_data['image'] = $request->image_url;
+            $valid_data['image'] = url("/storage/" . $request->image_url);
         } else {
             // If no new image is provided, retain the existing image
             $valid_data['image'] = $food->image;
@@ -230,7 +226,6 @@ class FoodController extends Controller
 
         return redirect()->route('admin.foods.index');
     }
-
 
 
     /**

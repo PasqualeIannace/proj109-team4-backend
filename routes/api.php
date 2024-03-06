@@ -5,21 +5,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\FoodController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\RestaurantTypeController;
-use App\Models\Food;
+use App\Http\Controllers\Api\OrdersController;
 
-
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
@@ -32,3 +20,6 @@ Route::get("/users/{id}", [UserController::class, "show"]);
 Route::get('/foods/user/{userId}', [FoodController::class, 'getByUser']);
 
 Route::get("/restaurant_types", [RestaurantTypeController::class, "index"]);
+
+Route::get('/orders/generate', [OrdersController::class, 'generate']);
+Route::post('/orders/make/payment', [OrdersController::class, 'makePayment']);

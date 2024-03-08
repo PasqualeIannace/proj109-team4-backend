@@ -18,7 +18,7 @@ class FoodOrderSeeder extends Seeder
     public function run()
 
     {
-        $food_order = config("food_order");
+        $food_order = config("food_orders");
 
         foreach ($food_order as $single_order) {
             $food = Food::find($single_order['food_id']);

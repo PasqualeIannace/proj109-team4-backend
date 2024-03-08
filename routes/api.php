@@ -28,3 +28,8 @@ Route::get('/orders/generate', [OrdersController::class, 'generate']);
 Route::post('/orders/makePayment', [OrdersController::class, 'makePayment']);
 
 Route::post('/orders/create', [OrdersController::class, 'createOrder']);
+
+
+/* Route::post('/orders/addFoodOrder', [OrdersController::class, 'addFoodOrder']); */
+
+Route::post('/food_order/create', [OrdersController::class, 'addFoodOrder']);

@@ -49,7 +49,7 @@ class RegisteredUserController extends Controller
         $imageName = uniqid('', true) . '.' . $uploadedFile->getClientOriginalExtension();
 
 
-        $uploadedFile->storeAs('public/images', $imageName);
+        $uploadedFile->storeAs('images', $imageName, 'public');
 
         $imageUrl = url('storage/images/' . $imageName);
 

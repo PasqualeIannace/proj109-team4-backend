@@ -31,7 +31,9 @@ class OrderController extends Controller
             $query->where('user_id', $userId)
                 ->withTrashed() // Include soft-deleted foods
                 ->withPivot('quantity');
-        }])->get();
+        }])
+        ->orderByDesc('id')
+        ->get();
 
         return view("admin.orders.index", compact("orders", 'user'));
     }
@@ -52,9 +54,7 @@ class OrderController extends Controller
                 $query->where('user_id', $userId)
                     ->withTrashed() // Include soft-deleted foods
                     ->withPivot('quantity');
-            }])
-            ->orderByDesc('id')
-            ->first();
+            }])->first();
 
         $totalOrderPrice = 0;
         foreach ($order->foods as $food) {

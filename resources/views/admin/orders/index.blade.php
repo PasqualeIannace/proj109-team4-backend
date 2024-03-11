@@ -21,10 +21,10 @@
 
 <div class="container">
     <h1 class="mb-5 text-center">Elenco degli ordini</h1>
-    <table class="table">
+    <table class="table text-center">
         <thead>
             <tr>
-                <th>ID</th>
+                <th>Numero Ordine</th>
                 <th>Data Ordine</th>
                 <th>Quantità</th>
                 <th>Dettaglio</th>

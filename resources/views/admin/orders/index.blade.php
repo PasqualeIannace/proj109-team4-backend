@@ -21,10 +21,10 @@
 
 <div class="container">
     <h1 class="mb-5 text-center">Elenco degli ordini</h1>
-    <table class="table text-center">
+    <table class="table">
         <thead>
             <tr>
-                <th>Numero Ordine</th>
+                <th class=" text-center">Numero Ordine</th>
                 <th>Data Ordine</th>
                 <th>Quantità</th>
                 <th>Dettaglio</th>
@@ -34,7 +34,7 @@
         <tbody>
             @foreach ($orders as $order)
             <tr>
-                <td>{{ $order->id }}</td>
+                <td class=" text-center">{{ $order->id }}</td>
                 <td>{{ $order->order_date }}</td> <!-- Assumo che 'order_date' sia un campo della tua tabella Order -->
                 <td>
                     <ul>

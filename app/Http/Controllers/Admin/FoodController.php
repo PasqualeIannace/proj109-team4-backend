@@ -28,7 +28,7 @@ class FoodController extends Controller
 
     public function validation($data, $editMode = false)
     {
-        $imageValidation = $editMode ? 'nullable' : 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048|required';
+        $imageValidation = $editMode ? 'nullable' : 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048|required';
 
         $validated = Validator::make(
             $data,

@@ -48,7 +48,6 @@
                 <th scope="col">Descrizione</th>
                 <th scope="col">Quantità</th>
                 <th scope="col">Prezzo al pezzo</th>
-                <th scope="col">Prezzo totale</th>
             </tr>
         </thead>
         <tbody>

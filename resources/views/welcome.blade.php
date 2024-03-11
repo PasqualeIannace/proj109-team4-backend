@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="jumbotron p-5 mb-4 bg-light rounded-3">
+<div class="jumbotron p-3 mb-2 bg-light rounded-3">
     <div class="container py-5">
         <div class="logo_deliveboo">
             <img src="logo.png" alt="logo" class="w-25">
@@ -25,10 +25,16 @@
 <div class="content">
     <div class="container">
         <p>Copyright ©2024 - Team <strong>4</strong> Classe <strong>109</strong>. All rights reserved.
-
             Progetto finale di Boolean sviluppato da <strong>Pasquale Iannace</strong>, <strong>Francesca
                 Picoco</strong>, <strong>Thomas Salvaterra</strong>, <strong>Muhammad Israr</strong>, <strong>Abdullah
                 Azza</strong>.</p>
     </div>
 </div>
 @endsection
+
+<style scoped>
+.jumbotron {
+    background-image: url('/prova3.png');
+}
+
+</style>

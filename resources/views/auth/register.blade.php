@@ -105,7 +105,7 @@
                             </div>
 
                             <div class="row mb-4 row">
-                                <label for="logo_activity" class="col-md-4 col-form-label text-md-right">Carica Immagine</label>
+                                <label for="logo_activity" class="col-md-4 col-form-label text-md-right">Carica il tuo Logo</label>
                                 <div class="col-md-6">
                                     <input type="file" class="form-control @error('logo_activity') is-invalid @enderror"
                                         id="logo_activity" name="logo_activity">
@@ -132,7 +132,7 @@
 
                             <div class="mb-4 row">
                                 <label for="VAT_number"
-                                    class="col-md-4 col-form-label text-md-right">{{ __('Numero VAT') }}</label>
+                                    class="col-md-4 col-form-label text-md-right">{{ __('Partita IVA') }}</label>
                                 <div class="col-md-6">
                                     <input id="VAT_number" type="text"
                                         class="form-control @error('VAT_number') is-invalid @enderror" name="VAT_number"

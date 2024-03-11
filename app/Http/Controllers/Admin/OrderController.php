@@ -52,7 +52,9 @@ class OrderController extends Controller
                 $query->where('user_id', $userId)
                     ->withTrashed() // Include soft-deleted foods
                     ->withPivot('quantity');
-            }])->first();
+            }])
+            ->orderByDesc('created_at')
+            ->first();
 
         $totalOrderPrice = 0;
         foreach ($order->foods as $food) {

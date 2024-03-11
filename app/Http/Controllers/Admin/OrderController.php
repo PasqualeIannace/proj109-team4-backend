@@ -53,7 +53,7 @@ class OrderController extends Controller
                     ->withTrashed() // Include soft-deleted foods
                     ->withPivot('quantity');
             }])
-            ->orderByDesc('created_at')
+            ->orderByDesc('id')
             ->first();
 
         $totalOrderPrice = 0;

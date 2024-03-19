@@ -21,7 +21,7 @@
 
 <div class="container">
     <h1 class="mb-5 text-center">Elenco degli ordini</h1>
-    <table class="table">
+    <table class="table MyOrdersCont">
         <thead>
             <tr>
                 <th class=" text-center">Numero Ordine</th>

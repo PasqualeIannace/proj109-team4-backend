@@ -227,6 +227,27 @@ ol::-webkit-scrollbar-thumb {
 	transform: rotateY(180deg);
 }
 
+// ORDER INDEX
+
+.search-btn {
+	background: #492A84;
+	border-radius: 2em;
+	width: 3em;
+	height: 3em;
+	padding-top: 0.6em;
+	padding-left: 0.5em;
+	display: inline-block;
+	color: white;
+
+	&:hover {
+		background: #160934;
+	}
+}
+
+.my-table {
+	overflow: hidden;
+}
+
 // CLASSI ATOMICHE
 
 .top-1em {
@@ -257,6 +278,14 @@ ol::-webkit-scrollbar-thumb {
 	margin-left: 2rem;
 }
 
+.br-2em {
+	border-radius: 2em;
+}
+
+.txt-logo {
+	width: 13em;
+}
+
 //graph
 .chart-container .chartjs-size-monitor-expand {
 	color: white !important;
@@ -264,6 +293,6 @@ ol::-webkit-scrollbar-thumb {
 }
 
 //
-.MyOrdersCont{
+.MyOrdersCont {
 	border-radius: 20px;
 }

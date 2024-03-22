@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="container mybg p-5 mt-5 rounded">
+<div class="container mybg p-5 mt-5 br-2em">
     <header class="d-flex justify-content-between mt-4 mb-4 text-white">
-        <h2>Deliveboo</h2>
+        <img src="/txt-logo.png" alt="" class="txt-logo">
         <h2>Conferma d'ordine</h2>
     </header>
 

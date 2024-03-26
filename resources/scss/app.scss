@@ -230,7 +230,7 @@ ol::-webkit-scrollbar-thumb {
 // ORDER INDEX
 
 .search-btn {
-	background: #492A84;
+	background: #160934;
 	border-radius: 2em;
 	width: 3em;
 	height: 3em;
@@ -240,12 +240,13 @@ ol::-webkit-scrollbar-thumb {
 	color: white;
 
 	&:hover {
-		background: #160934;
+		background: #FD5933;
 	}
 }
 
 .my-table {
 	overflow: hidden;
+	margin-bottom: 2em;
 }
 
 // CLASSI ATOMICHE
@@ -284,6 +285,17 @@ ol::-webkit-scrollbar-thumb {
 
 .txt-logo {
 	width: 13em;
+}
+
+#myTable {
+	--bs-table-bg: rgb(88 56 148 / 97%);
+	--bs-table-color: white;
+	--bs-table-border-color: #dee2e652;
+}
+
+.noBullet {
+	list-style-type: none;
+	padding: 0;
 }
 
 //graph

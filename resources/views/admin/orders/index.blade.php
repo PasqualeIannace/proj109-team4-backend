@@ -22,7 +22,7 @@
 <div class="container">
     <h1 class="mb-5 text-center">Elenco degli ordini</h1>
     <div class="br-2em my-table">
-        <table class="table MyOrdersCont m-0">
+        <table id="myTable" class="table MyOrdersCont m-0">
             <thead>
                 <tr>
                     <th class="text-center">Numero Ordine</th>
@@ -39,7 +39,7 @@
                     <td>{{ $order->order_date }}</td>
                     <!-- Assumo che 'order_date' sia un campo della tua tabella Order -->
                     <td>
-                        <ul>
+                        <ul class="noBullet">
                             @foreach ($order->foods as $food)
                             <li>{{ $food->name }} - Quantità: {{ $food->pivot->quantity }}</li>
                             @endforeach

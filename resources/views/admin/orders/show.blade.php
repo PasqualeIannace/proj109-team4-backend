@@ -54,21 +54,21 @@
             <tr>
                 <td>{{ $order->id }}</td>
                 <td>
-                    <ul>
+                    <ul class="noBullet">
                         @foreach ($order->foods as $food)
-                        <li>{{ $food->name }} - Quantità: {{ $food->pivot->quantity }}</li>
+                        <li>{{ $food->name }}</li>
                         @endforeach
                     </ul>
                 </td>
                 <td>
-                    <ul>
+                    <ul class="noBullet">
                         @foreach ($order->foods as $food)
                         <li>{{ $food->pivot->quantity }}</li>
                         @endforeach
                     </ul>
                 </td>
                 <td>
-                    <ul>
+                    <ul class="noBullet">
                         @foreach ($order->foods as $food)
                         <li>€ {{ $food->price }}</li>
                         @endforeach

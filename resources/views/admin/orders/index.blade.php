@@ -20,7 +20,7 @@
 <!-- admin/orders/index.blade.php -->
 
 <div class="container">
-    <h1 class="mb-5 text-center">Elenco degli ordini</h1>
+    {{-- <h1 class="mb-5 text-center">Elenco degli ordini</h1> --}}
     <div class="br-2em my-table">
         <table id="myTable" class="table MyOrdersCont m-0">
             <thead>

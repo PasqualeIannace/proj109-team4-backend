@@ -3,8 +3,9 @@
 @section('content')
 {{-- <h1 class="text-center mt-4 mb-3">Nuovo piatto</h1> --}}
 
-<div class="container-sm mt-5 bg-opacity-50 bg-black text-light br-2em">
+<div class="container-sm mt-5 bg-opacity-50 mybg text-light br-2em">
     <div class="row g-3">
+        <h1 class="text-center">NUOVO PIATTO</h1>
         <form action="{{ route('admin.foods.store') }}" method="POST" enctype="multipart/form-data">
 
             @csrf
@@ -68,28 +69,12 @@
                 </div>
 
 
+                {{-- Disponibilità --}}
                 <div class="col-md-4">
-                    <label for="visible" class="form-label">Disponibile *</label>
-                    <div class="form-check">
-                        <input class="form-check-input @error('visible') is-invalid @enderror" id="visible"
-                            name="visible" value="1" type="radio">
-                        @error('visible')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                        <label class="form-check-label" for="visible">
-                            Si
-                        </label>
-                    </div>
-
-                    <div class="form-check">
-                        <input class="form-check-input @error('visible') is-invalid @enderror" id="visible"
-                            name="visible" value="0" type="radio">
-                        @error('visible')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                        <label class="form-check-label" for="visible2">
-                            No
-                        </label>
+                    <div class="form-check form-switch">
+                        <label class="form-check-label" for="visible" name="visible">Disponibilità</label>
+                        <input type="hidden" name="visible" value="0" />
+                        <input class="form-check-input" type="checkbox" id="visible" name="visible" value="1" checked>
                     </div>
                 </div>
 

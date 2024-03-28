@@ -227,6 +227,31 @@ ol::-webkit-scrollbar-thumb {
 	transform: rotateY(180deg);
 }
 
+// FOOD CREATE
+
+.my-switch {
+	padding: 0.7em 1.5em;
+	background-color: gray !important;
+	border-color: white !important;
+}
+
+.my-switch:checked {
+	background-color: #FD5933 !important;
+}
+
+.my-btn {
+	border-radius: 2em;
+	background: none;
+	color: white;
+	border: 1px solid white;
+	padding: 0.8em 0.5em;
+
+	&:hover {
+		transition: 300ms;
+		background-color: #FD5933;
+	}
+}
+
 // ORDER INDEX
 
 .search-btn {
@@ -273,6 +298,10 @@ ol::-webkit-scrollbar-thumb {
 
 .vh-70 {
 	height: 70vh;
+}
+
+.w-10em {
+	width: 10em;
 }
 
 .ms-2r {

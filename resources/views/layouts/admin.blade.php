@@ -49,8 +49,11 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.orders.index' ? 'bg-click' : 'bg-unclick' }}"
-                                    href="{{ route('admin.orders.index') }}">
+                                <a class="nav-link text-white     {{
+                                    (Route::currentRouteName() == 'admin.orders.index' || Route::currentRouteName() == 'admin.orders.show') 
+                                    ? 'bg-click' 
+                                    : 'bg-unclick'
+                                }}" href="{{ route('admin.orders.index') }}">
                                     <i class="fa-solid fa-list" style="color: #ffffff;"></i> Ordini
                                 </a>
                             </li>

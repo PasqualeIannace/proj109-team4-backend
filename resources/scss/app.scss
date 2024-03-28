@@ -241,13 +241,19 @@ ol::-webkit-scrollbar-thumb {
 
 .my-btn {
 	border-radius: 2em;
-	background: none;
+	background: #492A84;
 	color: white;
-	border: 1px solid white;
+	border: 1px solid #492A84;
 	padding: 0.8em 0.5em;
 
 	&:hover {
 		transition: 300ms;
+		background-color: #160934;
+		border: 1px solid #160934;
+	}
+
+	&:active {
+		border: 1px solid #FD5933;
 		background-color: #FD5933;
 	}
 }

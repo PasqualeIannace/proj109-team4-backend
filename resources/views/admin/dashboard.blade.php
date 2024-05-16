@@ -55,7 +55,7 @@
         </div>
 
         <div class="statistic text-white mt-6 col-7">
-            <p class="text-center fs-4">Le tue Statistiche</p>
+            <p class="text-center fs-4 pt-3">Le tue Statistiche</p>
             <div class="vh-70 ms-2r">
                 <canvas id="myChart"></canvas>
             </div>
